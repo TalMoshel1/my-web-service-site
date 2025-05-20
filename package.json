@@ -8,10 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export"
-<<<<<<< HEAD
 
-=======
->>>>>>> ca5b5176d9f15d6e92b08c3a95891fddb2058ae4
   },
   "dependencies": {
     "react": "^18",
