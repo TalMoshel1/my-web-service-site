@@ -1,4 +1,4 @@
-import logo from "@/assets/TalPhoto.jpg"; /* this is should be 1200 px width and 630 px height */
+import logo from "../../public/TalPhoto.jpg"; /* this is should be 1200 px width and 630 px height */
 import Image from "next/image";
 import Link from "next/link";
 
