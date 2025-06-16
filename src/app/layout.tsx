@@ -13,7 +13,6 @@ import "./globals.css";
 // import MySvg2 from "@/components/mySvg2";
 // import HeaderLayout from "@/components/AboutLayout";
 
-export const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -36,7 +35,6 @@ export default function RootLayout({
   return (
     <html lang="he" style={{ direction: "rtl" }}>
       <body
-        className={inter.className}
         style={{
           width: "100vw",
           minHeight: "100svh",
