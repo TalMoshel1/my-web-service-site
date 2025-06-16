@@ -1,8 +1,5 @@
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import HeroImage from "@/components/HeroImage";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 // import StyledJsxRegistry from "./registry";
 // import Demo1 from "../components/Demo1.svg";
