@@ -1,0 +1,55 @@
+nav {
+    width:90%;
+    margin: 0 auto;
+}
+
+li {
+    text-wrap: nowrap;
+}
+
+
+
+@media (orientation: portrait) {
+    .ul-display-none {
+        display: none;
+    }
+
+    .logo-size {
+        font-size:2.5rem;
+        margin-left: 1rem;
+    }
+
+    
+
+
+}
+
+@media (orientation: landscape) {
+
+
+    .ul-shown {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+        gap:2rem;
+        width:fit-content
+        /* width: 50%; */
+        /* margin-right: 1rem; */
+    }
+
+    .ul-shown li {
+        /* margin-left:1rem; */
+        text-align: center;
+
+    }
+
+    .logo-size {
+        font-size:2.5rem;
+        /* margin-left: 4rem; */
+
+    }
+}

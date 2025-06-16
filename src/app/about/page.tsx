@@ -15,15 +15,30 @@
 //   );
 // }
 
+import AboutLayout from "@/components/AboutLayout";
+import HeroImage from "@/components/HeroImage";
 import { Metadata } from "next";
+import { Varela_Round } from "next/font/google";
+import Customer_ux from "../../assets/customer-ux.svg";
+import Image from "next/image";
+import './page.css';
 
 export const metadata: Metadata = {
-  title: "טל מושל - פיתוח עמודי נחיתה - פתרונות שיפור מהירות ותיקון באגים באתרי אינטרנט",
+  title:
+    "טל מושל - פיתוח עמודי נחיתה - פתרונות שיפור מהירות ותיקון באגים באתרי אינטרנט",
 };
+
+const varela = Varela_Round({
+  subsets: ["hebrew"],
+  weight: "400",
+  display: "swap",
+});
 
 export default function AboutPage() {
   return (
-    <article className="max-w-prose m-auto space-y-6 p-4">
+    <>
+      <AboutLayout />
+      {/* <article className="max-w-prose m-auto space-y-6 p-4 overflow-x-hidden" style={{overflowX: 'hidden'}}>
       <h1 className="text-4xl font-bold text-center">
         בניית עמודי נחיתה, שיפור מהירות האתר, קידום אורגני ותיקון באגים
       </h1>
@@ -35,7 +50,7 @@ export default function AboutPage() {
         <p>
           אני לא מדבר עכשיו על האלגוריתם של גוגל. ולא על הביצועים. אני מדבר על מישהו שגולש באתר שלך מהטלפון בין פגישות, ומחליט תוך שניות אם אתה נראה לו רציני.
         </p>
-        <p>
+        <p className="overflow-x-hidden">
           עמוד נחיתה טוב, בנוי נכון, יכול להפוך ביקור מקרי להתחלה של מערכת יחסים. עסקית. אנושית. וזה מה שאני עושה.
         </p>
       </section>
@@ -89,6 +104,177 @@ export default function AboutPage() {
         <p className="font-semibold">אם אתם מחפשים מישהו שיקשיב, יבין, ויבנה את מה שצריך –</p>
         <p className="text-lg font-bold">אני כאן.</p>
       </section>
-    </article>
+    </article> */}
+      <main
+        className={varela.className}
+        style={{
+          position: "relative",
+          top: "0",
+          minHeight: "100svh",
+          height:'fit-content',
+          width: "100vw",
+        }}
+      >
+        <div
+          className="about-background-container"
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            width: "100%",
+            height: "100svh",
+            minHeight:'fit-content'
+          }}
+        >
+          <HeroImage
+            src="/sofa-living-room-with-copy-space2.webp"
+            width="100vw
+        "
+          />
+        </div>
+
+        <div
+          style={{
+            position: "absolute",
+            top: "0",
+            backgroundColor: "rgba(255,255,255,0.8)",
+            width: "100%",
+            minHeight: '100%',
+            height: "fit-content",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "start",
+            alignItems: "center",
+          }}
+        >
+          <div style={{height: 'fit-content'}}>
+            <header
+              style={{
+                padding: "2rem",
+                fontSize: "1.5rem",
+                backgroundColor: "transparent",
+              }}
+            >
+              מיקסום הפוטנציאל של האתר שלכם יכול להתבצע במגוון דרכים
+            </header>
+            <ul
+              style={{
+                width: "80%",
+                margin: "0 auto",
+                gap: "1rem",
+                listStyleType: "none",
+                display: "flex",
+                alignItems:'center',
+                flexWrap: "wrap",
+              }}
+              className='services'
+            >
+              <li
+                style={{
+                  position: "relative",
+                  height: "fit-content",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <span>
+                שיפור חווית משתמש
+
+                </span>
+                {/* <Customer_ux /> */}
+                <Image
+                  src={"/customer-ux.svg"}
+                  alt={"customer-ux"}
+                  width={100}
+                  height={100}
+                />
+              </li>
+                <li
+                style={{
+                  position: "relative",
+                  height: "fit-content",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                >
+                <span>בניית עמודי נחיתה שמניעים לפעולה</span>
+                <Image
+                  src={"/customer-ux.svg"}
+                  alt={"customer-ux"}
+                  width={100}
+                  height={100}
+                />
+                </li>
+              <li
+                style={{
+                  position: "relative",
+                  height: "fit-content",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <span>
+                תיקון באגים
+                </span>
+                {/* <Customer_ux /> */}
+                <Image
+                  src={"/customer-ux.svg"}
+                  alt={"customer-ux"}
+                  width={100}
+                  height={100}
+                />
+              </li>
+              <li
+                style={{
+                  position: "relative",
+                  height: "fit-content",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <span>
+                קידום אורגני
+                </span>
+                <Image
+                  src={"/customer-ux.svg"}
+                  alt={"customer-ux"}
+                  width={100}
+                  height={100}
+                />
+              </li>
+              <li
+                style={{
+                  position: "relative",
+                  height: "fit-content",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <span>
+                שיפור נגישות
+                </span>
+                {/* <Customer_ux /> */}
+                <Image
+                  src={"/customer-ux.svg"}
+                  alt={"customer-ux"}
+                  width={100}
+                  height={100}
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </>
   );
 }
