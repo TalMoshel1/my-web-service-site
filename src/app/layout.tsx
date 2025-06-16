@@ -1,14 +1,7 @@
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import "./globals.css";
-// import StyledJsxRegistry from "./registry";
-// import Demo1 from "../components/Demo1.svg";
-// import Image from "next/image";
-// import Navbar from "@/components/Navbar";
-// import SendQuestionToTal from "@/components/SendQuestionToTal";
-// import MySvg from "@/components/mySvg";
-// import MySvg2 from "@/components/mySvg2";
-// import HeaderLayout from "@/components/AboutLayout";
+
 
 
 export const metadata: Metadata = {
