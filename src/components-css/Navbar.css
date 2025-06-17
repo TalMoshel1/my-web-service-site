@@ -53,3 +53,15 @@ li {
 
     }
 }
+
+@media (orientation: landscape) and (max-width: 1500px) {
+    .ul-display-none {
+        display: none;
+    }
+
+    .logo-size {
+        font-size:2.5rem;
+        margin-left: 1rem;
+    }
+
+}

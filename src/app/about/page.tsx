@@ -122,25 +122,21 @@ export default function AboutPage() {
             top: "0",
             left: "0",
             width: "100%",
-            height: "100svh",
-            minHeight:'fit-content'
+            minHeight:'100%',
+            height:'fit-content',
           }}
         >
-          <HeroImage
-            src="/sofa-living-room-with-copy-space2.webp"
-            width="100vw
-        "
-          />
+                    <Image src={"/sofa-living-room-with-copy-space2.webp"} alt={"living room"} fill={true} />
+
         </div>
 
-        <div
-          style={{
-            position: "absolute",
+        <div style={{
+            position: "relative",
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
             width: "100%",
-            minHeight: '100%',
-            height: "fit-content",
+            minHeight: '100svh',
+            height: "100%",
             display: "flex",
             flexDirection: "column",
             justifyContent: "start",
@@ -274,6 +270,9 @@ export default function AboutPage() {
             </ul>
           </div>
         </div>
+
+
+        
       </main>
     </>
   );
