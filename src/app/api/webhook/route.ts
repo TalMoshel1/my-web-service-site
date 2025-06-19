@@ -1,27 +1,28 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
+// src/app/api/webhook/route.ts
+// וודא שאתה מייבא מ- 'next/server' ולא מ- 'next'
+import { NextRequest, NextResponse } from 'next/server';
 
-const VERIFY_TOKEN = process.env.META_VERIFY_TOKEN || '';
+const VERIFY_TOKEN = process.env.META_VERIFY_TOKEN || ''; 
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'GET') {
-    const mode = req.query['hub.mode'];
-    const token = req.query['hub.verify_token'];
-    const challenge = req.query['hub.challenge'];
 
-    if (mode === 'subscribe' && token === VERIFY_TOKEN) {
-      console.log('✅ Webhook verified');
-      return res.status(200).send(challenge as string);
-    } else {
-      console.warn('❌ Verification failed');
-      return res.status(403).send('Verification failed');
-    }
+export async function GET(req: NextRequest) {
+  const mode = req.nextUrl.searchParams.get('hub.mode');
+  const token = req.nextUrl.searchParams.get('hub.verify_token');
+  const challenge = req.nextUrl.searchParams.get('hub.challenge');
+
+  if (mode === 'subscribe' && token === VERIFY_TOKEN) {
+    console.log('✅ Webhook verified');
+    // חובה להחזיר NextResponse או Response
+    return new NextResponse(challenge as string, { status: 200, headers: { 'Content-Type': 'text/plain' } });
+  } else {
+    console.warn('❌ Verification failed');
+    return new NextResponse('Verification failed', { status: 403 });
   }
+}
 
-  if (req.method === 'POST') {
-    console.log('📩 Webhook event received:', JSON.stringify(req.body, null, 2));
-    return res.status(200).end();
-  }
 
-  res.setHeader('Allow', ['GET', 'POST']);
-  return res.status(405).end(`Method ${req.method} Not Allowed`);
+export async function POST(req: NextRequest) {
+  const body = await req.json();
+  console.log('📩 Webhook event received:', JSON.stringify(body, null, 2));
+  return new NextResponse(null, { status: 200 }); 
 }
