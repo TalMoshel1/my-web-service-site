@@ -24,7 +24,16 @@ li {
 
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape ) and (max-width: 1500px) {
+    .logo-size {
+        font-size:1rem;
+        /* margin-left: 4rem; */
+
+    }
+
+}
+
+@media (orientation: landscape ) and (min-width: 1500px) {
 
 
     .ul-shown {

@@ -21,7 +21,8 @@ import { Metadata } from "next";
 import { Varela_Round } from "next/font/google";
 import Customer_ux from "../../assets/customer-ux.svg";
 import Image from "next/image";
-import './page.css';
+import "./page.css";
+import Form from "@/components/Form";
 
 export const metadata: Metadata = {
   title:
@@ -38,6 +39,8 @@ export default function AboutPage() {
   return (
     <>
       <AboutLayout />
+      <Form />
+
       {/* <article className="max-w-prose m-auto space-y-6 p-4 overflow-x-hidden" style={{overflowX: 'hidden'}}>
       <h1 className="text-4xl font-bold text-center">
         בניית עמודי נחיתה, שיפור מהירות האתר, קידום אורגני ותיקון באגים
@@ -111,7 +114,7 @@ export default function AboutPage() {
           position: "relative",
           top: "0",
           minHeight: "100svh",
-          height:'fit-content',
+          height: "fit-content",
           width: "100vw",
         }}
       >
@@ -122,20 +125,24 @@ export default function AboutPage() {
             top: "0",
             left: "0",
             width: "100%",
-            minHeight:'100%',
-            height:'fit-content',
+            minHeight: "100%",
+            height: "fit-content",
           }}
         >
-                    <Image src={"/sofa-living-room-with-copy-space2.webp"} alt={"living room"} fill={true} />
-
+          <Image
+            src={"/sofa-living-room-with-copy-space2.webp"}
+            alt={"living room"}
+            fill={true}
+          />
         </div>
 
-        <div style={{
+        <div
+          style={{
             position: "relative",
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
             width: "100%",
-            minHeight: '100svh',
+            minHeight: "100svh",
             height: "100%",
             display: "flex",
             flexDirection: "column",
@@ -143,7 +150,7 @@ export default function AboutPage() {
             alignItems: "center",
           }}
         >
-          <div style={{height: 'fit-content'}}>
+          <div style={{ height: "fit-content" }}>
             <header
               style={{
                 padding: "2rem",
@@ -160,10 +167,10 @@ export default function AboutPage() {
                 gap: "1rem",
                 listStyleType: "none",
                 display: "flex",
-                alignItems:'center',
+                alignItems: "center",
                 flexWrap: "wrap",
               }}
-              className='services'
+              className="services"
             >
               <li
                 style={{
@@ -175,10 +182,7 @@ export default function AboutPage() {
                   justifyContent: "center",
                 }}
               >
-                <span>
-                שיפור חווית משתמש
-
-                </span>
+                <span>שיפור חווית משתמש</span>
                 {/* <Customer_ux /> */}
                 <Image
                   src={"/customer-ux.svg"}
@@ -187,7 +191,7 @@ export default function AboutPage() {
                   height={100}
                 />
               </li>
-                <li
+              <li
                 style={{
                   position: "relative",
                   height: "fit-content",
@@ -196,7 +200,7 @@ export default function AboutPage() {
                   alignItems: "center",
                   justifyContent: "center",
                 }}
-                >
+              >
                 <span>בניית עמודי נחיתה שמניעים לפעולה</span>
                 <Image
                   src={"/customer-ux.svg"}
@@ -204,7 +208,7 @@ export default function AboutPage() {
                   width={100}
                   height={100}
                 />
-                </li>
+              </li>
               <li
                 style={{
                   position: "relative",
@@ -215,9 +219,7 @@ export default function AboutPage() {
                   justifyContent: "center",
                 }}
               >
-                <span>
-                תיקון באגים
-                </span>
+                <span>תיקון באגים</span>
                 {/* <Customer_ux /> */}
                 <Image
                   src={"/customer-ux.svg"}
@@ -236,9 +238,7 @@ export default function AboutPage() {
                   justifyContent: "center",
                 }}
               >
-                <span>
-                קידום אורגני
-                </span>
+                <span>קידום אורגני</span>
                 <Image
                   src={"/customer-ux.svg"}
                   alt={"customer-ux"}
@@ -256,9 +256,7 @@ export default function AboutPage() {
                   justifyContent: "center",
                 }}
               >
-                <span>
-                שיפור נגישות
-                </span>
+                <span>שיפור נגישות</span>
                 {/* <Customer_ux /> */}
                 <Image
                   src={"/customer-ux.svg"}
@@ -271,8 +269,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-
-        
       </main>
     </>
   );

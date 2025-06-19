@@ -1,10 +1,15 @@
-@media (orientation: landscape) {
-    .logo-size {
-        font-size: 2.5rem;
+
+
+@media (orientation: landscape)  {
+    .logo-size , .job-description{
+        font-size: 1.0rem;
     }
 
     .logo-container {
         width: 40%
+    }
+    .svg-width {
+        width:1rem;
     }
 }
 
@@ -14,15 +19,19 @@
         width: 100%;
     }
 
-    .logo-size {
-        font-size: 2.5rem;
+    .logo-size, .job-description {
+        font-size: 1rem;
+    }
+
+    .svg-width {
+        width:1rem;
     }
 }
 
 .svg { 
 
     display: inline;
-    vertical-align: middle;
-    width: 2rem;
-    padding: 0.05rem;
+    /* vertical-align: middle; */
+    /* padding: 0.05rem; */
+    height:'fit-content'
 }

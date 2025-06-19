@@ -7,10 +7,9 @@ import { Varela_Round } from "next/font/google";
 
 import MySvg2 from "@/components/mySvg2";
 import ContainerLaptop from "./ContainerLaptop";
-import '../components-css/AboutLayout.css';
+import "../components-css/AboutLayout.css";
 
 export const inter = Inter({ subsets: ["latin"] });
-
 
 const varela = Varela_Round({
   subsets: ["hebrew"],
@@ -18,10 +17,11 @@ const varela = Varela_Round({
   display: "swap",
 });
 
-
 const AboutLayout: React.FC = () => {
   return (
-    <header style={{ position: "relative", height: "60svh" }}>
+    <header
+      style={{ position: "relative", height: "25rem", border: "1px solid red" }}
+    >
       <HeroImage src="/pc-background-image.webp" width="100%" />
 
       <Navbar />
@@ -31,7 +31,7 @@ const AboutLayout: React.FC = () => {
         style={{
           width: "100%",
           position: "relative",
-          top: "55%",
+          top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           textAlign: "center",
@@ -45,28 +45,30 @@ const AboutLayout: React.FC = () => {
           gap: "2rem",
         }}
       >
-        <div className='large-svg-foward' style={{ width: "20%" }}>
+        <div
+          className="large-svg-foward"
+          style={{ width: "10%", maxHeight: "5rem", border: "1px solid white" }}
+        >
           <ContainerLaptop />
         </div>
         <div
           style={{
-            width: "80%",
+            width: "100%",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            gap:'1rem',
-    
+            gap: "1rem",
           }}
         >
           <h1
             style={{
               zIndex: 4,
               position: "relative",
-              top: "65%",
+              top: "55%",
               left: "0",
               textAlign: "center",
-              fontSize:'2rem'
+              fontSize: "2rem",
             }}
             className={`${varela.className} call-to-action-h1`}
           >
@@ -77,8 +79,8 @@ const AboutLayout: React.FC = () => {
               padding: "0.5rem",
               backgroundColor: "yellow",
               color: "black",
-              fontSize:'1rem',
-              fontWeight:700
+              fontSize: "1rem",
+              fontWeight: 700,
             }}
           >
             דברו איתי - נתחיל לשפר
@@ -90,7 +92,7 @@ const AboutLayout: React.FC = () => {
         style={{
           backgroundColor: "rgba(77, 125, 238, 0.5)",
           width: "100vw",
-          height: "60svh",
+          height: "25rem",
           position: "absolute",
           top: "0",
           zIndex: 3,
@@ -103,7 +105,7 @@ const AboutLayout: React.FC = () => {
               bottom: "-1px",
               height: "fit-content",
               width: "100%",
-              zIndex:3
+              zIndex: 3,
             }}
           >
             <MySvg2 />
