@@ -10,6 +10,7 @@ import ContainerLaptop from "./ContainerLaptop";
 import "../components-css/AboutLayout.css";
 import CallToActionSection from "./CallToActionSection";
 import SvgBottomShapedCorner from "./SvgTopShapedCorner";
+import Form from "./Form";
 
 export const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,8 @@ const varela = Varela_Round({
 
 const FormContainer: React.FC = () => {
   return (
-    <header
-      style={{ position: "relative", height: "25rem", overflow: "hidden" }}
+    <div
+      style={{ position: "relative", height: "25rem"}}
     >
       <HeroImage src="/dark-background.webp" width="100%" />
 
@@ -35,8 +36,12 @@ const FormContainer: React.FC = () => {
           position: "absolute",
           top: "0",
           zIndex: 3,
+          display: 'flex',
+          justifyContent:'center'
+   
         }}
       >
+
         <div style={{ position: "relative", height: "100%", width: "100%" }}>
           <div
             style={{
@@ -50,8 +55,10 @@ const FormContainer: React.FC = () => {
             <SvgTopShapedCorner />
           </div>
         </div>
+        <Form />
+
       </div>
-    </header>
+    </div>
   );
 };
 

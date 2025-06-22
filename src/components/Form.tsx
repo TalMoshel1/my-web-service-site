@@ -71,6 +71,12 @@
 
 import React, { useState } from 'react';
 
+import { Varela_Round } from 'next/font/google'; // Example import for varela font
+import AnimatedOnScrollButNotOnLoad from './AnimatedOnScrollButNotOnLoad'
+
+
+const varela = Varela_Round({ subsets: ['latin'], weight: '400' });
+
 const Form: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', phone: '' });
 
@@ -84,20 +90,33 @@ const Form: React.FC = () => {
   };
 
   return (
-    <form 
+    <AnimatedOnScrollButNotOnLoad threshold={0.1}>
+
+<form 
       onSubmit={handleSubmit}
       style={{
-        width: '100%',
+        width: '20rem',
         // maxWidth: '500px',
         margin: '40px auto',
         padding: '30px',
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
         // borderRadius: '16px',
-        backgroundColor: '#fff',
+        // backgroundColor: '#fff',
         direction: 'rtl',
         fontFamily: 'Arial, sans-serif',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        backgroundColor: 'transparent',
+        position: 'absolute',
+        top: '0',
+        left: '100%',
+        transform: 'translateX(-50%)',
+        zIndex:4
       }}
+      data-aos="fade-up"
+
+
+      className={`${varela.className} `}
+
     >
       <label 
         htmlFor="name"
@@ -106,8 +125,10 @@ const Form: React.FC = () => {
           marginBottom: '8px',
           fontSize: '16px',
           fontWeight: 'bold',
-          color: '#333'
+          color: 'white'
         }}
+        className={`${varela.className}`}
+
       >
         שם מלא
       </label>
@@ -122,7 +143,6 @@ const Form: React.FC = () => {
           padding: '12px',
           marginBottom: '20px',
           border: '1px solid #ccc',
-        //   borderRadius: '8px',
           fontSize: '16px',
           boxSizing: 'border-box'
         }}
@@ -136,8 +156,10 @@ const Form: React.FC = () => {
           marginBottom: '8px',
           fontSize: '16px',
           fontWeight: 'bold',
-          color: '#333'
+          color: 'white'
         }}
+        className={`${varela.className}`}
+
       >
         מספר טלפון
       </label>
@@ -164,21 +186,25 @@ const Form: React.FC = () => {
         style={{
           width: '100%',
           padding: '14px',
-          backgroundColor: '#496199',
-          color: '#fff',
+          backgroundColor: '#FFFF00',
           border: 'none',
         //   borderRadius: '10px',
           fontSize: '18px',
           fontWeight: 'bold',
           cursor: 'pointer',
-          transition: 'background-color 0.3s ease'
+          transition: 'background-color 0.3s ease',
+          color:'black'
         }}
-        onMouseOver={e => (e.currentTarget.style.backgroundColor = '#314266')}
-        onMouseOut={e => (e.currentTarget.style.backgroundColor = '#496199')}
+        className={`${varela.className}`}
+
+        onMouseOver={e => (e.currentTarget.style.backgroundColor = '#FFDD00')}
+        onMouseOut={e => (e.currentTarget.style.backgroundColor = '#FFFF00')}
       >
         שליחה
       </button>
     </form>
+    </AnimatedOnScrollButNotOnLoad>
+
   );
 };
 

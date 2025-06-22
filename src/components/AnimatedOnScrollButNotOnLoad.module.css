@@ -1,0 +1,21 @@
+.base {
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Define transitions here */
+  }
+  
+  /* State for elements that are initially visible (no animation) */
+  .initial {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* State for elements that start hidden (below the fold) */
+  .hidden {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  /* State for elements that were hidden and are now in view (animate in) */
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

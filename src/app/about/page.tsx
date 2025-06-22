@@ -257,6 +257,7 @@ export default function AboutPage() {
                   alignItems: "center",
                   justifyContent: "center",
                 }}
+
                 
               >
                 <span>שיפור נגישות</span>
