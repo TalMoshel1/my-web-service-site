@@ -20,7 +20,6 @@ const Navbar: React.FC = () => {
         height: scrolledBeyond ? "3rem" : "5rem",
         transition:
           "height 0.3s ease-in-out, background-color 0.3s ease-in-out",
-        // display:'flex'
       }}
     >
       <div
@@ -29,7 +28,6 @@ const Navbar: React.FC = () => {
           margin: "0 auto",
           display: "flex",
           height: "100%",
-          border:'1px solid green'
         }}
       >
         <ul className="navbar-links ul-display-none ul-shown">

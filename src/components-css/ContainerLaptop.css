@@ -1,0 +1,10 @@
+/* components-css/ContainerLaptop.css */
+
+.laptop {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 10rem;
+    /* This is the animation (transition) property */
+    transition: left 2s ease-in-out, transform 2s ease-in-out;
+}

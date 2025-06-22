@@ -1,8 +1,7 @@
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import "./globals.css";
-
-
+import AosInitializer from "@/components/AosInitializer"; // Adjust path as needed
 
 export const metadata: Metadata = {
   title: {
@@ -33,7 +32,9 @@ export default function RootLayout({
           overflowX: "hidden",
         }}
       >
-        <main style={{ zIndex: "1" }}>{children}</main>
+        <AosInitializer>
+          <main style={{ zIndex: "1" }}>{children}</main>
+        </AosInitializer>
         {/* <SendQuestionToTal /> */}
         <Footer />
       </body>

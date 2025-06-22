@@ -26,3 +26,20 @@ ul {
 ul li {
     width: 30%;
 }
+
+@keyframes slide-in {
+    0% {
+      top: -50%;
+    }
+    50% {
+      top: 55%;
+    }
+    100% {
+      top: 50%;
+    }
+  }
+  
+  .call-to-action-text-container {
+    animation: slide-in 2s ease-in-out;
+    /* position: relative; */
+  }

@@ -15,7 +15,7 @@
 //   );
 // }
 
-import AboutLayout from "@/components/AboutLayout";
+import AboutHeaderLayout from "@/components/AboutLayout";
 import HeroImage from "@/components/HeroImage";
 import { Metadata } from "next";
 import { Varela_Round } from "next/font/google";
@@ -23,6 +23,7 @@ import Customer_ux from "../../assets/customer-ux.svg";
 import Image from "next/image";
 import "./page.css";
 import Form from "@/components/Form";
+import FormContainer from "@/components/FormContainer";
 
 export const metadata: Metadata = {
   title:
@@ -38,8 +39,8 @@ const varela = Varela_Round({
 export default function AboutPage() {
   return (
     <>
-      <AboutLayout />
-      <Form />
+      <AboutHeaderLayout />
+      {/* <Form /> */}
 
       {/* <article className="max-w-prose m-auto space-y-6 p-4 overflow-x-hidden" style={{overflowX: 'hidden'}}>
       <h1 className="text-4xl font-bold text-center">
@@ -146,7 +147,7 @@ export default function AboutPage() {
             height: "100%",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "start",
+            justifyContent: "center",
             alignItems: "center",
           }}
         >
@@ -237,6 +238,7 @@ export default function AboutPage() {
                   alignItems: "center",
                   justifyContent: "center",
                 }}
+                
               >
                 <span>קידום אורגני</span>
                 <Image
@@ -255,6 +257,7 @@ export default function AboutPage() {
                   alignItems: "center",
                   justifyContent: "center",
                 }}
+                
               >
                 <span>שיפור נגישות</span>
                 {/* <Customer_ux /> */}
@@ -268,8 +271,14 @@ export default function AboutPage() {
             </ul>
           </div>
         </div>
+        
+
 
       </main>
+
+      <FormContainer />
+      {/* <Form /> */}
+
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-const MySvg2: React.FC = () => {
+const SvgBottomShapedCorner: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,4 +24,4 @@ const MySvg2: React.FC = () => {
   );
 };
 
-export default MySvg2;
+export default SvgBottomShapedCorner;

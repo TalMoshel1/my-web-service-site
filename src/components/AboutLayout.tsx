@@ -5,9 +5,10 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { Varela_Round } from "next/font/google";
 
-import MySvg2 from "@/components/mySvg2";
+import SvgBottomShapedCorner from "@/components/SvgBottomShapedCorner";
 import ContainerLaptop from "./ContainerLaptop";
 import "../components-css/AboutLayout.css";
+import CallToActionSection from "./CallToActionSection";
 
 export const inter = Inter({ subsets: ["latin"] });
 
@@ -17,16 +18,16 @@ const varela = Varela_Round({
   display: "swap",
 });
 
-const AboutLayout: React.FC = () => {
+const AboutHeaderLayout: React.FC = () => {
   return (
     <header
-      style={{ position: "relative", height: "25rem", border: "1px solid red" }}
+      style={{ position: "relative", height: "25rem", overflow: "hidden" }}
     >
       <HeroImage src="/pc-background-image.webp" width="100%" />
 
       <Navbar />
 
-      <div
+      {/* <div not remove yet!!!
         className={`call-to-action-container`}
         style={{
           width: "100%",
@@ -40,26 +41,30 @@ const AboutLayout: React.FC = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          height: "fit-content",
+          height: "100%",
           flexDirection: "row",
           gap: "2rem",
         }}
       >
         <div
           className="large-svg-foward"
-          style={{ width: "10%", maxHeight: "5rem", border: "1px solid white" }}
+          style={{ width: "10%", maxHeight: "5rem" }}
         >
           <ContainerLaptop />
         </div>
         <div
           style={{
             width: "100%",
+            position:'absolute',
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
             gap: "1rem",
+            top:'50%',
+            transform: 'translateY(-50%)'
           }}
+          className='call-to-action-text-container'
         >
           <h1
             style={{
@@ -86,8 +91,9 @@ const AboutLayout: React.FC = () => {
             דברו איתי - נתחיל לשפר
           </button>
         </div>
-      </div>
+      </div> */}
 
+      <CallToActionSection />
       <div
         style={{
           backgroundColor: "rgba(77, 125, 238, 0.5)",
@@ -108,7 +114,7 @@ const AboutLayout: React.FC = () => {
               zIndex: 3,
             }}
           >
-            <MySvg2 />
+            <SvgBottomShapedCorner />
           </div>
         </div>
       </div>
@@ -116,4 +122,4 @@ const AboutLayout: React.FC = () => {
   );
 };
 
-export default AboutLayout;
+export default AboutHeaderLayout;

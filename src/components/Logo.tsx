@@ -39,12 +39,14 @@ const Logo: React.FC = () => {
             cx="50"
             cy="50"
             r="45"
-            stroke="rgba(0, 56, 184, 0.5)"
+            stroke= "rgba(0, 56, 184, 0.5)"
             strokeWidth="10"
-            fill="white"
+            fill={scrolledBeyond? "rgba(0, 56, 184, 0.5)": 'white'}
           />
-          <polygon points="35,30 35,70 55,50" fill="rgba(0, 56, 184, 0.5)" />
-          <polygon points="55,30 55,70 75,50" fill="rgba(0, 56, 184, 0.5)" />
+          <polygon points="35,30 35,70 55,50"             fill={scrolledBeyond? "rgba(0, 56, 184, 0.5)": 'white'}
+ />
+          <polygon points="55,30 55,70 75,50"             fill={scrolledBeyond? "rgba(0, 56, 184, 0.5)": 'white'}
+          />
         </svg>
         shel
         <br />
