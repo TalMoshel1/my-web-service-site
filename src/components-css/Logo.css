@@ -32,6 +32,6 @@
 
     display: inline;
     /* vertical-align: middle; */
-    /* padding: 0.05rem; */
+    margin-right: 0.05rem;
     height:'fit-content'
 }

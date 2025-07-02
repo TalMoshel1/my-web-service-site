@@ -36,7 +36,7 @@ const AnimatedOnScrollButNotOnLoad: React.FC<AnimatedOnScrollButNotOnLoadProps> 
     : styles.initial; 
 
   return (
-    <div  style={{position:'relative', width: '100%', height: '100%'}} ref={ref} className={`${styles.base} ${animationStateClass}` }>
+    <div  style={{position:'relative', width: '100%', height: '100%', zIndex:'4'}} ref={ref} className={`${styles.base} ${animationStateClass}` }>
       {children}
     </div>
   );

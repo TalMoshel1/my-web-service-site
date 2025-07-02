@@ -24,6 +24,7 @@ import Image from "next/image";
 import "./page.css";
 import Form from "@/components/Form";
 import FormContainer from "@/components/FormContainer";
+import AnimatedOnScrollButNotOnLoad from "@/components/AnimatedOnScrollButNotOnLoad";
 
 export const metadata: Metadata = {
   title:
@@ -114,7 +115,7 @@ export default function AboutPage() {
         style={{
           position: "relative",
           top: "0",
-          minHeight: "100svh",
+          minHeight: "70svh",
           height: "fit-content",
           width: "100vw",
         }}
