@@ -19,7 +19,9 @@ const Form: React.FC = () => {
     e.preventDefault();
     console.log('Form submitted with:', formData);
 
-    const result = await fetch('https://talmoshelasaservice.runmydocker-app.com/submit-details', {
+    const result = await fetch('https://talmoshelasaservice2.runmydocker-app.com/submit-details', {
+    //   const result = await fetch('http://localhost:3001/test-post', {
+
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
