@@ -20,8 +20,7 @@ const Form: React.FC = () => {
     console.log('Form submitted with:', formData);
 
     const result = await fetch('https://talmoshelasaservice2.runmydocker-app.com/submit-details', {
-    //   const result = await fetch('http://localhost:3001/test-post', {
-
+      // const result = await fetch('https://90ee-2a00-a041-e050-a600-dcb7-1f2a-660b-1b9a.ngrok-free.app/submit-details', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
