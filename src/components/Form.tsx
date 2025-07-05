@@ -27,7 +27,6 @@ const Form: React.FC = () => {
       body: JSON.stringify(formData),
     });
 
-    console.log('Response from server:', result);
     if (result.ok) {
       alert('Message sent!');
     } else {
