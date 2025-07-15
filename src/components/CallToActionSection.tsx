@@ -8,7 +8,6 @@ import ContainerLaptop from "./ContainerLaptop"; // Adjust path as needed
 import { Varela_Round } from 'next/font/google'; // Example import for varela font
 
 
-import { Playpen_Sans_Hebrew } from 'next/font/google';
 
 const varela = Varela_Round({ subsets: ['latin'], weight: '400' });
 
