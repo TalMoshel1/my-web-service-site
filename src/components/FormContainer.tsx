@@ -24,7 +24,7 @@ const FormContainer: React.FC = () => {
   return (
     
     <div
-      style={{ position: "relative", height: "25rem"}}
+      style={{ position: "relative", height: "45rem"}}
     >
       <HeroImage src="/dark-background.webp" width="100%" />
 
@@ -33,7 +33,7 @@ const FormContainer: React.FC = () => {
         style={{
           backgroundColor: "rgba(77, 125, 238, 0.5)",
           width: "100vw",
-          height: "25rem",
+          height: "100%",
           position: "absolute",
           top: "0",
           zIndex: 3,
@@ -55,7 +55,13 @@ const FormContainer: React.FC = () => {
           >
             <SvgTopShapedCorner />
           </div>
+          
         </div>
+
+   
+        <h2 className={varela.className} style={{fontSize: '2rem', marginBottom:'1rem',marginTop:'5rem', position:'absolute', color:'white'}}>השאר פרטים ונחזור אליך!</h2>
+
+
         <Form />
 
       </div>

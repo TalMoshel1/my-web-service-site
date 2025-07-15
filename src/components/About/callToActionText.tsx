@@ -1,5 +1,9 @@
 import React from "react";
 import { Varela_Round } from "next/font/google";
+import "../components-css/CallToActionSection.css"; // Adjust path as needed
+
+import { Playpen_Sans_Hebrew } from 'next/font/google'; // Corrected import name!
+
 
 const varela = Varela_Round({
     subsets: ["hebrew"],

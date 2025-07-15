@@ -1,10 +1,14 @@
 // components/CallToActionSection.tsx
 'use client'; // This component will be a client component
+import "../components-css/CallToActionSection.css"; 
 
 import React, { useEffect, useState } from "react";
 import ContainerLaptop from "./ContainerLaptop"; // Adjust path as needed
 // Assuming 'varela' is a font object you're importing, e.g., from next/font/google
 import { Varela_Round } from 'next/font/google'; // Example import for varela font
+
+
+import { Playpen_Sans_Hebrew } from 'next/font/google';
 
 const varela = Varela_Round({ subsets: ['latin'], weight: '400' });
 
@@ -74,12 +78,17 @@ const CallToActionSection: React.FC = () => {
                 </h1>
                 <button
                     style={{
-                        padding: "0.5rem",
-                        backgroundColor: "yellow",
+                        padding: "0.75em",
                         color: "black",
+                        backgroundColor: '#FFFF00',
                         fontSize: "1rem",
                         fontWeight: 700,
+                        transition: 'background-color 0.3s ease',
+
                     }}
+
+                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FFDD00')}
+                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FFFF00')}
                 >
                     דברו איתי - נתחיל לשפר
                 </button>
