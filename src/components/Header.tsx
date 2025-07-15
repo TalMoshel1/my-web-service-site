@@ -1,29 +1,35 @@
-// components/CallToActionSection.tsx
-'use client'; // This component will be a client component
-import "../components-css/CallToActionSection.css"; 
+import HeroImage from "@/components/HeroImage";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
-import React, { useEffect, useState } from "react";
-import ContainerLaptop from "./ContainerLaptop"; // Adjust path as needed
-// Assuming 'varela' is a font object you're importing, e.g., from next/font/google
-import { Varela_Round } from 'next/font/google'; // Example import for varela font
-import AnimatedLogo from "./AnimatedLogo";
+import Navbar from "@/components/Navbar";
+import { Varela_Round } from "next/font/google";
 
+import SvgBottomShapedCorner from "@/components/SvgBottomShapedCorner";
+import BackgroundImageSelector from "@/components/BackgroundImageSelector.tsx";
 
+import "../components-css/AboutLayout.css";
+import CallToActionSection from "./CallToActionSection";
 
-const varela = Varela_Round({ subsets: ['latin'], weight: '400' });
+export const inter = Inter({ subsets: ["latin"] });
 
-const CallToActionSection: React.FC = () => {
-    // State to control when animations should start
-    const [isAnimated, setIsAnimated] = useState(false);
+const varela = Varela_Round({
+  subsets: ["hebrew"],
+  weight: "400",
+  display: "swap",
+});
 
-    useEffect(() => {
-        // Set isAnimated to true after the initial render, triggering both animations
-        setIsAnimated(true);
-    }, []); // Empty dependency array ensures this runs only once on mount
+const Header: React.FC = () => {
+  return (
+    <header
+      style={{ position: "relative", height: "25rem", overflow: "hidden" }}
+    >
+      <BackgroundImageSelector />
 
-    return (
-        <div
-            className={`call-to-action-container`}
+      <Navbar />
+
+      
+      <div
             style={{
                 width: "100%",
                 position: "relative",
@@ -39,15 +45,10 @@ const CallToActionSection: React.FC = () => {
                 height: "100%",
                 flexDirection: "row",
                 gap: "2rem",
+                backgroundColor: 'white'
             }}
         >
-            {/* <div
-                className="large-svg-foward"
-                style={{ width: "10%", maxHeight: "5rem" }}
-            >
-                <ContainerLaptop isAnimated={isAnimated} />
-            </div> */}
-            <AnimatedLogo  />
+  
 
             <div
                 style={{
@@ -62,7 +63,6 @@ const CallToActionSection: React.FC = () => {
                     transform: 'translateY(-50%)'
                 }}
                 // Conditionally apply the 'animate' class to trigger the CSS animation
-                className={`call-to-action-text-container ${isAnimated ? 'animate' : ''}`}
             >
                 <h1
                     style={{
@@ -95,7 +95,33 @@ const CallToActionSection: React.FC = () => {
                 </button>
             </div>
         </div>
-    );
+      <CallToActionSection />
+      <div
+        style={{
+          backgroundColor: "rgba(77, 125, 238, 0.5)",
+          width: "100vw",
+          height: "25rem",
+          position: "absolute",
+          top: "0",
+          zIndex: 3,
+        }}
+      >
+        <div style={{ position: "relative", height: "100%", width: "100%" }}>
+          <div
+            style={{
+              position: "absolute",
+              bottom: "-1px",
+              height: "fit-content",
+              width: "100%",
+              zIndex: 3,
+            }}
+          >
+            <SvgBottomShapedCorner />
+          </div>
+        </div>
+      </div>
+    </header>
+  );
 };
 
-export default CallToActionSection;
+export default Header;

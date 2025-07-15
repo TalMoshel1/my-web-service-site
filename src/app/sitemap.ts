@@ -14,5 +14,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
       lastModified: new Date(),
     },
+    {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/ux-ui`,
+      lastModified: new Date(),
+    },
   ];
 }

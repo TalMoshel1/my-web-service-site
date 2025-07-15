@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import "./globals.css";
 import AosInitializer from "@/components/AosInitializer"; // Adjust path as needed
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: {
@@ -21,6 +22,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+  console.log('children: ', children)
   return (
     <html lang="he" style={{ direction: "rtl" }}>
       <body
@@ -33,7 +36,10 @@ export default function RootLayout({
         }}
       >
         <AosInitializer>
-          <main style={{ zIndex: "1" }}>{children}</main>
+          <main style={{ zIndex: "1" }}>
+            {/* <Header /> */}
+            
+            {children}</main>
         </AosInitializer>
         {/* <SendQuestionToTal /> */}
         <Footer />

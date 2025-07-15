@@ -8,6 +8,7 @@ import { Varela_Round } from "next/font/google";
 import SvgBottomShapedCorner from "@/components/SvgBottomShapedCorner";
 import "../components-css/AboutLayout.css";
 import CallToActionSection from "./CallToActionSection";
+import AnimatedLogo from "./AnimatedLogo";
 
 export const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,8 @@ const AboutHeaderLayout: React.FC = () => {
       <HeroImage src="/pc-background-image.webp" width="100%" />
 
       <Navbar />
+
+      <AnimatedLogo />
 
       <CallToActionSection />
       <div
