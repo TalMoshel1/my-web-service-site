@@ -1,4 +1,4 @@
-import UxUiHeader from "@/components/headers/ux-ui.tsx";
+import UxUiHeader from "@/components/headers/ux-ui";
 import HeroImage from "@/components/HeroImage";
 import { Metadata } from "next";
 import { Varela_Round } from "next/font/google";
