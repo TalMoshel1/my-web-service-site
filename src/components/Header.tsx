@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import { Varela_Round } from "next/font/google";
 
 import SvgBottomShapedCorner from "@/components/SvgBottomShapedCorner";
-import BackgroundImageSelector from "@/components/BackgroundImageSelector.tsx";
+import BackgroundImageSelector from "@/components/BackgroundImageSelector";
 
 import "../components-css/AboutLayout.css";
 import CallToActionSection from "./CallToActionSection";
