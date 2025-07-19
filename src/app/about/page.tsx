@@ -73,7 +73,7 @@ export default function AboutPage() {
               height: "fit-content",
               margin: "5.5em auto",
               width: "auto",
-              maxWidth: "90%",
+              // maxWidth: "90%",
               //           outline: '8px ridge rgba(0, 0, 0,0.2)',
               // borderRadius: '2rem', backgroundColor:'rgba(79, 159,7,0.3)'
             }}
@@ -115,7 +115,7 @@ export default function AboutPage() {
                       justifyContent: "center",
                     }}
                   >
-                    <span>שיפור חווית משתמש</span>
+                    <span style={{}}><a href='/articles/ux-ui'>שיפור חווית משתמש</a></span>
                     {/* <Customer_ux /> */}
                     <Image
                       src={"/customer-ux.svg"}

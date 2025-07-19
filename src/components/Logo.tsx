@@ -18,7 +18,7 @@ const Logo: React.FC = () => {
 
 
   return (
-    <div className='logo-container' style={{  textAlign: "center", position:'relative', overflow:'hidden', width: '100%', height: '100%' }}>
+    <div className='logo-container' style={{  textAlign: "center", position:'relative', overflow:'hidden', flex:'1', height: '100%' }}>
       <span
         style={{  position:'absolute', height:'100%', left:'0', top:scrolledBeyond? '-100px':'50%', transition: 'top 0.3s ease-in-out', fontWeight:'700', transform: 'translateY(-40%)'}}
         className={`${varela.className} logo-size`}
@@ -63,7 +63,7 @@ const Logo: React.FC = () => {
       <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%'}}>
      
       <span
-        style={{ display: "inline", position:'absolute',left:'0',top:scrolledBeyond? '-58%':'0', height:'fit-content', transform: 'translateY(-5%)', transition: 'top 0.3s ease-in-out', visibility: scrolledBeyond ? 'visible' : 'hidden', fontWeight:'700' }}
+        style={{ display: "inline", position:'absolute',left:'0',top:scrolledBeyond? '-55%':'0', height:'fit-content', transform: 'translateY(-5%)', transition: 'top 0.3s ease-in-out', visibility: scrolledBeyond ? 'visible' : 'hidden', fontWeight:'700' }}
         className={`${varela.className} logo-size`}      >
 
 <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%'}}>

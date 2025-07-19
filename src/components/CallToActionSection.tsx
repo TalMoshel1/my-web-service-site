@@ -47,7 +47,10 @@ const CallToActionSection: React.FC = () => {
             >
                 <ContainerLaptop isAnimated={isAnimated} />
             </div> */}
+            <div>
             <AnimatedLogo  />
+
+            </div>
 
             <div
                 style={{
@@ -58,24 +61,22 @@ const CallToActionSection: React.FC = () => {
                     alignItems: "center",
                     justifyContent: "center",
                     gap: "1rem",
-                    top: '50%',
                     transform: 'translateY(-50%)'
                 }}
                 // Conditionally apply the 'animate' class to trigger the CSS animation
-                className={`call-to-action-text-container ${isAnimated ? 'animate' : ''}`}
+                className={`call-to-action-text-container ${isAnimated ? 'animate' : ''} dynamic-top`}
             >
                 <h1
                     style={{
                         zIndex: 4,
                         position: "relative",
-                        top: "55%", // This will be the start for the CSS animation
                         left: "0",
                         textAlign: "center",
                         fontSize: "2rem",
                     }}
                     className={`${varela.className} call-to-action-h1`}
                 >
-                    אתר איטי זה הפסד — תהפוך אותו לנכס שמביא לקוחות מגוגל.
+                     אתר איטי זה הפסד — תהפוך אותו לנכס שמביא לקוחות מגוגל.
                 </h1>
                 <button
                     style={{

@@ -24,7 +24,7 @@ const FormContainer: React.FC = () => {
   return (
     
     <div
-      style={{ position: "relative", height: "45rem"}}
+      style={{ position: "relative", height: "34rem"}}
     >
       <HeroImage src="/dark-background.webp" width="100%" />
 
@@ -38,7 +38,7 @@ const FormContainer: React.FC = () => {
           top: "0",
           zIndex: 3,
           display: 'flex',
-          justifyContent:'center'
+          justifyContent:'center',
    
         }}
       >
@@ -59,7 +59,7 @@ const FormContainer: React.FC = () => {
         </div>
 
    
-        <h2 className={varela.className} style={{fontSize: '2rem', marginBottom:'1rem',marginTop:'5rem', position:'absolute', color:'white'}}>השאר פרטים ונחזור אליך!</h2>
+        <h2 className={varela.className} style={{fontSize: '2rem', marginBottom:'1rem',marginTop:'5rem', textAlign:'center', position:'absolute', color:'white'}}>השאר פרטים ונחזור אליך!</h2>
 
 
         <Form />

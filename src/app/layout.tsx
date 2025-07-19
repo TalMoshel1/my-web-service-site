@@ -32,11 +32,13 @@ export default function RootLayout({
           minHeight: "100svh",
           position: "relative",
           height: "fit-content",
-          overflowX: "hidden",
+          boxSizing:"border-box",
+          maxWidth: "100vw",
+          // overflowX: "hidden",
         }}
       >
         <AosInitializer>
-          <main style={{ zIndex: "1" }}>
+          <main style={{ zIndex: "1", width: '100%'}}>
             {/* <Header /> */}
             
             {children}</main>

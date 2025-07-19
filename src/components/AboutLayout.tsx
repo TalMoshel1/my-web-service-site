@@ -21,20 +21,20 @@ const varela = Varela_Round({
 const AboutHeaderLayout: React.FC = () => {
   return (
     <header
-      style={{ position: "relative", height: "25rem", overflow: "hidden" }}
+    className='header'
+      style={{ position: "relative", overflow: "hidden" }}
     >
       <HeroImage src="/pc-background-image.webp" width="100%" />
 
       <Navbar />
 
-      <AnimatedLogo />
 
       <CallToActionSection />
       <div
+        className='dynamic-height'
         style={{
           backgroundColor: "rgba(77, 125, 238, 0.5)",
           width: "100vw",
-          height: "25rem",
           position: "absolute",
           top: "0",
           zIndex: 3,

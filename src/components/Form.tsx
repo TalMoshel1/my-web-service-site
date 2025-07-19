@@ -44,7 +44,7 @@ const Form: React.FC = () => {
           style={{
             width: "20rem",
             margin: "10.5em auto",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.1)",
             direction: "rtl",
             boxSizing: "border-box",
             backgroundColor: "transparent",
@@ -79,7 +79,7 @@ const Form: React.FC = () => {
             style={{
               width: "100%",
               padding: "0.75em",
-              marginBottom: "20px",
+              marginBottom: "1.25em",
               border: "1px solid #ccc",
               fontSize: "1rem",
               boxSizing: "border-box",
@@ -107,8 +107,8 @@ const Form: React.FC = () => {
             onChange={handleChange}
             style={{
               width: "100%",
-              padding: "12px",
-              marginBottom: "30px",
+              padding: "0.75em",
+              marginBottom: "2em",
               border: "1px solid #ccc",
               fontSize: "1rem",
               boxSizing: "border-box",

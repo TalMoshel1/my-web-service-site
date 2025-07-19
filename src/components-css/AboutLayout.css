@@ -1,4 +1,10 @@
 @media screen and (orientation: portrait) {
+  .dynamic-height {
+    height: 30rem
+  }
+  .header { 
+    height: 30rem;
+  }
     .large-svg-foward {
         display:none
     }
@@ -10,6 +16,12 @@
 }
 
 @media screen and (orientation: landscape) {
+  .dynamic-height {
+    height: 25rem
+  }
+  .header { 
+    height: 25rem;
+  }
 
 
     .call-to-action-h1 {
@@ -32,10 +44,10 @@ ul li {
       top: -50%;
     }
     50% {
-      top: 55%;
+      top: 75%;
     }
     100% {
-      top: 50%;
+      top: 70%;
     }
   }
   

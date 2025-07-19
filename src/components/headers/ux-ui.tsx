@@ -4,9 +4,10 @@ import { Inter } from "next/font/google";
 
 import Navbar from "@/components/Navbar";
 import { Varela_Round } from "next/font/google";
+import '../../components-css/AboutLayout.css';
+import '../../components-css/UxUiHeader.css';
 
 import SvgBottomShapedCorner from "@/components/SvgBottomShapedCorner";
-import "@/components-css/AboutLayout.css";
 import AnimatedLogo from "../AnimatedLogo";
 
 export const inter = Inter({ subsets: ["latin"] });
@@ -20,73 +21,69 @@ const varela = Varela_Round({
 const UxUiHeader: React.FC = () => {
   return (
     <header
-      style={{ position: "relative", height: "25rem", overflow: "hidden" }}
+    className='header'
+      style={{ position: "relative", overflow: "hidden", width: '100vw'}}
     >
-      <HeroImage src="/uxui.webp" width="100%" height='100%'/>
+      <HeroImage src="/uxui.webp" width="100%" height="100%" />
 
       <Navbar />
 
       <AnimatedLogo />
 
       <div
-            style={{
-                width: "100%",
-                position: "relative",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                textAlign: "center",
-                color: "white",
-                zIndex: 4,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                height: "100%",
-                flexDirection: "row",
-                gap: "2rem",
-            }}
+        style={{
+          width: "100%",
+          position: "relative",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          textAlign: "center",
+          color: "white",
+          zIndex: 4,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100%",
+          flexDirection: "row",
+          gap: "2rem",
+        }}
+      >
+        <div
+        className='dynamic-top'
+          style={{
+            width: "100%",
+            position: "absolute",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "1rem",
+            transform: "translateY(-50%)",
+          }}
+          // Conditionally apply the 'animate' class to trigger the CSS animation
         >
-
-
-            <div
-                style={{
-                    width: "100%",
-                    position: 'absolute',
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "1rem",
-                    top: '50%',
-                    transform: 'translateY(-50%)'
-                }}
-                // Conditionally apply the 'animate' class to trigger the CSS animation
-            >
-                <h1
-                    style={{
-                        zIndex: 4,
-                        position: "relative",
-                        top: "55%", // This will be the start for the CSS animation
-                        left: "0",
-                        textAlign: "center",
-                        fontSize: "2rem",
-                    }}
-                    className={`${varela.className} call-to-action-h1`}
-                >
-                    חווית משתמש (UX): המפתח לבניית אתר מנצח וקידום אתרים (SEO) אפקטיבי
-
-                </h1>
-          
-            </div>
+          <h1
+            style={{
+              zIndex: 4,
+              position: "relative",
+              left: "0",
+              textAlign: "center",
+              fontSize: "2rem",
+              margin: "auto",
+            }}
+            className={`${varela.className} call-to-action-h1 ux-ui-header-h1`}
+          >
+            חווית משתמש (UX): המפתח לבניית אתר מנצח וקידום אתרים (SEO) אפקטיבי
+          </h1>
         </div>
-
-
+      </div>
 
       <div
+              className='dynamic-height'
+
         style={{
           backgroundColor: "rgba(77, 125, 238, 0.5)",
           width: "100vw",
-          height: "25rem",
           position: "absolute",
           top: "0",
           zIndex: 3,

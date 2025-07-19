@@ -22,7 +22,8 @@ const varela = Varela_Round({
 const Header: React.FC = () => {
   return (
     <header
-      style={{ position: "relative", height: "25rem", overflow: "hidden" }}
+    className='header'
+      style={{ position: "relative", overflow: "hidden", width: '100vw'}}
     >
       <BackgroundImageSelector />
 
@@ -72,6 +73,8 @@ const Header: React.FC = () => {
                         left: "0",
                         textAlign: "center",
                         fontSize: "2rem",
+                        margin: 'auto',
+                        width: '90%'
                     }}
                     className={`${varela.className} call-to-action-h1`}
                 >

@@ -11,7 +11,7 @@
   /* State for elements that start hidden (below the fold) */
   .hidden {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(3rem);
   }
   
   /* State for elements that were hidden and are now in view (animate in) */

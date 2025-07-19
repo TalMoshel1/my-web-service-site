@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
       >
         <ul className="navbar-links ul-display-none ul-shown">
           <li>
-            <a href="/home">בית</a>
+            <a href="/">בית</a>
           </li>
           <li>
             <a href="/about">אודות</a>

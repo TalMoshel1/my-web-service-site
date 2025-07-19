@@ -1,5 +1,5 @@
 .services div {
-  outline: 8px ridge rgba(0, 0, 0, 0.2);
+  outline: 0.5rem ridge rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
   background-color: rgba(115, 198, 37, 0.3);
   margin-top:2rem;
@@ -38,3 +38,6 @@
 
   }
   
+.articles-a {
+  color: blue
+}
