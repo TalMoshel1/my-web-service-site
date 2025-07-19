@@ -1,5 +1,10 @@
 .ux-ui-article div{
-    width: 40%;
-    margin:0 auto;
+    width: 45%;
     line-height:2
+}
+
+.ux-ui-article {
+    gap:1rem;
+    justify-content: center;
+
 }
