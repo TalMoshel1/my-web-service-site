@@ -1,43 +1,85 @@
-.services div {
-  outline: 0.5rem ridge rgba(0, 0, 0, 0.2);
-  border-radius: 2rem;
-  background-color: rgba(115, 198, 37, 0.3);
-  margin-top:2rem;
+/* Base styles (for all screen sizes and orientations, or mobile-first defaults) */
+.services div:not(.fake-border, .fake-border-horizontal, .fake-border-vertical) {
+  background-color: #F5F5F5;
   position: relative;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* filter: saturate(10); */
 }
 
-@media (orientation: portrait) {
-  .services div {
-    width: 90%;
-    padding: 1em
-  }
+.services .fake-border-horizontal,
+.fake-border-vertical {
+  position: absolute;
+  background-color: #FFFF00;
 }
 
-@media (orientation: landscape) and (max-width: 900px) {
-    .services div {
-      width: 50% !important;
-      padding:7em !important;
-    }
-  }
+.fake-border-horizontal {
+  width: 3.33125rem;
+  height: 1rem;
+}
 
-@media (orientation: landscape ) {
-    .services div {
-      width: 30% !important;
-      height: 30% !important;
-      padding:2em;
-        margin-right: 2em;
+.fake-border-vertical {
+  height: 3.33125rem;
+  width: 1rem;
+}
 
-    }
-
-
-  }
-  
 .articles-a {
-  color: blue
+  color: blue;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Portrait orientation styles (most general for portrait) */
+@media (orientation: portrait) {
+  .services div:not(.fake-border, .fake-border-horizontal, .fake-border-vertical) {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Landscape orientation styles (general landscape, applies to all landscape screens unless overridden) */
+/* This block was commented out in your original code, but if you want general landscape styles, include it.
+   It should come before more specific landscape queries if it's meant to be the default. */
+/*
+@media (orientation: landscape) {
+  .services div:not(.fake-border, .fake-border-horizontal, .fake-border-vertical) {
+    width: 35% !important;
+    height: 35% !important;
+    padding: 2em;
+  }
+}
+*/
+
+/* ---------------------------------------------------------------------- */
+
+/* Landscape styles for screens up to 900px wide (more specific, will override general landscape for these widths) */
+@media (orientation: landscape) and (max-width: 900px) {
+  .services div:not(.fake-border, .fake-border-horizontal, .fake-border-vertical) {
+    width: 55% !important;
+    height: 55% !important;
+    /* padding: 7em ; */
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Landscape styles for screens 900px wide and up (overrides max-width: 900px for larger screens) */
+@media (orientation: landscape) and (min-width: 900px) { /* Changed '900px' to 900px (integer) */
+  .services-ul-container { /* This targets a different element than the others */
+    width: 90%;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Landscape styles for screens 1062px wide and up (most specific for large landscape screens) */
+@media (orientation: landscape) and (min-width: 1062px) { /* Changed '1062px' to 1062px (integer) */
+  .services div:not(.fake-border, .fake-border-horizontal, .fake-border-vertical) {
+    width: 30% !important;
+    height: 30% !important;
+    padding: 2em;
+  }
 }

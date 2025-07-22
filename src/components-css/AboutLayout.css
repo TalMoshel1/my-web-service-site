@@ -35,9 +35,9 @@ ul {
     margin: 0 auto
 }
 
-ul li {
+/* ul li {
     width: 30%;
-}
+} */
 
 @keyframes slide-in {
     0% {
