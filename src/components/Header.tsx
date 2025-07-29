@@ -109,7 +109,8 @@ const Header: React.FC = () => {
           zIndex: 3,
         }}
       >
-        <div style={{ position: "relative", height: "100%", width: "100%" }}>
+        <div style={{ position: "relative", height: "100%", width: "100%", 
+}}>
           <div
             style={{
               position: "absolute",

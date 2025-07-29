@@ -63,11 +63,11 @@ const Logo: React.FC = () => {
       <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%'}}>
      
       <span
-        style={{ display: "inline", position:'absolute',left:'0',top:scrolledBeyond? '-55%':'0', height:'fit-content', transform: 'translateY(-5%)', transition: 'top 0.3s ease-in-out', visibility: scrolledBeyond ? 'visible' : 'hidden', fontWeight:'700' }}
+        style={{ display: "inline", position:'absolute',left:'0',top:scrolledBeyond? '50%':'-100px', height:'100%', transform: 'translateY(-50%)', transition: 'top 0.3s ease-in-out', visibility: scrolledBeyond ? 'visible' : 'hidden', fontWeight:'700' }}
         className={`${varela.className} logo-size`}      >
 
-<div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%'}}>
-<span>
+<div className='logo-on-white' style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%'}}>
+<span style={{height: '3rem'}}>
 Tal M
         <svg
           width="100"

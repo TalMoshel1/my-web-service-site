@@ -28,23 +28,23 @@ export default function RootLayout({
     <html lang="he" style={{ direction: "rtl" }}>
       <body
         style={{
-          width: "100vw",
           minHeight: "100svh",
           position: "relative",
           height: "fit-content",
           boxSizing:"border-box",
-          maxWidth: "100vw",
-          // overflowX: "hidden",
+
         }}
       >
         <AosInitializer>
-          <main style={{ zIndex: "1", width: '100%'}}>
+          <main style={{ zIndex: "1", width: '100%',           overflow: 'hidden'
+}}>
             {/* <Header /> */}
-            
-            {children}</main>
+    
+            {children}
+            </main>
         </AosInitializer>
         {/* <SendQuestionToTal /> */}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

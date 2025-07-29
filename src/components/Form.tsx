@@ -37,7 +37,7 @@ const Form: React.FC = () => {
 
   return (
     <>
-      <AnimatedOnScrollButNotOnLoad threshold={0.1}>
+      <AnimatedOnScrollButNotOnLoad threshold={0.1}> 
 
         <form
           onSubmit={handleSubmit}

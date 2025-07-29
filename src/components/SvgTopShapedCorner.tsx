@@ -13,8 +13,8 @@ const SvgTopShapedCorner: React.FC = () => {
         zIndex:4
       }}
     >
-      <path stroke="rgba(244, 241, 238, 1)" stroke-width="1" fill="rgba(244, 241, 238, 1)" d="M0 6 l 50 -6 h -50" />
-      <path stroke="rgba(244, 241, 238, 1)" stroke-width="1" fill="rgba(244, 241, 238, 1)" d="M100 6 l -50 -6 h 50" />
+      <path stroke="rgba(244, 241, 238, 1)" stroke-width="1" fill="rgba(244, 241, 238, 1)" d="M0 5 l 50 0 h -50" />
+      {/* <path stroke="rgba(244, 241, 238, 1)" stroke-width="1" fill="rgba(244, 241, 238, 1)" d="M100 6 l -50 -6 h 50" /> */}
 
     </svg>
   );

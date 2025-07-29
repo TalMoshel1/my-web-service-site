@@ -30,6 +30,12 @@
 
 /* ---------------------------------------------------------------------- */
 
+ @media (max-width: 700px) {
+  .services-ul-container {
+    display:none;
+  }
+ }
+
 /* Portrait orientation styles (most general for portrait) */
 @media (orientation: portrait) {
   .services div:not(.fake-border, .fake-border-horizontal, .fake-border-vertical) {

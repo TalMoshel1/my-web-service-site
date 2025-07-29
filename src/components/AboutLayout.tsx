@@ -22,7 +22,7 @@ const AboutHeaderLayout: React.FC = () => {
   return (
     <header
     className='header'
-      style={{ position: "relative", overflow: "hidden" }}
+      style={{ position: "relative"}}
     >
       <HeroImage src="/pc-background-image.webp" width="100%" />
 
@@ -50,7 +50,10 @@ const AboutHeaderLayout: React.FC = () => {
               zIndex: 3,
             }}
           >
+            <div style={{rotate: 'deg(180deg)'}}>
             <SvgBottomShapedCorner />
+
+            </div>
           </div>
         </div>
       </div>

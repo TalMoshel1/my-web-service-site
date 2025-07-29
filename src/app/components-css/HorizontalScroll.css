@@ -1,0 +1,62 @@
+/* .wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+} */
+
+.scrollingList {
+  display: flex;
+  /* width: max-content; */
+  /* animation: scroll 3s linear infinite;
+    scroll-snap-type: x mandatory; */
+
+}
+
+
+
+
+
+/* Keyframes for horizontal movement */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  99% {
+    transform: translateX(50%);
+  }
+    100% {
+    transform: translateX(0%);
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 1em; /*width of the scrollbar */
+}
+
+::-webkit-scrollbar-track{
+  background: hsl(60, 100%, 50%);
+
+
+}
+
+::-webkit-scrollbar-thumb{
+background:    hsl(224, 83%, 62%);
+/* border-radius: 100vw; */
+border: 0.2em solid  hsl(60, 100%, 50%);
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:    hsl(224, 92%, 31%)
+
+}
+/*   background: hsl(48, 100%, 50%)
+ */
+
+
+ @media (min-width: 700px) {
+  .display-none {
+    display: none;
+  }
+ }

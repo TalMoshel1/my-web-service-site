@@ -9,7 +9,7 @@ import SvgTopShapedCorner from "@/components/SvgTopShapedCorner";
 import ContainerLaptop from "./ContainerLaptop";
 import "../components-css/AboutLayout.css";
 import CallToActionSection from "./CallToActionSection";
-import SvgBottomShapedCorner from "./SvgTopShapedCorner";
+import SvgBottomShapedCorner from "@/components/SvgBottomShapedCorner";
 import Form from "./Form";
 
 export const inter = Inter({ subsets: ["latin"] });
@@ -22,10 +22,7 @@ const varela = Varela_Round({
 
 const FormContainer: React.FC = () => {
   return (
-    
-    <div
-      style={{ position: "relative", height: "34rem"}}
-    >
+    <div style={{ position: "relative", height: "34rem" , maxWidth: '100vw'}}>
       <HeroImage src="/dark-background.webp" width="100%" />
 
       {/* <CallToActionSection /> */}
@@ -37,13 +34,17 @@ const FormContainer: React.FC = () => {
           position: "absolute",
           top: "0",
           zIndex: 3,
-          display: 'flex',
-          justifyContent:'center',
-   
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-
-        <div style={{ position: "relative", height: "100%", width: "100%" }}>
+        <div
+          style={{
+            position: "relative",
+            height: "100%",
+            width: "100%",
+          }}
+        >
           <div
             style={{
               position: "absolute",
@@ -53,17 +54,25 @@ const FormContainer: React.FC = () => {
               zIndex: 3,
             }}
           >
-            <SvgTopShapedCorner />
+            <SvgBottomShapedCorner container='formContainer' />
           </div>
-          
         </div>
 
-   
-        <h2 className={varela.className} style={{fontSize: '2rem', marginBottom:'1rem',marginTop:'5rem', textAlign:'center', position:'absolute', color:'white'}}>השאר פרטים ונחזור אליך!</h2>
-
+        <h2
+          className={varela.className}
+          style={{
+            fontSize: "2rem",
+            marginBottom: "1rem",
+            marginTop: "5rem",
+            textAlign: "center",
+            position: "absolute",
+            color: "white",
+          }}
+        >
+          השאר פרטים ונחזור אליך!
+        </h2>
 
         <Form />
-
       </div>
     </div>
   );
