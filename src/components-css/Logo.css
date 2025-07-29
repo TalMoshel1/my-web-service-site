@@ -1,37 +1,35 @@
+@media (orientation: landscape) {
+  .logo-size,
+  .job-description {
+    font-size: 1rem;
+  }
 
-
-@media (orientation: landscape)  {
-    .logo-size , .job-description{
-        font-size: 1.0rem;
-    }
-
-    .logo-container {
-        width: 40%
-    }
-    .svg-width {
-        width:1rem;
-    }
+  .logo-section-container {
+    width: 40%;
+  }
+  .svg-width {
+    width: 1rem;
+  }
 }
 
 @media (orientation: portrait) {
+  .logo-section-container {
+    width: 100%;
+  }
 
-    .logo-container {
-        width: 100%;
-    }
+  .logo-size,
+  .job-description {
+    font-size: 1rem;
+  }
 
-    .logo-size, .job-description {
-        font-size: 1rem;
-    }
-
-    .svg-width {
-        width:1rem;
-    }
+  .svg-width {
+    width: 1rem;
+  }
 }
 
-.svg { 
-
-    display: inline;
-    /* vertical-align: middle; */
-    margin-right: 0.05rem;
-    height:'fit-content'
+.svg {
+  display: inline;
+  /* vertical-align: middle; */
+  margin-right: 0.05rem;
+  height: fit-content;
 }

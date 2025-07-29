@@ -63,7 +63,7 @@ const HorizontalScroll: React.FC = () => (
         <li
           key={i}
           style={{
-            width: "47.5vw",
+            width: "55vw",
             flexShrink: 0,
             display: "flex",
             flexDirection: "column",
