@@ -90,7 +90,7 @@ export default function Footer() {
             }}
             className="bottom-footer"
           >
-            <h1 style={{ dir: "rtl" }}>
+            <h1 dir="rtl">
               &copy; {new Date().getFullYear()} כל הזכויות שמורות לטל מושל פיתוח
               אתרים
             </h1>
