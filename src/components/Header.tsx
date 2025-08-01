@@ -46,7 +46,7 @@ const Header: React.FC = () => {
                 height: "100%",
                 flexDirection: "row",
                 gap: "2rem",
-                backgroundColor: 'white'
+                backgroundColor: 'white',
             }}
         >
   
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
                         backgroundColor: '#FFFF00',
                         fontSize: "1rem",
                         fontWeight: 700,
-                        transition: 'background-color 0.3s ease',
+                        transition: 'background-color 0.5s ease',
 
                     }}
 
@@ -98,7 +98,7 @@ const Header: React.FC = () => {
                 </button>
             </div>
         </div>
-      <CallToActionSection />
+      {/* <CallToActionSection /> */}
       <div
         style={{
           backgroundColor: "rgba(77, 125, 238, 0.5)",

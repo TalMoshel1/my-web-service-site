@@ -9,6 +9,9 @@ import "./components-css/AboutIndex.css";
 import AngleTopRightSvg from "@/components/AngleTopRightSvg";
 import AngleBottomLeftSvg from "@/components/AngleBottomLeftSvg";
 import HorizontalScroll from "@/components/HorizontalScroll";
+import dynamic from 'next/dynamic';
+
+
 import Form from "@/components/Form";
 export const metadata: Metadata = {
   title:
@@ -20,6 +23,9 @@ const varela = Varela_Round({
   weight: "400",
   display: "swap",
 });
+
+
+
 
 export default function AboutPage() {
   return (
@@ -88,7 +94,9 @@ export default function AboutPage() {
               position: "relative",
               width: "100%",
               right: "0",
-              margin: "2em 0",
+              marginTop: "2em",
+              marginBottom: '4em',
+              marginInline: '0',
               gap: "1rem",
                  height: "fit-content",
             }}

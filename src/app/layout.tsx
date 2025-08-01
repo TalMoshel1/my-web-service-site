@@ -44,7 +44,7 @@ export default function RootLayout({
             </main>
         </AosInitializer>
         {/* <SendQuestionToTal /> */}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

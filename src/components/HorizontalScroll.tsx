@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import "../app/components-css/HorizontalScroll.css";
+
 const items = [
   { text: "שיפור חווית משתמש", img: "/user.svg", alt: "user expereience" },
   {
@@ -27,7 +28,7 @@ const HorizontalScroll: React.FC = () => (
     }}
     className='display-none'
   >
-    <ul
+  <ul
       className="scrollingList"
       style={{
         display: "flex",
@@ -97,6 +98,8 @@ const HorizontalScroll: React.FC = () => (
         </li>
       ))}
     </ul>
+
+  
   </div>
 );
 

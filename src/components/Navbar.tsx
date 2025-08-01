@@ -28,6 +28,8 @@ const Navbar: React.FC = () => {
           margin: "0 auto",
           display: "flex",
           height: "100%",
+          alignItems: 'center',
+          justifyContent: "space-between",
         }}
       >
         <ul className="navbar-links ul-display-none ul-shown">

@@ -32,15 +32,15 @@ const Logo: React.FC = () => {
           position: "absolute",
           height: "100%",
           left: "0",
-          top: scrolledBeyond ? "150%" : "0",
+          // top: scrolledBeyond ? "150%" : "0",
           transition: "top 0.3s ease-in-out",
           fontWeight: "700",
           // transform: "translateY(-50%)",
-          // order: scrolledBeyond? '2':'1',
+          // order: scrolledBeyond ? "2" : "1",
         }}
         className={`${varela.className} logo-size first-logo-container`}
       >
-      <div
+        <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -49,7 +49,14 @@ const Logo: React.FC = () => {
             height: "100%",
           }}
         >
-          <span>
+          <span
+            style={{
+              // height: "",
+              display: "flex",
+              flexDirection: "row-reverse",
+              alignItems: "center",
+            }}
+          >
             Tal M
             <svg
               className="svg-width svg"
@@ -79,12 +86,14 @@ const Logo: React.FC = () => {
             <br />
           </span>
 
-          <span
-            // style={{ position: "relative", bottom: "3rem" }}
+          {/* <span
+            dir="rtl"
+            lang="he"
+            style={{ position: "relative", display: "inline-block" }}
             className="job-description"
           >
             פיתוח אתרים
-          </span>
+          </span> */}
         </div>
       </span>
 
@@ -95,7 +104,7 @@ const Logo: React.FC = () => {
           alignItems: "center",
           justifyContent: "center",
           height: "100%",
-          // order: scrolledBeyond? '1':'2',
+          // order: scrolledBeyond ? "1" : "2",
         }}
         className="second-logo-container"
       >
@@ -104,8 +113,8 @@ const Logo: React.FC = () => {
             display: "inline",
             position: "absolute",
             left: "0",
-            top: scrolledBeyond ? "0" : "150%",
-            height: "auto",
+            // top: scrolledBeyond ? "0" : "150%",
+            // height: "auto",
             // transform: "translateY(-50%)",
             transition: "top 0.3s ease-in-out",
             visibility: scrolledBeyond ? "visible" : "hidden",
@@ -120,10 +129,10 @@ const Logo: React.FC = () => {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              height: "auto",
+              height: "100%",
             }}
           >
-            <span>
+            <span >
               Tal M
               <svg
                 width="100"
@@ -151,12 +160,14 @@ const Logo: React.FC = () => {
               </svg>
               shel
               <br />
-              <span
-                // style={{ position: "relative", bottom: "3rem" }}
+              {/* <span
+                style={{ position: "relative", display: "inline-block" }}
                 className="job-description"
+                dir="rtl"
+                lang="he"
               >
                 פיתוח אתרים
-              </span>
+              </span> */}
             </span>
           </div>
         </span>

@@ -126,7 +126,7 @@ const Form: React.FC = () => {
               border: "none",
               fontSize: "1rem",
               cursor: "pointer",
-              transition: "background-color 0.3s ease",
+              transition: "background-color 0.5s ease",
               color: "black",
               fontWeight: "700",
             }}
