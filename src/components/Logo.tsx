@@ -25,6 +25,7 @@ const Logo: React.FC = () => {
         height: "100%",
         display: "flex",
         flexDirection: "column",
+        
       }}
     >
       <span
@@ -38,7 +39,7 @@ const Logo: React.FC = () => {
           // transform: "translateY(-50%)",
           // order: scrolledBeyond ? "2" : "1",
         }}
-        className={`${varela.className} logo-size first-logo-container`}
+        className={` logo-size first-logo-container`}
       >
         <div
           style={{
@@ -51,25 +52,30 @@ const Logo: React.FC = () => {
         >
           <span
             style={{
-              // height: "",
+              height: "100%",
               display: "flex",
               flexDirection: "row-reverse",
               alignItems: "center",
+              fontSize: scrolledBeyond? '1.1rem': '2rem'
             }}
           >
             Tal M
-            <svg
+            <div style={{position: 'relative',  width: scrolledBeyond? '0.8rem': '1.4rem',right:'0.5px'}}>
+    <svg
               className="svg-width svg"
-              width="100"
-              height="100"
+              width="0"
+              height="0"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
+              style={{     position: 'absolute',       top: scrolledBeyond?'0.08rem': '0.1rem', left: '50%', transform: 'translate(-50%, -50%)',
+ width: scrolledBeyond? '0.8rem': '1.4rem'
+}}
             >
               <circle
                 cx="50"
                 cy="50"
                 r="45"
-                // stroke={scrolledBeyond? "rgba(0, 56, 184, 0.5)": 'blue'}
+                stroke={scrolledBeyond? "rgba(0, 56, 184, 0.9)": 'white'}
                 strokeWidth="10"
                 fill="white"
               />
@@ -79,99 +85,20 @@ const Logo: React.FC = () => {
               />
               <polygon
                 points="55,30 55,70 75,50"
-                fill="rgba(0, 56, 184, 0.5)"
+                fill="rgba(0, 56, 184, 0.3)"
               />
             </svg>
+            </div>
+        
             shel
             <br />
           </span>
 
-          {/* <span
-            dir="rtl"
-            lang="he"
-            style={{ position: "relative", display: "inline-block" }}
-            className="job-description"
-          >
-            פיתוח אתרים
-          </span> */}
+
         </div>
       </span>
 
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "100%",
-          // order: scrolledBeyond ? "1" : "2",
-        }}
-        className="second-logo-container"
-      >
-        <span
-          style={{
-            display: "inline",
-            position: "absolute",
-            left: "0",
-            // top: scrolledBeyond ? "0" : "150%",
-            // height: "auto",
-            // transform: "translateY(-50%)",
-            transition: "top 0.3s ease-in-out",
-            visibility: scrolledBeyond ? "visible" : "hidden",
-            fontWeight: "700",
-          }}
-          className={`${varela.className} logo-size`}
-        >
-          <div
-            className="logo-on-white"
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              height: "100%",
-            }}
-          >
-            <span >
-              Tal M
-              <svg
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-                className="svg-width svg"
-              >
-                <circle
-                  cx="50"
-                  cy="50"
-                  r="45"
-                  stroke="rgba(0, 56, 184, 0.5)"
-                  strokeWidth="10"
-                  fill="white"
-                />
-                <polygon
-                  points="35,30 35,70 55,50"
-                  fill="rgba(0, 56, 184, 0.5)"
-                />
-                <polygon
-                  points="55,30 55,70 75,50"
-                  fill="rgba(0, 56, 184, 0.5)"
-                />
-              </svg>
-              shel
-              <br />
-              {/* <span
-                style={{ position: "relative", display: "inline-block" }}
-                className="job-description"
-                dir="rtl"
-                lang="he"
-              >
-                פיתוח אתרים
-              </span> */}
-            </span>
-          </div>
-        </span>
-      </div>
+   
     </div>
   );
 };

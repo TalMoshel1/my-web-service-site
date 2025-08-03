@@ -24,25 +24,29 @@ const Navbar: React.FC = () => {
     >
       <div
         style={{
-          width: "90%",
-          margin: "0 auto",
-          display: "flex",
-          height: "100%",
-          alignItems: 'center',
-          justifyContent: "space-between",
+          // width: "90%",
+          // margin: "0 auto",
+          // display: "flex",
+          // height: "100%",
+          // alignItems: "center",
+          // justifyContent: "space-between",
         }}
+        className='navbar-ul-container'
+        
       >
         <ul className="navbar-links ul-display-none ul-shown">
-          <li>
+          <li >
             <a href="/">בית</a>
           </li>
           <li>
             <a href="/about">אודות</a>
           </li>
           <li>
-            <a href="/about">צרו קשר</a>
+            <a style={{}} href="#contact-form">צרו קשר</a>
           </li>
         </ul>
+
+        {/* <div>sdfijhsdkfjh</div> */}
         <Logo />
       </div>
     </nav>

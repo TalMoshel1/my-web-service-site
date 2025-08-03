@@ -318,8 +318,10 @@ export default function AboutPage() {
         </div>
       </main>
 
-
+      <div id="contact-form">
       <FormContainer />
+
+      </div>
     </>
   );
 }
