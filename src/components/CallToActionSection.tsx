@@ -92,7 +92,9 @@ const CallToActionSection: React.FC = () => {
                     onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FFDD00')}
                     onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FFFF00')}
                 >
-                    דברו איתי - נתחיל לשפר
+                       <a style={{display: 'block',width: '100%', height: '100%'}} href="#contact-form">
+              דברו איתי - נתחיל לשפר 
+            </a>
                 </button>
             </div>
         </div>
