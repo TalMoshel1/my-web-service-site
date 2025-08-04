@@ -7,7 +7,7 @@ const BackgroundSvg: React.FC = () => {
       version="1.1"
 
       viewBox="0 0 100 60"
-      style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border:'10x solid green'}}
+      style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%"}}
     >
       {/* <circle cx="0" cy="0" r="100" fill="rgb(239, 8, 8)" /> */}
       

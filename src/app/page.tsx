@@ -318,7 +318,7 @@ export default function AboutPage() {
         </div>
       </main>
 
-      <div id="contact-form">
+      <div id="contact-form" style={{flexGrow: '1', position:'relative', bottom: '0'}}>
       <FormContainer />
 
       </div>

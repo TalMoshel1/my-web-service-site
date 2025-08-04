@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       // className="p-5 text-center border-t text-sm space-y-1 text-gray-500"
-      style={{ backgroundColor: "black", height: "auto" }}
+      style={{ backgroundColor: "black", height: "auto", position :'relative', top:'0'}}
     >
       <div>
         <section style={{ color: "white" }}>

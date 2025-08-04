@@ -22,7 +22,7 @@ const AboutHeaderLayout: React.FC = () => {
   return (
     <header
     className='header'
-      style={{ position: "relative"}}
+      style={{ position: "relative", paddingTop: '5rem'}}
     >
       <HeroImage src="/pc-background-image.webp" width="100%" />
 

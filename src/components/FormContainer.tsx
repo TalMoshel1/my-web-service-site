@@ -62,7 +62,7 @@ const FormContainer: React.FC = () => {
           className={varela.className}
           style={{
             fontSize: "2rem",
-            marginBottom: "1rem",
+            // marginBottom: "1rem",
             marginTop: "5rem",
             textAlign: "center",
             position: "absolute",

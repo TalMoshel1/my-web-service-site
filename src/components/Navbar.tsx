@@ -42,7 +42,9 @@ const Navbar: React.FC = () => {
             <a href="/about">אודות</a>
           </li>
           <li>
-            <a style={{}} href="#contact-form">צרו קשר</a>
+            <a style={{}} 
+            href="#contact-form"
+            >צרו קשר</a>
           </li>
         </ul>
 

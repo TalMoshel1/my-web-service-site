@@ -93,8 +93,11 @@ const Header: React.FC = () => {
               (e.currentTarget.style.backgroundColor = "#FFFF00")
             }
           >
-            <a style={{display: 'block',width: '100%', height: '100%'}} href="#contact-form">
-              דברו איתי - נתחיל לשפר 
+            <a
+              style={{ display: "block", width: "100%", height: "100%" }}
+              href="#contact-form"
+            >
+              - נתחיל לשפר
             </a>
           </button>
         </div>

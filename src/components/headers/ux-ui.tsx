@@ -22,7 +22,7 @@ const UxUiHeader: React.FC = () => {
   return (
     <header
     className='header'
-      style={{ position: "relative", overflow: "hidden", width: '100vw'}}
+      style={{ position: "relative", overflow: "hidden", width: '100vw',paddingTop: '5rem'}}
     >
       <HeroImage src="/uxui.webp" width="100%" height="100%" />
 
