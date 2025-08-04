@@ -40,7 +40,7 @@ export default function AboutPage() {
           // minHeight: "70svh",
           height: "fit-content",
           // overflow: 'hidden'
-        }}
+         }}
       >
         <div
           className="about-background-container"

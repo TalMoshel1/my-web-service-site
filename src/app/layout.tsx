@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import AosInitializer from "@/components/AosInitializer"; // Adjust path as needed
 import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -39,7 +40,8 @@ export default function RootLayout({
           <main style={{ zIndex: "1", width: '100%',           overflow: 'hidden'
 }}>
             {/* <Header /> */}
-    
+            <Navbar />
+            
             {children}
             </main>
         </AosInitializer>

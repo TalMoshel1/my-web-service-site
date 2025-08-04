@@ -26,7 +26,7 @@ const AboutHeaderLayout: React.FC = () => {
     >
       <HeroImage src="/pc-background-image.webp" width="100%" />
 
-      <Navbar />
+      {/* <Navbar /> */}
 
 
       <CallToActionSection />
