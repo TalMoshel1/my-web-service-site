@@ -56,7 +56,8 @@ const Logo: React.FC = () => {
               display: "flex",
               flexDirection: "row-reverse",
               alignItems: "center",
-              fontSize: scrolledBeyond? '1.1rem': '2rem'
+              fontSize: scrolledBeyond? '1.1rem': '2rem',
+              color: scrolledBeyond? 'rgba(0, 0, 120, 1)': 'white'
             }}
           >
             Tal M
@@ -75,17 +76,17 @@ const Logo: React.FC = () => {
                 cx="50"
                 cy="50"
                 r="45"
-                stroke={scrolledBeyond? "rgba(0, 56, 184, 0.9)": 'white'}
+                stroke={scrolledBeyond? "rgba(0, 0, 120, 1)": 'rgba(0, 0, 120, 1)'}
                 strokeWidth="10"
                 fill="white"
               />
               <polygon
                 points="35,30 35,70 55,50"
-                fill="rgba(0, 56, 184, 0.5)"
+                fill="rgba(0, 0, 120, 1)"
               />
               <polygon
                 points="55,30 55,70 75,50"
-                fill="rgba(0, 56, 184, 0.3)"
+                fill="rgba(41, 41, 121, 0.9)"
               />
             </svg>
             </div>

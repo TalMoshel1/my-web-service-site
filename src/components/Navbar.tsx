@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       className="navbar"
       style={{
         backgroundColor: scrolledBeyond ? "white" : "transparent",
-        color: scrolledBeyond ? "rgba(0, 56, 184, 1)" : "white",
+        color: scrolledBeyond ? "rgba(0, 0, 120, 1)" : "white",
                 // color:  "black",
 
         position: "fixed",
