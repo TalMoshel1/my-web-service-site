@@ -22,11 +22,11 @@ const AboutHeaderLayout: React.FC = () => {
   return (
     <header
     className='header'
-      style={{ position: "relative", paddingTop: '5rem'}}
+      style={{ position: "relative"}}
     >
       <HeroImage src="/pc-background-image.webp" width="100%" />
 
-      {/* <Navbar /> */}
+      <Navbar />
 
 
       <CallToActionSection />

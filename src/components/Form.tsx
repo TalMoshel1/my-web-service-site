@@ -43,7 +43,11 @@ const Form: React.FC = () => {
           onSubmit={handleSubmit}
           style={{
             width: "20rem",
-            margin: "10.5em auto",
+            margin: '10.5em auto',
+            // marginInline: "auto",
+            // marginBottom:'10.5em',
+            // marginTop: '20.5em',
+            // border: '1px solid red',
             boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.1)",
             direction: "rtl",
             boxSizing: "border-box",
@@ -58,6 +62,7 @@ const Form: React.FC = () => {
           }}
           className={varela.className}
           data-aos="fade-up"
+           id="contact-form"
         >
           <label
             htmlFor="name"

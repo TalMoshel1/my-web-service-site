@@ -9,8 +9,7 @@ import "./components-css/AboutIndex.css";
 import AngleTopRightSvg from "@/components/AngleTopRightSvg";
 import AngleBottomLeftSvg from "@/components/AngleBottomLeftSvg";
 import HorizontalScroll from "@/components/HorizontalScroll";
-import dynamic from 'next/dynamic';
-
+import dynamic from "next/dynamic";
 
 import Form from "@/components/Form";
 export const metadata: Metadata = {
@@ -24,13 +23,10 @@ const varela = Varela_Round({
   display: "swap",
 });
 
-
-
-
 export default function AboutPage() {
   return (
     <>
-      <AboutHeaderLayout />
+      {/* <AboutHeaderLayout /> */}
 
       <main
         className={varela.className}
@@ -40,7 +36,8 @@ export default function AboutPage() {
           // minHeight: "70svh",
           height: "fit-content",
           // overflow: 'hidden'
-         }}
+          paddingBottom: "0px !important",
+        }}
       >
         <div
           className="about-background-container"
@@ -51,6 +48,7 @@ export default function AboutPage() {
             width: "100%",
             minHeight: "100%",
             height: "fit-content",
+            paddingBottom: "0px !important",
           }}
         >
           <Image
@@ -72,6 +70,7 @@ export default function AboutPage() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
+            paddingBottom: "0px !important",
           }}
         >
           <header
@@ -95,15 +94,14 @@ export default function AboutPage() {
               width: "100%",
               right: "0",
               marginTop: "2em",
-              marginBottom: '4em',
-              marginInline: '0',
+              marginBottom: "4em",
+              marginInline: "0",
               gap: "1rem",
-                 height: "fit-content",
+              height: "fit-content",
             }}
           >
             <AnimatedOnScrollButNotOnLoad>
-            <HorizontalScroll />
-
+              <HorizontalScroll />
             </AnimatedOnScrollButNotOnLoad>
           </div>
           <div
@@ -118,8 +116,7 @@ export default function AboutPage() {
               //           outline: '8px ridge rgba(0, 0, 0,0.2)',
               // borderRadius: '2rem', backgroundColor:'rgba(79, 159,7,0.3)'
             }}
-                          className='ul-for-pc-screen'
-
+            className="ul-for-pc-screen"
           >
             {/* <header
               style={{
@@ -133,194 +130,199 @@ export default function AboutPage() {
             </header> */}
 
             <AnimatedOnScrollButNotOnLoad threshold={0.1}>
-            <div
-              className="services-ul-container"
-              style={{
-                position: "relative",
-                marginBlock: "0",
-                width: "fit-content",
-                height:
-                  "100%" ,
-                  display:'flex',
-                  justifyContent:'center',
-                  marginInline: 'auto'
-              }}
-            >
-              <ul
+              <div
+                className="services-ul-container"
                 style={{
+                  position: "relative",
+                  marginBlock: "0",
                   width: "fit-content",
                   height: "100%",
-                  // margin: "2em auto",
-                  gap: "1rem",
-                  listStyleType: "none",
                   display: "flex",
-                  alignItems: "center",
-                  justifyContent: "start",
-                  flexWrap: "wrap",
-                  // paddingTop: "4.5em",
-                  // paddingBottom: "4.5em",
+                  justifyContent: "center",
+                  marginInline: "auto",
                 }}
-                className="services"
               >
-                {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
-                <div
-                  className="fake-border-horizontal"
-                  style={{ top: "-1rem", right: "-1rem" }}
-                ></div>
-                <div
-                  className="fake-border-vertical"
-                  style={{ top: "-1rem", right: "-1rem" }}
-                ></div>
+                <ul
+                  style={{
+                    width: "fit-content",
+                    height: "100%",
+                    // margin: "2em auto",
+                    gap: "1rem",
+                    listStyleType: "none",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "start",
+                    flexWrap: "wrap",
+                    // paddingTop: "4.5em",
+                    // paddingBottom: "4.5em",
+                  }}
+                  className="services"
+                >
+                  {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
+                  <div
+                    className="fake-border-horizontal"
+                    style={{ top: "-1rem", right: "-1rem" }}
+                  ></div>
+                  <div
+                    className="fake-border-vertical"
+                    style={{ top: "-1rem", right: "-1rem" }}
+                  ></div>
 
-                <li
-                  className="service-item"
-                  style={{
-                    position: "relative",
-                    // height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    // minWidth: "0",
-                    // overflow: "hidden",
-                  }}
-                >
-                  <span style={{}}>
-                    <a href="/articles/ux-ui">שיפור חווית משתמש</a>
-                  </span>
-                  <Image
-                    src={"/user.svg"}
-                    alt={"user experience"}
-                    width={100}
-                    height={100}
-                    color="black"
-                    // style={{ maxWidth: "100%" }}
-                    // fill
-                  />
-                </li>
-                {/* </AnimatedOnScrollButNotOnLoad> */}
-                {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
-                <li
-                  style={{
-                    position: "relative",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    // overflow: "hidden",
-                    minWidth: "0",
-                  }}
-                >
-                  <span>בניית עמודי נחיתה שמניעים לפעולה</span>
-                  <Image
-                     src={"/landing-page.svg"}
-                    alt={"landing-page"}
-                    width={100}
-                    height={100}
-                    color="black"
-                    // style={{ maxWidth: "100%" }}
-                    // fill
-                  />
-                </li>
-                {/* </AnimatedOnScrollButNotOnLoad> */}
+                  <li
+                    className="service-item"
+                    style={{
+                      position: "relative",
+                      // height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      // minWidth: "0",
+                      // overflow: "hidden",
+                    }}
+                  >
+                    <span style={{}}>
+                      <a href="/articles/ux-ui">שיפור חווית משתמש</a>
+                    </span>
+                    <Image
+                      src={"/user.svg"}
+                      alt={"user experience"}
+                      width={100}
+                      height={100}
+                      color="black"
+                      // style={{ maxWidth: "100%" }}
+                      // fill
+                    />
+                  </li>
+                  {/* </AnimatedOnScrollButNotOnLoad> */}
+                  {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
+                  <li
+                    style={{
+                      position: "relative",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      // overflow: "hidden",
+                      minWidth: "0",
+                    }}
+                  >
+                    <span>בניית עמודי נחיתה שמניעים לפעולה</span>
+                    <Image
+                      src={"/landing-page.svg"}
+                      alt={"landing-page"}
+                      width={100}
+                      height={100}
+                      color="black"
+                      // style={{ maxWidth: "100%" }}
+                      // fill
+                    />
+                  </li>
+                  {/* </AnimatedOnScrollButNotOnLoad> */}
 
-                {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
-                <li
-                  className="service-item"
-                  style={{
-                    position: "relative",
-                    // height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    minWidth: "0",
-                    // overflow: "hidden",
-                  }}
-                >
-                  <span>תיקון באגים</span>
-                  <Image
-                       src={"/bug.svg"}
-                    alt={"bugs"}
-                    width={100}
-                    height={100}
-                    color="black"
-                    // style={{ maxWidth: "100%" }}
-                    // fill
-                  />
-                </li>
-                {/* </AnimatedOnScrollButNotOnLoad> */}
+                  {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
+                  <li
+                    className="service-item"
+                    style={{
+                      position: "relative",
+                      // height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      minWidth: "0",
+                      // overflow: "hidden",
+                    }}
+                  >
+                    <span>תיקון באגים</span>
+                    <Image
+                      src={"/bug.svg"}
+                      alt={"bugs"}
+                      width={100}
+                      height={100}
+                      color="black"
+                      // style={{ maxWidth: "100%" }}
+                      // fill
+                    />
+                  </li>
+                  {/* </AnimatedOnScrollButNotOnLoad> */}
 
-                {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
-                <li
-                  className="service-item"
-                  style={{
-                    position: "relative",
-                    // height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    minWidth: "0",
-                    // overflow: "hidden",
-                  }}
-                >
-                  <span>קידום אורגני</span>
-                  <Image
-                         src={"/seo.svg"}
-                    alt={"seo"}
-                    width={100}
-                    height={100}
-                    color="black"
-                    // style={{ maxWidth: "100%" }}
-                    // fill
-                  />
-                </li>
-                {/* </AnimatedOnScrollButNotOnLoad> */}
-                {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
-                <li
-                  className="service-item"
-                  style={{
-                    position: "relative",
-                    // height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    minWidth: "0",
-                    // overflow: "hidden",
-                  }}
-                >
-                  <span>שיפור נגישות</span>
-                  <Image
-                         src={"/accessibility.svg"}
-                    alt={"accessibility"}
-                    width={100}
-                    height={100}
-                    color="black"
-                    // style={{ maxWidth: "100%" }}
-                    // fill
-                  />
-                </li>
-                <div
-                  className="fake-border-horizontal"
-                  style={{ bottom: "-1rem", left: "-1rem" }}
-                ></div>
-                <div
-                  className="fake-border-vertical"
-                  style={{ bottom: "-1rem", left: "-1rem" }}
-                ></div>
-                {/* </AnimatedOnScrollButNotOnLoad> */}
-              </ul>
-            </div>
+                  {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
+                  <li
+                    className="service-item"
+                    style={{
+                      position: "relative",
+                      // height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      minWidth: "0",
+                      // overflow: "hidden",
+                    }}
+                  >
+                    <span>קידום אורגני</span>
+                    <Image
+                      src={"/seo.svg"}
+                      alt={"seo"}
+                      width={100}
+                      height={100}
+                      color="black"
+                      // style={{ maxWidth: "100%" }}
+                      // fill
+                    />
+                  </li>
+                  {/* </AnimatedOnScrollButNotOnLoad> */}
+                  {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
+                  <li
+                    className="service-item"
+                    style={{
+                      position: "relative",
+                      // height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      minWidth: "0",
+                      // overflow: "hidden",
+                    }}
+                  >
+                    <span>שיפור נגישות</span>
+                    <Image
+                      src={"/accessibility.svg"}
+                      alt={"accessibility"}
+                      width={100}
+                      height={100}
+                      color="black"
+                      // style={{ maxWidth: "100%" }}
+                      // fill
+                    />
+                  </li>
+                  <div
+                    className="fake-border-horizontal"
+                    style={{ bottom: "-1rem", left: "-1rem" }}
+                  ></div>
+                  <div
+                    className="fake-border-vertical"
+                    style={{ bottom: "-1rem", left: "-1rem" }}
+                  ></div>
+                  {/* </AnimatedOnScrollButNotOnLoad> */}
+                </ul>
+              </div>
             </AnimatedOnScrollButNotOnLoad>
           </div>
         </div>
       </main>
 
-      <div id="contact-form" style={{flexGrow: '1', position:'relative', bottom: '0'}}>
-      <FormContainer />
-
+      <div
+        style={{
+          flexGrow: "1",
+          position: "relative",
+          bottom: "0",
+          paddingBottom: "0px !important",
+        }}
+      >
+        <FormContainer />
       </div>
     </>
   );

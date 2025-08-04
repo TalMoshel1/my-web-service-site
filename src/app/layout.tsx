@@ -4,6 +4,7 @@ import "./globals.css";
 import AosInitializer from "@/components/AosInitializer"; // Adjust path as needed
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import AboutHeaderLayout from "@/components/AboutLayout";
 
 export const metadata: Metadata = {
   title: {
@@ -33,14 +34,15 @@ export default function RootLayout({
           position: "relative",
           height: "fit-content",
           boxSizing:"border-box",
+          backgroundColor: 'black'
 
         }}
       >
         <AosInitializer>
-          <main style={{ zIndex: "1", width: '100%',           overflow: 'hidden'
+          <main style={{ zIndex: "1", width: '100%',           overflow: 'hidden', paddingBottom: '0px !important'
 }}>
-            {/* <Header /> */}
-            <Navbar />
+            <AboutHeaderLayout/>
+            {/* <Navbar /> */}
             
             {children}
             </main>

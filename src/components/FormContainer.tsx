@@ -68,6 +68,8 @@ const FormContainer: React.FC = () => {
             position: "absolute",
             color: "white",
           }}
+
+         
         >
           השאר פרטים ונחזור אליך!
         </h2>
