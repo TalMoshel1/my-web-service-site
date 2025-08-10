@@ -59,18 +59,25 @@ const Logo: React.FC = () => {
               fontSize: scrolledBeyond? '1.1rem': '2rem',
               color: scrolledBeyond? 'rgba(0, 0, 120, 1)': 'white'
             }}
+
+            className={`${scrolledBeyond? 'span-text-scrolledBeyond': 'span-text-no-scrolledBeyond'}`}
           >
             Tal M
-            <div style={{position: 'relative',  width: scrolledBeyond? '0.8rem': '1.4rem',right:'0.5px', bottom: '0px'}}>
+            <div style={{position: 'relative',
+            // right:'0.5px',
+            right:'0px', bottom: '0px'}}
+                          className={`${scrolledBeyond ? 'svg-container-scrolledBeyond' : 'svg-container-no-scrolledBeyond'}`}
+>
     <svg
-              className="svg-width svg"
+              className={`svg-width svg`}
               width="0"
               height="0"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
-              style={{     position: 'absolute',       top: scrolledBeyond?'0.08rem': '0.1rem', left: '50%', transform: 'translate(-50%, -50%)',
+              style={{     position: 'absolute',       top: scrolledBeyond?'0.08rem': '0.025rem', left: '50%', transform: 'translate(-50%, -50%)',
  width: scrolledBeyond? '0.8rem': '1.4rem'
 }}
+
             >
               <circle
                 cx="50"
