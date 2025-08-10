@@ -1,6 +1,7 @@
 .ux-ui-article div{
-    width: 40%;
-    line-height:2
+    width: 80%;
+    line-height:2;
+    margin-inline: auto;
 }
 
 .ux-ui-article {

@@ -24,8 +24,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
-  console.log('children: ', children)
+  console.log("children: ", children);
   return (
     <html lang="he" style={{ direction: "rtl" }}>
       <body
@@ -33,19 +32,27 @@ export default function RootLayout({
           minHeight: "100svh",
           position: "relative",
           height: "fit-content",
-          boxSizing:"border-box",
-          backgroundColor: 'black'
-
+          boxSizing: "border-box",
+          backgroundColor: "black",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <AosInitializer>
-          <main style={{ zIndex: "1", width: '100%',           overflow: 'hidden', paddingBottom: '0px !important'
-}}>
-            <AboutHeaderLayout/>
+          <main
+            style={{
+              zIndex: "1",
+              width: "100%",
+              flexGrow: "1",
+              overflow: "hidden",
+              paddingBottom: "0px !important",
+            }}
+          >
+            {/* <AboutHeaderLayout/> */}
             {/* <Navbar /> */}
-            
+
             {children}
-            </main>
+          </main>
         </AosInitializer>
         {/* <SendQuestionToTal /> */}
         <Footer />

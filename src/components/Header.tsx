@@ -76,7 +76,7 @@ const Header: React.FC = () => {
             }}
             className={`${varela.className} call-to-action-h1`}
           >
-            אתר איטי זה הפסד — תהפוך אותו לנכס שמביא לקוחות מגוגל.
+            אתר איטי זה הפסד — תהפוך אותו לנכס שמביא לקוחות מגוגל. 
           </h1>
           <button
             style={{

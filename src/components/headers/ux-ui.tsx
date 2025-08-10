@@ -28,12 +28,11 @@ const UxUiHeader: React.FC = () => {
 
       <Navbar />
 
-      <AnimatedLogo />
 
       <div
         style={{
           width: "100%",
-          position: "relative",
+          position: "absolute",
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
@@ -48,6 +47,12 @@ const UxUiHeader: React.FC = () => {
           gap: "2rem",
         }}
       >
+
+               <div>
+            <AnimatedLogo  />
+
+            </div>
+
         <div
         className='dynamic-top'
           style={{

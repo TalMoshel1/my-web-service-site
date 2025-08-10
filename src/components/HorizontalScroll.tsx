@@ -64,7 +64,20 @@ const HorizontalScroll: React.FC = () => (
         <li
           key={i}
           style={{
-            width: "55vw",
+            // width: "55vw",
+            // flexShrink: 0,
+            // display: "flex",
+            // flexDirection: "column",
+            // alignItems: "center",
+            // justifyContent: "center",
+            // boxSizing: "border-box",
+            // padding: "1em",
+            // height: "auto",
+            // textAlign: "center", // optional, good for RTL
+            // border: "1px solid rgba(77, 125, 238, 0.5)",
+          }}
+        >
+          <a href='/articles/ux-ui' style={{     width: "55vw",
             flexShrink: 0,
             display: "flex",
             flexDirection: "column",
@@ -74,10 +87,8 @@ const HorizontalScroll: React.FC = () => (
             padding: "1em",
             height: "auto",
             textAlign: "center", // optional, good for RTL
-            border: "1px solid rgba(77, 125, 238, 0.5)",
-          }}
-        >
-          <div
+            border: "1px solid rgba(77, 125, 238, 0.5)",}}>
+     <div
             style={{
               width: "100%",
               whiteSpace: "normal",
@@ -95,6 +106,9 @@ const HorizontalScroll: React.FC = () => (
             width={100}
             height={100}
           />
+
+          </a>
+     
         </li>
       ))}
     </ul>

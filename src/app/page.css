@@ -28,6 +28,10 @@ ul {
   padding: 1em;
 }
 
+.service-item span {
+  border: '1px solid black'
+}
+
 .service-item img {
   /* max-width: 100%;
   height: auto;
