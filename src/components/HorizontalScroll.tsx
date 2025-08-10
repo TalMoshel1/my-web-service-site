@@ -63,6 +63,7 @@ const HorizontalScroll: React.FC = () => (
         // </li>
         <li
           key={i}
+          className='scrollisgListItem'
           style={{
             // width: "55vw",
             // flexShrink: 0,
@@ -85,7 +86,7 @@ const HorizontalScroll: React.FC = () => (
             justifyContent: "center",
             boxSizing: "border-box",
             padding: "1em",
-            height: "auto",
+            // height: "auto",
             textAlign: "center", // optional, good for RTL
             border: "1px solid rgba(77, 125, 238, 0.5)",}}>
      <div
