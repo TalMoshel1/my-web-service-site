@@ -61,7 +61,7 @@ const Logo: React.FC = () => {
             }}
           >
             Tal M
-            <div style={{position: 'relative',  width: scrolledBeyond? '0.8rem': '1.4rem',right:'0.5px'}}>
+            <div style={{position: 'relative',  width: scrolledBeyond? '0.8rem': '1.4rem',right:'0.5px', bottom: '0px'}}>
     <svg
               className="svg-width svg"
               width="0"
@@ -76,7 +76,7 @@ const Logo: React.FC = () => {
                 cx="50"
                 cy="50"
                 r="45"
-                stroke={scrolledBeyond? "rgba(0, 0, 120, 1)": 'rgba(0, 0, 120, 1)'}
+                stroke={scrolledBeyond? "rgba(0, 0, 120, 1)": 'white'}
                 strokeWidth="10"
                 fill="white"
               />
