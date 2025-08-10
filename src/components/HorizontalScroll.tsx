@@ -88,7 +88,7 @@ const HorizontalScroll: React.FC = () => (
             padding: "1em",
             // height: "auto",
             textAlign: "center", // optional, good for RTL
-            border: "1px solid rgba(77, 125, 238, 0.5)",}}>
+            border: "1px solid rgba(0, 0, 0, 0.5)",}}>
      <div
             style={{
               width: "100%",
