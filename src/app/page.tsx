@@ -26,6 +26,7 @@ const varela = Varela_Round({
 });
 
 export default function AboutPage() {
+  console.log()
   return (
     <>
       <AboutHeaderLayout />
