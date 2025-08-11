@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
                  <section className="footer-contact">
                 <h1 style={{display: 'inline-block', marginInline: 'auto', marginBottom: '0.5em', fontSize: '1.5rem'}}>צור קשר</h1>
-                <ul className="contact-list" style={{ position: "relative", display: 'flex', width: '100%', padding: '1em' }}>
+                <ul className="contact-list" style={{ position: "relative", display: 'flex', width: 'auto', padding: '1em' }}>
                   <li style={{display: 'flex', gap: '1rem'}}>
                     <div style={{ width: "1rem", position: "relative" }}>
                       <Image src={"/email.svg"} alt={"email"} fill={true} />

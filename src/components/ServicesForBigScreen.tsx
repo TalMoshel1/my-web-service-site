@@ -41,7 +41,7 @@ const ServicesForBigScreen = () => {
                   {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
                   <li>
     <a
-                                 href="/articles/ux-ui"
+                                 href="/articles/landing-page"
 
                     style={{
                       position: "relative",
@@ -71,7 +71,7 @@ const ServicesForBigScreen = () => {
                   {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
                   <li>
   <a
-                               href="/articles/ux-ui"
+                               href="/articles/bugs"
 
                     className="service-item"
                     style={{
@@ -104,7 +104,7 @@ const ServicesForBigScreen = () => {
 
                   <li>
      <a
-                                  href="/articles/ux-ui"
+                                  href="/articles/seo"
 
                     className="service-item"
                     style={{
@@ -135,7 +135,7 @@ const ServicesForBigScreen = () => {
                   {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
                   <li>
                            <a
-                                                        href="/articles/ux-ui"
+                                                        href="/articles/accessibility"
 
                     className="service-item"
                     style={{

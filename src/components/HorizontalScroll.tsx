@@ -3,15 +3,16 @@ import Image from "next/image";
 import "../app/components-css/HorizontalScroll.css";
 
 const items = [
-  { text: "שיפור חווית משתמש", img: "/user.svg", alt: "user expereience" },
+  { text: "שיפור חווית משתמש", img: "/user.svg", alt: "user expereience", page: '/articles/ux-ui' },
   {
     text: "בניית עמודי נחיתה שמניעים לפעולה",
     img: "/landing-page.svg",
     alt: "landing-page",
+    page: '/articles/landing-page'
   },
-  { text: "תיקון באגים", img: "/bug.svg", alt: "bugs" },
-  { text: "קידום אורגני", img: "/seo.svg", alt: "seo" },
-  { text: "שיפור נגישות", img: "/accessibility.svg", alt: "accessibility" },
+  { text: "תיקון באגים", img: "/bug.svg", alt: "bugs", page: '/articles/bugs' },
+  { text: "קידום אורגני", img: "/seo.svg", alt: "seo", page:'/articles/seo' },
+  { text: "שיפור נגישות", img: "/accessibility.svg", alt: "accessibility", page: '/articles/accessibility'},
 ];
 
 const HorizontalScroll: React.FC = () => (
@@ -78,7 +79,7 @@ const HorizontalScroll: React.FC = () => (
             // border: "1px solid rgba(77, 125, 238, 0.5)",
           }}
         >
-          <a href='/articles/ux-ui' style={{     width: "55vw",
+          <a href={item.page} style={{     width: "55vw",
             flexShrink: 0,
             display: "flex",
             flexDirection: "column",

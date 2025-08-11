@@ -10,6 +10,13 @@
 }
 }
 
+@media (orientation: landscape) and (max-width: 800px) {
+    .article div{
+    width: 90%;
+ 
+}
+}
+
 @media (orientation: landscape) and (min-width: 800px) {
     .article div{
     width: 50%;
@@ -26,6 +33,10 @@
 .landing-page-list li {
     /* height: auto; */
         text-wrap: wrap;
+}
+
+.articles-a {
+  color: blue;
 }
 
   .link-in-text:link {

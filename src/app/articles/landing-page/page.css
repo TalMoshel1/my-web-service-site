@@ -10,6 +10,13 @@
 }
 }
 
+@media (orientation: landscape) and (max-width: 800px) {
+    .article div{
+    width: 90%;
+ 
+}
+}
+
 @media (orientation: landscape) and (min-width: 800px) {
     .article div{
     width: 50%;
@@ -29,6 +36,6 @@
 }
 
   .link-in-text:link {
-  color: #0077cc; /* כחול עדין */
-  text-decoration: none; /* בלי קו תחתון אם לא רוצים */
+  color: #0077cc; 
+  text-decoration: none; 
 }

@@ -8,7 +8,7 @@ import "./page.css";
 import Form from "@/components/Form";
 import FormContainer from "@/components/FormContainer";
 import AnimatedOnScrollButNotOnLoad from "@/components/AnimatedOnScrollButNotOnLoad";
-import "../../components-css/AboutIndex.css";
+// import "../../components-css/AboutIndex.css";
 
 export const metadata: Metadata = {
   title:
@@ -60,7 +60,6 @@ export default function UxUiPage() {
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
             width: "100%",
-            minHeight: "100svh",
             height: "100%",
             display: "flex",
             flexDirection: "column",
@@ -92,10 +91,13 @@ export default function UxUiPage() {
             </header>
             <AnimatedOnScrollButNotOnLoad threshold={0.1}>
               <article
-                className="ux-ui-article"
-                style={{ width: "100%", margin: "auto", display: "flex" }}
+                className="article"
+                style={{ width: "100vw", margin: "auto", display: "flex" }}
               >
                 <div>
+
+                  <p style={{textWrap:'wrap'}}>
+                    
                   חווית משתמש (UX) היא המפתח להצלחה בעידן הדיגיטלי. היא מתייחסת
                   לכלל התחושות והרגשות של המשתמש בעת אינטראקציה עם המוצר או
                   השירות שלכם – החל מהרגע הראשון ועד לאחר השימוש. חווית משתמש
@@ -111,10 +113,10 @@ export default function UxUiPage() {
                   </a>
                   . בידול מהמתחרים: בעולם רווי באתרי אינטרנט, חווית משתמש עדיפה
                   יכולה להוות יתרון תחרותי משמעותי שיבדיל אתכם מהשאר. השפעה
-                  חיובית על קידום אורגני :גוגל ומנועי חיפוש אחרים מעדיפים אתרים
+                  חיובית על קידום אורגני: גוגל ומנועי חיפוש אחרים מעדיפים אתרים
                   המספקים חווית משתמש טובה. זמן שהייה ארוך יותר באתר, שיעורי
                   נטישה נמוכים ואינטראקציות חיוביות אחרות הם סימנים ברורים
-                   לאלגוריתמים של גוגל שהאתר שלכם רלוונטי ואיכותי, קרא עוד על <a className="articles-a" href="/organic-seo"> 
+                   לאלגוריתמים של גוגל שהאתר שלכם רלוונטי ואיכותי, קרא עוד על <a className="link-in-text" href="/organic-seo"> 
                      קידום אורגני 
                   </a>
                    .
@@ -129,6 +131,8 @@ export default function UxUiPage() {
                   לוודא שהאתר נגיש לכלל האוכלוסייה. (לינק פנימי אפשרי ל: שיפור
                   נגישות – נגישות היא חלק בלתי נפרד מ-UX). השקעה ב-UX היא השקעה
                   לטווח ארוך המניבה פירות רבים ומשפיעה על שורת הרווח של העסק.
+                  </p>
+                    
                 </div>
               </article>
             </AnimatedOnScrollButNotOnLoad>
