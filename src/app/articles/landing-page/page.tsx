@@ -61,7 +61,6 @@ export default function LandingPage() {
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
             width: "100%",
-            // minHeight: "100svh",
             height: "100%",
             display: "flex",
             flexDirection: "column",
@@ -74,9 +73,6 @@ export default function LandingPage() {
               height: "fit-content",
               margin: "5.5em auto",
               width: "auto",
-              // maxWidth: "90%",
-              //           outline: '8px ridge rgba(0, 0, 0,0.2)',
-              // borderRadius: '2rem', backgroundColor:'rgba(79, 159,7,0.3)'
             }}
           >
             <header
@@ -97,7 +93,7 @@ export default function LandingPage() {
                 style={{ width: "100vw", margin: "auto", display: "flex" }}
               >
                 <div>
-                  <p style={{width: '100%'}}>
+                  <p style={{ width: "100%" }}>
                     עמוד נחיתה הוא הרבה יותר מסתם דף אינטרנט; הוא כלי שיווקי
                     עוצמתי שנועד להשיג מטרה אחת וברורה: להניע את המבקר לבצע
                     פעולה ספציפית. בניגוד לאתר אינטרנט רגיל, עמוד נחיתה מוצלח
@@ -105,15 +101,15 @@ export default function LandingPage() {
                     בין אם זו השארת פרטים, הורדת קובץ, או רכישת מוצר. אבל איך
                     בונים עמוד כזה שיעבוד באמת?
                   </p>
-                  <br/>
-                  <p style={{width: '100%'}}>
+                  <br />
+                  <p style={{ width: "100%" }}>
                     <strong>
                       הנה העקרונות המרכזיים לבניית עמוד נחיתה מנצח:
                     </strong>
                   </p>
-                                      <br/>
+                  <br />
 
-                  <ul className='landing-page-list' style={{width: '100%'}}>
+                  <ul className="landing-page-list" style={{ width: "100%" }}>
                     <li>
                       <strong>כותרת עוצמתית ותמציתית:</strong> הכותרת היא הדבר
                       הראשון שהמבקר רואה. היא צריכה לתפוס את תשומת ליבו באופן
@@ -135,8 +131,8 @@ export default function LandingPage() {
                     <li>
                       <strong>הנעה לפעולה (Call to Action – CTA):</strong> כפתור
                       ה-CTA הוא לב ליבו של העמוד. הוא חייב להיות בולט, ברור ובעל
-                      ניסוח שמבהיר בדיוק מה יקרה כאשר לוחצים עליו (למשל, "הורד
-                      את המדריך החינמי" במקום "שלח").
+                      ניסוח שמבהיר בדיוק מה יקרה כאשר לוחצים עליו (למשל, &quot;הורד
+                      את המדריך החינמי&quot; במקום &quot;שלח&quot;).
                     </li>
                     <li>
                       <strong>טופס קצר ופשוט:</strong> אם המטרה היא השארת פרטים,
@@ -148,18 +144,24 @@ export default function LandingPage() {
                       צריך להיות עמוס. השתמשו ברווחים לבנים, תמונות או סרטונים
                       איכותיים ועיצוב שמשתלב עם המותג שלכם. בנוסף, יש לוודא
                       שהעמוד נגיש לכלל האוכלוסייה. קראו עוד על
-                      <a  className='link-in-text' href="https://www.example.com/accessibility-improvement">
+                      <a
+                        className="link-in-text"
+                        href="https://www.example.com/accessibility-improvement"
+                      >
                         שיפור נגישות
                       </a>
                       .
                     </li>
                   </ul>
-                  <br/>
+                  <br />
                   <p>
                     עמוד נחיתה מעוצב היטב הוא כלי חיוני לכל קמפיין שיווקי. הוא
                     מפחית את עלויות הקמפיין, מגביר את שיעורי ההמרה ומשמש כחוליה
                     חיונית בשרשרת השיווקית שלכם. קראו עוד על
-                    <a className='link-in-text' href="https://www.example.com/ux-improvement">
+                    <a
+                      className="link-in-text"
+                      href="https://www.example.com/ux-improvement"
+                    >
                       שיפור חווית משתמש
                     </a>
                     .
