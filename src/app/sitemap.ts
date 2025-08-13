@@ -11,11 +11,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/articles/landing-page`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}articles/ux-ui`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/articles/accessibility`,
+      lastModified: new Date(),
+    },
+        {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/articles/bot`,
+      lastModified: new Date(),
+    },    {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/articles/bugs`,
+      lastModified: new Date(),
+    },    {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/articles/ux-ui`,
       lastModified: new Date(),
     },
   ];

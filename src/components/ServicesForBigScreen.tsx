@@ -104,7 +104,7 @@ const ServicesForBigScreen = () => {
 
                   <li>
      <a
-                                  href="/articles/seo"
+                                  href="/articles/bot"
 
                     className="service-item"
                     style={{
@@ -118,7 +118,7 @@ const ServicesForBigScreen = () => {
                       // overflow: "hidden",
                     }}
                   >
-                    <span>קידום אורגני</span>
+                    <span>בוט עסקי</span>
                     <Image
                       src={"/seo.svg"}
                       alt={"seo"}
