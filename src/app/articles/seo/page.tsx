@@ -1,4 +1,6 @@
 import UxUiHeader from "@/components/headers/ux-ui";
+import BotHeader from "@/components/headers/Bot";
+
 import HeroImage from "@/components/HeroImage";
 import { Metadata } from "next";
 import { Varela_Round } from "next/font/google";
@@ -25,7 +27,7 @@ const varela = Varela_Round({
 export default function Seo() {
   return (
     <>
-      <UxUiHeader />
+      <BotHeader />
 
       <main
         className={varela.className}

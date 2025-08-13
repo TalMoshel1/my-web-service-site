@@ -111,17 +111,20 @@ export default function Footer() {
                 style={{ display: "flex", gap: "1em", position: "relative" }}
               >
                 <li style={{ width: "1rem", position: "relative" }}>
-                  <Link href="/privacy">
+                  <Link href="https://www.linkedin.com/in/tal-moshel/"     target="_blank"
+    rel="noopener noreferrer" >
                     <Image src={"/linkedin.svg"} alt={"linkedin"} fill={true} />
                   </Link>
                 </li>
                 <li style={{ width: "1rem", position: "relative" }}>
-                  <Link href="/about">
+                  <Link href="https://github.com/TalMoshel1" target="_blank"
+    rel="noopener noreferrer">
                     <Image src={"/github.svg"} alt={"github"} fill={true} />
                   </Link>
                 </li>
                 <li style={{ width: "1rem", position: "relative" }}>
-                  <Link href="/contact">
+                  <Link href="https://www.facebook.com/mosheltal/" target="_blank"
+    rel="noopener noreferrer">
                     <Image src={"/facebook.svg"} alt={"facebook"} fill={true} />
                   </Link>
                 </li>

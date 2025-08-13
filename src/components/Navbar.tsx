@@ -40,13 +40,13 @@ const Navbar: React.FC = () => {
           <li >
             <a href="/">בית</a>
           </li>
-          <li>
-            <a href="/about">אודות</a>
-          </li>
+          {/* <li>
+            <a href="#main-services">מאמרים</a>
+          </li> */}
           <li>
             <a style={{}} 
             href="#contact-form"
-            >צרו קשר</a>
+            >צור קשר</a>
           </li>
         </ul>
 

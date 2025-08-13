@@ -88,7 +88,8 @@ export default function AboutPage() {
           >
             מיקסום הפוטנציאל של האתר שלכם יכול להתבצע במגוון דרכים
           </header>
-          <div
+          <main id='main-services'>
+    <div
             className="services-container-wrapper"
             style={{
               // display: "flex",
@@ -178,6 +179,8 @@ export default function AboutPage() {
               </div>
             </AnimatedOnScrollButNotOnLoad>
           </div>
+          </main>
+      
         </div>
       </main>
 

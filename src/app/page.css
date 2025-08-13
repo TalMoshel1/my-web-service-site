@@ -26,10 +26,15 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.5);
   /* outline: 8px ridge rgb(170 50 220 / 0.6); */
   padding: 1em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.services li:hover {
+  transform: scale(1.02);
 }
 
 .service-item span {
-  border: '1px solid black'
+  border: "1px solid black";
 }
 
 .service-item img {

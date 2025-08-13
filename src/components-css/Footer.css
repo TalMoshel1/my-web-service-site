@@ -83,3 +83,16 @@
     justify-content: center;
   }
 }
+
+.socialmedia-links a:focus {
+  outline: 1px solid #fff; /* צבע ורוחב של הבורדר בעת מיקוד */
+  outline-offset: 1px; /* רווח בין הבורדר לבין האלמנט עצמו */
+  border-radius: 1px;
+}
+
+/* אם אתה מעדיף לעצב את ה-li עצמו: */
+.socialmedia-links li:focus-within {
+  outline: 1px solid #fff; 
+  outline-offset: 1px;
+  border-radius: 1px;
+}
