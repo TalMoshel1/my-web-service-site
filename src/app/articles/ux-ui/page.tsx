@@ -12,7 +12,7 @@ import AnimatedOnScrollButNotOnLoad from "@/components/AnimatedOnScrollButNotOnL
 
 export const metadata: Metadata = {
   title:
-    "טל מושל - פיתוח עמודי נחיתה - פתרונות שיפור מהירות ותיקון באגים באתרי אינטרנט",
+    "טל מושל - שיפור חווית משתמש באתר",
 };
 
 const varela = Varela_Round({

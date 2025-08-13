@@ -14,7 +14,7 @@ import BugsHeader from '@/components/headers/Bugs';
 
 export const metadata: Metadata = {
   title:
-    "טל מושל - פיתוח עמודי נחיתה - פתרונות שיפור מהירות ותיקון באגים באתרי אינטרנט",
+    "טל מושל - תיקון של באגים ושגיאות באתר",
 };
 
 const varela = Varela_Round({

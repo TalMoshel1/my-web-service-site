@@ -14,7 +14,7 @@ import WebAccessibility from "@/components/headers/WebAccessibility";
 
 export const metadata: Metadata = {
   title:
-    "טל מושל - פיתוח עמודי נחיתה - פתרונות שיפור מהירות ותיקון באגים באתרי אינטרנט",
+    "טל מושל - שיפור נגישות באתר",
 };
 
 const varela = Varela_Round({

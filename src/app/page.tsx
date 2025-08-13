@@ -16,7 +16,7 @@ import ServicesForBigScreen from "@/components/ServicesForBigScreen";
 import Link from "next/link";
 export const metadata: Metadata = {
   title:
-    "טל מושל - פיתוח עמודי נחיתה - פתרונות שיפור מהירות ותיקון באגים באתרי אינטרנט",
+    "טל מושל - בוט עסקי - עמודי נחיתה - תיקון באגים - נגישות - חווית משתמש",
 };
 
 const varela = Varela_Round({

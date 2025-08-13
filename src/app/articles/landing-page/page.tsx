@@ -14,7 +14,7 @@ import LandingPageHeader from "@/components/headers/Landing-Page";
 
 export const metadata: Metadata = {
   title:
-    "טל מושל - פיתוח עמודי נחיתה - פתרונות שיפור מהירות ותיקון באגים באתרי אינטרנט",
+    "טל מושל - פיתוח עמודי נחיתה מקצועיים ומניעים לפעולה",
 };
 
 const varela = Varela_Round({

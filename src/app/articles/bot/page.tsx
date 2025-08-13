@@ -15,7 +15,7 @@ import "./page.css";
 
 export const metadata: Metadata = {
   title:
-    "טל מושל - פיתוח עמודי נחיתה - פתרונות שיפור מהירות ותיקון באגים באתרי אינטרנט",
+    "טל מושל - פיתוח אוטומציה עסקית - צ'אט בוט - ווצאפ בוט",
 };
 
 const varela = Varela_Round({
