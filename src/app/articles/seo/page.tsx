@@ -64,7 +64,6 @@ export default function Seo() {
             backgroundColor: "rgba(255,255,255,0.8)",
                         minHeight: '70svh',
 
-            minHeight: '70svh',
             width: "100%",
             height: "100%",
             display: "flex",
