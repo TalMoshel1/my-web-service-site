@@ -62,6 +62,9 @@ export default function Seo() {
             position: "relative",
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
+                        minHeight: '70svh',
+
+            minHeight: '70svh',
             width: "100%",
             height: "100%",
             display: "flex",
@@ -87,14 +90,19 @@ export default function Seo() {
                 margin: "auto",
               }}
             >
-              קידום אורגני
+              בוט ווצאפ
             </header>
             <AnimatedOnScrollButNotOnLoad threshold={0.1}>
               <article
                 className="article"
-                style={{ width: "100vw", margin: "auto", display: "flex" }}
+                style={{
+                  width: "100vw",
+                  margin: "auto",
+                  display: "flex",
+                  // backgroundColor: "white",
+                }}
               >
-                <div>
+                {/* <div>
                   <p style={{ width: "100%" }}>
                     בעולם הדיגיטלי, נראות במנועי חיפוש היא המפתח להצלחה. קידום
                     אתרים אורגני (SEO) אינו רק עניין של מילות מפתח, אלא אמנות של
@@ -193,7 +201,8 @@ export default function Seo() {
                     </a>{" "}
                     שלכם.
                   </p>
-                </div>
+                </div> */}
+                <p>עמוד זה נמצא בבנייה ויתווסף בקרוב</p>
               </article>
             </AnimatedOnScrollButNotOnLoad>
           </div>

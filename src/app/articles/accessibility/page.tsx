@@ -10,6 +10,7 @@ import FormContainer from "@/components/FormContainer";
 import AnimatedOnScrollButNotOnLoad from "@/components/AnimatedOnScrollButNotOnLoad";
 import "../../components-css/AboutIndex.css";
 import "./page.css";
+import WebAccessibility from "@/components/headers/WebAccessibility";
 
 export const metadata: Metadata = {
   title:
@@ -25,7 +26,8 @@ const varela = Varela_Round({
 export default function Accessibility() {
   return (
     <>
-      <UxUiHeader />
+      {/* <UxUiHeader /> */}
+      <WebAccessibility />
 
       <main
         className={varela.className}
@@ -60,6 +62,8 @@ export default function Accessibility() {
             position: "relative",
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
+                        minHeight: '70svh',
+
             width: "100%",
             height: "100%",
             display: "flex",
@@ -85,14 +89,13 @@ export default function Accessibility() {
                 margin: "auto",
               }}
             >
-              תיקון באגים
-            </header>
+נגישות            </header>
             <AnimatedOnScrollButNotOnLoad threshold={0.1}>
               <article
                 className="article"
                 style={{ width: "100vw", margin: "auto", display: "flex" }}
               >
-                <div>
+                {/* <div>
                   <p style={{ width: "100%" }}>
                     נגישות בבניית אתרי אינטרנט היא לא רק דרישה חוקית במקרים
                     מסוימים, אלא גם חלק בלתי נפרד מיצירת חווית גלישה שוויונית
@@ -185,7 +188,8 @@ export default function Accessibility() {
                     בה תוביל ליותר מבקרים מרוצים, חשיפה רחבה יותר, ושיפור מתמשך
                     בביצועי האתר העסקי.
                   </p>
-                </div>
+                </div> */}
+                <p>עמוד זה נמצא בבנייה ויתווסף בקרוב</p>
               </article>
             </AnimatedOnScrollButNotOnLoad>
           </div>

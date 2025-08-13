@@ -18,13 +18,13 @@ const varela = Varela_Round({
   display: "swap",
 });
 
-const BotHeader: React.FC = () => {
+const BugsHeader: React.FC = () => {
   return (
     <header
     className='header'
       style={{ position: "relative", overflow: "hidden", width: '100vw',paddingTop: '5rem'}}
     >
-      <HeroImage src="/bot.webp" width="100%" height="100%" />
+      <HeroImage src="/uxui.webp" width="100%" height="100%" />
 
       <Navbar />
 
@@ -78,7 +78,7 @@ const BotHeader: React.FC = () => {
             }}
             className={`${varela.className} call-to-action-h1 ux-ui-header-h1`}
           >
-           בניית בוט ווצאפ שימקסם את התוצאות של העסק שלך
+         תיקון באגים ושגיאות באתר לחווית משתמש טובה יותר
           </h1>
         </div>
       </div>
@@ -112,4 +112,4 @@ const BotHeader: React.FC = () => {
   );
 };
 
-export default BotHeader;
+export default BugsHeader;

@@ -66,6 +66,8 @@ export default function AboutPage() {
             position: "relative",
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
+                        minHeight: '70svh',
+
             // width: "100%",
             // minHeight: "100svh",
             height: "100%",
@@ -86,7 +88,8 @@ export default function AboutPage() {
               // marginRight: "5%",
             }}
           >
-            מיקסום הפוטנציאל של האתר שלכם יכול להתבצע במגוון דרכים
+            {/* מיקסום הפוטנציאל של האתר שלכם יכול להתבצע במגוון דרכים */}
+            מתן שירות מקצועי
           </header>
           <main id='main-services'>
     <div

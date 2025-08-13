@@ -10,6 +10,7 @@ import FormContainer from "@/components/FormContainer";
 import AnimatedOnScrollButNotOnLoad from "@/components/AnimatedOnScrollButNotOnLoad";
 import "../../components-css/AboutIndex.css";
 import "./page.css";
+import BugsHeader from '@/components/headers/Bugs';
 
 export const metadata: Metadata = {
   title:
@@ -25,7 +26,8 @@ const varela = Varela_Round({
 export default function Bugs() {
   return (
     <>
-      <UxUiHeader />
+      {/* <BugsHeader /> */}
+      <BugsHeader />
 
       <main
         className={varela.className}
@@ -60,6 +62,8 @@ export default function Bugs() {
             position: "relative",
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
+                        minHeight: '70svh',
+
             width: "100%",
             height: "100%",
             display: "flex",
@@ -85,6 +89,7 @@ export default function Bugs() {
                 margin: "auto",
               }}
             >
+              
               תיקון באגים
             </header>
             <AnimatedOnScrollButNotOnLoad threshold={0.1}>
@@ -92,7 +97,7 @@ export default function Bugs() {
                 className="article"
                 style={{ width: "100vw", margin: "auto", display: "flex" }}
               >
-                <div>
+                {/* <div>
                   <p style={{ width: "100%" }}>
                     בעולם הפיתוח, באגים הם חלק בלתי נפרד מהתהליך. הם יכולים
                     להופיע בכל שלב, משינוי קטן בקוד ועד להשקת פיצ&apos;ר חדש
@@ -179,7 +184,8 @@ export default function Bugs() {
                     ונכונה תבטיח לא רק שהקוד יפעל כצפוי, אלא גם שתשמרו על
                     יציבות ואמינות המוצר שלכם לאורך זמן.
                   </p>
-                </div>
+                </div> */}
+                <p>עמוד זה נמצא בבנייה ויתווסף בקרוב</p>
               </article>
             </AnimatedOnScrollButNotOnLoad>
           </div>

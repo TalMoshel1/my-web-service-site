@@ -12,7 +12,7 @@ export default function HeroImage({src = '', width = '100%', height = '100%'}: {
         priority
         loading="eager"
         style={{
-          objectFit: 'cover',
+          objectFit: 'fill',
           
         }}
       />

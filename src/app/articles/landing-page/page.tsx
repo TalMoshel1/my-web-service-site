@@ -10,6 +10,7 @@ import FormContainer from "@/components/FormContainer";
 import AnimatedOnScrollButNotOnLoad from "@/components/AnimatedOnScrollButNotOnLoad";
 import "../../components-css/AboutIndex.css";
 import "./page.css";
+import LandingPageHeader from "@/components/headers/Landing-Page";
 
 export const metadata: Metadata = {
   title:
@@ -25,7 +26,8 @@ const varela = Varela_Round({
 export default function LandingPage() {
   return (
     <>
-      <UxUiHeader />
+      {/* <UxUiHeader /> */}
+      <LandingPageHeader />
 
       <main
         className={varela.className}
@@ -60,6 +62,8 @@ export default function LandingPage() {
             position: "relative",
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
+                        minHeight: '70svh',
+
             width: "100%",
             height: "100%",
             display: "flex",
@@ -92,7 +96,7 @@ export default function LandingPage() {
                 className="article"
                 style={{ width: "100vw", margin: "auto", display: "flex" }}
               >
-                <div>
+                {/* <div>
                   <p style={{ width: "100%" }}>
                     עמוד נחיתה הוא הרבה יותר מסתם דף אינטרנט; הוא כלי שיווקי
                     עוצמתי שנועד להשיג מטרה אחת וברורה: להניע את המבקר לבצע
@@ -166,7 +170,8 @@ export default function LandingPage() {
                     </a>
                     .
                   </p>
-                </div>
+                </div> */}
+                <p>עמוד זה נמצא בבנייה ויתווסף בקרוב</p>
               </article>
             </AnimatedOnScrollButNotOnLoad>
           </div>

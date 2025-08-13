@@ -58,7 +58,6 @@ export default function AboutPage() {
           style={{
             position: "relative",
             top: "0",
-            backgroundColor: "rgba(255,255,255,0.8)",
             width: "100%",
             minHeight: "100svh",
             height: "100%",
@@ -115,7 +114,9 @@ export default function AboutPage() {
                       justifyContent: "center",
                     }}
                   >
-                    <span style={{}}><a href='/articles/ux-ui'>שיפור חווית משתמש</a></span>
+                    <span style={{}}>
+                      <a href="/articles/ux-ui">שיפור חווית משתמש</a>
+                    </span>
                     {/* <Customer_ux /> */}
                     <Image
                       src={"/customer-ux.svg"}
@@ -128,15 +129,14 @@ export default function AboutPage() {
                 </AnimatedOnScrollButNotOnLoad>
                 <AnimatedOnScrollButNotOnLoad threshold={0.1}>
                   <li
-
-                  style={{
-                    position: "relative",
-                    height: "fit-content",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
+                    style={{
+                      position: "relative",
+                      height: "fit-content",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
                   >
                     <span>בניית עמודי נחיתה שמניעים לפעולה</span>
                     <Image
