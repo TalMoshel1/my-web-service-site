@@ -33,6 +33,7 @@ const FormContainer: React.FC = () => {
       <div
         style={{
           backgroundColor: "rgba(77, 125, 238, 0.5)",
+            // background: 'linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255)), black',
           width: "100vw",
           height: "100%",
           position: "absolute",
