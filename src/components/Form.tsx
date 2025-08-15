@@ -11,55 +11,72 @@ const Form: React.FC = () => {
   const [nameError, setNameError] = useState("");
   const [phoneError, setPhoneError] = useState("");
 
-interface ValidationResult {
-  success: boolean;
-  nameError?: string;
-  phoneError?: string;
-}
-
-const checkData = (name: any, phone: any): ValidationResult => {
-  const nameRegex = /^[a-zA-Z\s]+$/;
-  const phoneRegex = /^\d{9,10}$/;
-
-  // let nameError: string | undefined;
-  // let phoneError: string | undefined;
-
-  if (!nameRegex.test(name)) {
-    setNameError('שם חייב לכלול אותיות ורווחים בלבד');
-  } else {
-    setNameError('');
+  interface ValidationResult {
+    success: boolean;
   }
 
-  if (!phoneRegex.test(phone)) {
-    setPhoneError('מספר חייב לכלול 9/10 ספרות בלבד');
-  } else {
-    setPhoneError('');
-  }
+  const handleInvalid = (event: React.FormEvent<HTMLInputElement>) => {
+    // console.log('event: ', event)
+    event.preventDefault();
+    if (event.currentTarget.id === 'name') {
+      if (event.currentTarget.validity.valueMissing) {
+        setNameError("נא למלא את שדה השם.");
+      }
 
-  if (nameError || phoneError) {
-    return {
-      success: false,
-      nameError,
-      phoneError,
-    };
-  } else {
-    return {
-      success: true,
-    };
-  }
-};
+    } else if (event.currentTarget.id === 'phone') {
+      if (event.currentTarget.validity.valueMissing) {
+        setPhoneError("נא למלא את שדה הטלפון.");
+      }
+    }
+  };
+
+  const checkData = (name: any, phone: any): ValidationResult => {
+    const nameRegex = /^[a-zA-Z\s]+$/;
+    const phoneRegex = /^\d{9,10}$/;
+
+    let nameError: string | undefined;
+    let phoneError: string | undefined;
+
+    if (!nameRegex.test(name)) {
+      nameError = 'Name must contain only letters and spaces.';
+      setNameError('שם חייב לכלול אותיות ורווחים בלבד');
+    } else {
+      setNameError('');
+    }
+
+    if (!phoneRegex.test(phone)) {
+      phoneError = 'Phone number must contain only numbers and be 9 or 10 digits long.';
+      setPhoneError('מספר חייב לכלול 9/10 ספרות בלבד');
+    } else {
+      setPhoneError('');
+    }
+
+    if (nameError || phoneError) {
+      return {
+        success: false,
+      };
+    } else {
+      return {
+        success: true,
+      };
+    }
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-
     setFormData((prev) => ({ ...prev, [name]: value }));
-    console.log("Updated formData:", { ...formData, [name]: value });
+    if (name === 'name') {
+        setNameError("");
+    } else if (name === 'phone') {
+        setPhoneError("");
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const validation = checkData(formData.name, formData.phone);
-    if (!validation.success) {
+    console.log('validation', validation)
+    if (validation.success === false) {
       console.log('validation failed')
       return;
     }
@@ -84,15 +101,11 @@ const checkData = (name: any, phone: any): ValidationResult => {
   return (
     <>
       <AnimatedOnScrollButNotOnLoad threshold={0.1}> 
-
-
         <form
           onSubmit={handleSubmit}
           style={{
             width: "20rem",
             margin: '10.5em auto',
-                        // margin: '11.5em auto',
-
             boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.1)",
             direction: "rtl",
             boxSizing: "border-box",
@@ -106,7 +119,7 @@ const checkData = (name: any, phone: any): ValidationResult => {
           }}
           className={varela.className}
           data-aos="fade-up"
-           id="contact-form"
+          id="contact-form"
         >
           <label
             htmlFor="name"
@@ -119,13 +132,14 @@ const checkData = (name: any, phone: any): ValidationResult => {
           >
             שם מלא
           </label>
-          {nameError && <p style={{marginBottom: '0.75rem', fontSize: '1rem', color: 'red',   backgroundColor:'rgba(255,255,255,0.7)'}}>{nameError}</p>}
+          {nameError && <p style={{marginBottom: '0.75rem', fontSize: '1rem', color: 'red', backgroundColor:'white'}}>{nameError}</p>}
           <input
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
+            onInvalid={handleInvalid} // הוספנו כאן את ה-handler החדש
             style={{
               width: "100%",
               padding: "0.75em",
@@ -149,14 +163,14 @@ const checkData = (name: any, phone: any): ValidationResult => {
           >
             מספר טלפון
           </label>
-          {phoneError && <p style={{marginBottom: '0.75rem', fontSize: '1rem', color: 'red', backgroundColor:'rgba(255,255,255,0.7)'}}>{phoneError}</p>}
-
+          {phoneError && <p style={{marginBottom: '0.75rem', fontSize: '1rem', color: 'red', backgroundColor:'white'}}>{phoneError}</p>}
           <input
             type="tel"
             id="phone"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
+            onInvalid={handleInvalid} // הוספנו כאן את ה-handler החדש
             style={{
               width: "100%",
               padding: "0.75em",
