@@ -22,7 +22,11 @@ const varela = Varela_Round({
 
 const FormContainer: React.FC = () => {
   return (
-    <div style={{ position: "relative", height: "34rem" , maxWidth: '100vw'}}>
+    <div style={{ position: "relative", 
+    // height: "34rem" , 
+        height: "40rem" , 
+
+    maxWidth: '100vw'}}>
       <HeroImage src="/dark-background.webp" width="100%" />
 
       {/* <CallToActionSection /> */}

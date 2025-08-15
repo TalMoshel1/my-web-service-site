@@ -74,7 +74,7 @@ const Logo: React.FC = () => {
               height="0"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
-              style={{     position: 'absolute',       top: scrolledBeyond?'0.08rem': '0.025rem', left: '50%', transform: 'translate(-50%, -50%)',
+              style={{     position: 'absolute',       top: scrolledBeyond?'0.08rem': '0.025rem', left: '50%', transform: scrolledBeyond?'translate(-50%, -50%)': 'translate(-50%, -41%)',
  width: scrolledBeyond? '0.8rem': '1.4rem'
 }}
 

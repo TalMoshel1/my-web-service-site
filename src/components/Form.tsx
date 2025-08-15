@@ -8,15 +8,61 @@ const varela = Varela_Round({ subsets: ["latin"], weight: "400" });
 
 const Form: React.FC = () => {
   const [formData, setFormData] = useState({ name: "", phone: "" });
+  const [nameError, setNameError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+
+interface ValidationResult {
+  success: boolean;
+  nameError?: string;
+  phoneError?: string;
+}
+
+const checkData = (name: any, phone: any): ValidationResult => {
+  const nameRegex = /^[a-zA-Z\s]+$/;
+  const phoneRegex = /^\d{9,10}$/;
+
+  // let nameError: string | undefined;
+  // let phoneError: string | undefined;
+
+  if (!nameRegex.test(name)) {
+    setNameError('שם חייב לכלול אותיות ורווחים בלבד');
+  } else {
+    setNameError('');
+  }
+
+  if (!phoneRegex.test(phone)) {
+    setPhoneError('מספר חייב לכלול 9/10 ספרות בלבד');
+  } else {
+    setPhoneError('');
+  }
+
+  if (nameError || phoneError) {
+    return {
+      success: false,
+      nameError,
+      phoneError,
+    };
+  } else {
+    return {
+      success: true,
+    };
+  }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+
     setFormData((prev) => ({ ...prev, [name]: value }));
     console.log("Updated formData:", { ...formData, [name]: value });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const validation = checkData(formData.name, formData.phone);
+    if (!validation.success) {
+      console.log('validation failed')
+      return;
+    }
     console.log("Form submitted with:", formData);
 
     const result = await fetch(
@@ -39,15 +85,14 @@ const Form: React.FC = () => {
     <>
       <AnimatedOnScrollButNotOnLoad threshold={0.1}> 
 
+
         <form
           onSubmit={handleSubmit}
           style={{
             width: "20rem",
             margin: '10.5em auto',
-            // marginInline: "auto",
-            // marginBottom:'10.5em',
-            // marginTop: '20.5em',
-            // border: '1px solid red',
+                        // margin: '11.5em auto',
+
             boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.1)",
             direction: "rtl",
             boxSizing: "border-box",
@@ -58,7 +103,6 @@ const Form: React.FC = () => {
             transform: "translateX(-50%)",
             zIndex: 4,
             textAlign: "center",
-            // height:'100%'
           }}
           className={varela.className}
           data-aos="fade-up"
@@ -75,6 +119,7 @@ const Form: React.FC = () => {
           >
             שם מלא
           </label>
+          {nameError && <p style={{marginBottom: '0.75rem', fontSize: '1rem', color: 'red',   backgroundColor:'rgba(255,255,255,0.7)'}}>{nameError}</p>}
           <input
             type="text"
             id="name"
@@ -104,6 +149,8 @@ const Form: React.FC = () => {
           >
             מספר טלפון
           </label>
+          {phoneError && <p style={{marginBottom: '0.75rem', fontSize: '1rem', color: 'red', backgroundColor:'rgba(255,255,255,0.7)'}}>{phoneError}</p>}
+
           <input
             type="tel"
             id="phone"
