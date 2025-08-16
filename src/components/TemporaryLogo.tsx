@@ -63,10 +63,11 @@ const Logo: React.FC = () => {
 
             className={`${scrolledBeyond? 'span-text-scrolledBeyond': 'span-text-no-scrolledBeyond'}`}
           >
-            Tal M
+            {/* Tal M */}
             <div style={{position: 'relative',
             // right:'0.5px',
-            right:'0.55px', bottom: '0px', border:'1px solid red'}}
+            // right:'0px',
+             bottom: '0px'}}
                           className={`${scrolledBeyond ? 'svg-container-scrolledBeyond' : 'svg-container-no-scrolledBeyond'}`}
 >
     <svg
@@ -75,8 +76,11 @@ const Logo: React.FC = () => {
               height="0"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
-              style={{     position: 'absolute',       top: scrolledBeyond?'0.08rem': '0.025rem', left: '50%', transform: scrolledBeyond?'translate(-50%, -50%)': 'translate(-50%, -50%)',
- width: scrolledBeyond? '0.8rem': '1.4rem'
+              style={{     position: 'absolute',       top: scrolledBeyond?'0.08rem': '0.025rem', 
+                left: '80%', 
+                transform: scrolledBeyond?'translate(-50%, -50%)': 'translate(-50%, -50%)',
+ width: scrolledBeyond? '0.8rem': '1.3rem',
+//  border: '1px solid red'
 }}
 
             >
@@ -99,7 +103,7 @@ const Logo: React.FC = () => {
             </svg>
             </div>
         
-            shel
+            {/* shel */}
             <br />
           </span>
 

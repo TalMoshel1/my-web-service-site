@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import "../components-css/Navbar.css";
 import useScrollBeyond20svh from "@/hooks/useScrollBeyond20svh";
 import Logo from "./Logo";
+import TemporaryLogo from "./TemporaryLogo";
+
 
 const Navbar: React.FC = () => {
   const scrolledBeyond = useScrollBeyond20svh();
@@ -51,7 +53,8 @@ const Navbar: React.FC = () => {
         </ul>
 
         {/* <div>sdfijhsdkfjh</div> */}
-        <Logo />
+        {/* <Logo /> */}
+        <TemporaryLogo />
       </div>
     </nav>
   );

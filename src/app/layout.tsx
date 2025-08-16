@@ -5,15 +5,16 @@ import AosInitializer from "@/components/AosInitializer"; // Adjust path as need
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import AboutHeaderLayout from "@/components/AboutLayout";
+import HeroImage from "@/components/HeroImage";
 
 export const metadata: Metadata = {
   title: {
-    default: "Tal Yohanan Ziv Moshel",
+    default: "טל מושל",
     template:
-      "%s - Tal Yohanan Ziv Moshel" /*this is for /posts... for example*/,
+      "%s - טל מושל" /*this is for /posts... for example*/,
   },
   description:
-    "Come and read my awesome Web Development and Music content! " /* this is the default text shown when posting a link to our website in social media */,
+    "מתכנת React" /* this is the default text shown when posting a link to our website in social media */,
   twitter: {
     /* this will be explecitly for twitter */ card: "summary_large_image",
   },
@@ -24,7 +25,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log("children: ", children);
   return (
     <html lang="he" style={{ direction: "rtl" }}>
       <body
