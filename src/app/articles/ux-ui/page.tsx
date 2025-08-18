@@ -145,14 +145,14 @@ export default function UxUiPage() {
                   <p>
 פעם דפי אינטרנט היו שוקלים עשרות קילובייטים בודדים בלבד.
 היום זה לא המצב. גודל של דף סטנדרטי עם קבצי וידאו, אנימציות ולוגיקה מורכבת יכול להגיע לגודל של כמה מהגהבייט. אתר איטי או לא מקצועי מראה לגולש באתר את הדלת החוצה.
-לכן חשוב להקפיד על <a className='link-in-text'>מבנה HTML תקין</a>
+לכן חשוב להקפיד על <a className='link-in-text' href='articles/accessibility'>מבנה HTML תקין</a>
 , ייעול תמונות, וידאו, הטמעת pagination כשמדובר בטעינה של מידע ורב וcache במקרה של טעינת מידע שאינו משתנה לעיתים תכופות.
 שימוש נכון בצבעים,
 קביעת מימדים סטנדרטיים וגמישים לטקסט ואלמנטים,
 ביצוע פעולות באתר בעזרת מקש ה Tab, Shift ו Enter.
 אני כאן כדי
 לייצר לכם אתר שנראה מדהים,
- לתקן <a className='link-in-text'>כפתור/אלמנט/לוגיקה</a>, <a className='link-in-text' href='/articles/landing-page'>לעודד את המשתמש לפעולה</a>.
+ לתקן <a className='link-in-text' href='articles/bugs'>כפתור/אלמנט/לוגיקה</a>, <a className='link-in-text' href='/articles/landing-page'>לעודד את המשתמש לפעולה</a>.
 
                   </p>
                 </div>
