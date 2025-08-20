@@ -208,7 +208,7 @@ const Form: React.FC = () => {
             style={{
               width: "100%",
               padding: "0.875em",
-              backgroundColor: "#FFFF00",
+              backgroundColor: "rgb(240, 240, 240)",
               border: "none",
               fontSize: "1rem",
               cursor: "pointer",
@@ -216,12 +216,8 @@ const Form: React.FC = () => {
               color: "black",
               fontWeight: "700",
             }}
-            onMouseOver={(e) =>
-              (e.currentTarget.style.backgroundColor = "#E0F0F0")
-            }
-            onMouseOut={(e) =>
-              (e.currentTarget.style.backgroundColor = "#F0F0F0")
-            }
+              onMouseOver={(e) => (e.currentTarget.style.backgroundColor = 'rgba(240, 240, 240, 0.8)	')}
+                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgb(240, 240, 240)	')}
           >
             שליחה
           </button>

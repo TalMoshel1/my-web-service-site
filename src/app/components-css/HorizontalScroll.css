@@ -74,17 +74,17 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(60, 100%, 50%);
+  background: hsl(0, 0%, 100%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(224, 83%, 62%);
+  background: black;
   /* border-radius: 100vw; */
-  border: 0.2em solid hsl(60, 100%, 50%);
+  border: 0.2em solid hsl(0, 0%, 100%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(224, 92%, 31%);
+  background: hsl(226, 9%, 48%);
 }
 /*   background: hsl(48, 100%, 50%)
  */

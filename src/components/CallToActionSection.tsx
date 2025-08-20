@@ -81,15 +81,15 @@ const CallToActionSection: React.FC = () => {
                     style={{
                         padding: "0.75em",
                         color: "black",
-                        backgroundColor: '#FFFF00',
+                        backgroundColor: 'rgb(240, 240, 240)',
                         fontSize: "1rem",
                         fontWeight: 700,
                         transition: 'background-color 0.3s ease',
 
                     }}
 
-                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#E0F0F0	')}
-                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#F0F0F0	')}
+                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = 'rgba(240, 240, 240, 0.8)	')}
+                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgb(240, 240, 240)	')}
                 >
                        <a style={{display: 'block',width: '100%', height: '100%'}} href="#contact-form">
               דברו איתי - נתחיל לשפר
