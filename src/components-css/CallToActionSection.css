@@ -11,3 +11,23 @@
         top: 70%
     }
 }
+
+
+@media (min-width: 300px) {
+.call-to-action-h1 {
+    font-size: 2rem
+}
+}
+
+@media (max-width: 170px) {
+.call-to-action-h1 {
+    font-size: 0.75rem
+}
+}
+
+@media (max-width: 300px) {
+.call-to-action-h1 {
+    font-size: 1.5rem
+}
+}
+

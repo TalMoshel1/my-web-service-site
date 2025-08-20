@@ -33,7 +33,7 @@ const HorizontalScroll: React.FC = () => (
       className="scrollingList"
       style={{
         display: "flex",
-        width: `${items.length * 50}%`, // ← בדיוק לפי מספר פריטים
+        // width: `${items.length * 50}%`, 
         gap: "5vw",
         // marginRight: "0.875em",
         marginBottom: "1em",
@@ -79,7 +79,8 @@ const HorizontalScroll: React.FC = () => (
             // border: "1px solid rgba(77, 125, 238, 0.5)",
           }}
         >
-          <a href={item.page} style={{     width: "55vw",
+          <a href={item.page} style={{     
+            // width: "55vw",
             flexShrink: 0,
             display: "flex",
             flexDirection: "column",

@@ -28,7 +28,7 @@ export default function RootLayout({
 
   
   return (
-    <html lang="he" style={{ direction: "rtl" }}>
+    <html lang="he" style={{ direction: "rtl", boxSizing: 'border-box' }}>
       <body
         style={{
           minHeight: "100svh",
@@ -36,8 +36,10 @@ export default function RootLayout({
           height: "fit-content",
           boxSizing: "border-box",
           backgroundColor: "black",
+
           display: "flex",
           flexDirection: "column",
+          // border: '10px solid green'
         }}
       >
         <AosInitializer>
@@ -48,6 +50,7 @@ export default function RootLayout({
               flexGrow: "1",
               overflow: "hidden",
               paddingBottom: "0px !important",
+              flexShrink:'0'
             }}
           >
             {/* <AboutHeaderLayout/> */}

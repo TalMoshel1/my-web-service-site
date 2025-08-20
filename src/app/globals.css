@@ -26,4 +26,10 @@ html {
 }
 
 
+@media (max-width: 140px) {
+  * {
+    font-size: 0.5rem !important
+  }
+}
+
 

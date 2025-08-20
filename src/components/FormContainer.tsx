@@ -8,6 +8,8 @@ import { Varela_Round } from "next/font/google";
 import SvgTopShapedCorner from "@/components/SvgTopShapedCorner";
 import ContainerLaptop from "./ContainerLaptop";
 import "../components-css/AboutLayout.css";
+import "../components-css/FormContainer.css";
+
 import CallToActionSection from "./CallToActionSection";
 import SvgBottomShapedCorner from "@/components/SvgBottomShapedCorner";
 import Form from "./Form";
@@ -41,6 +43,7 @@ const FormContainer: React.FC = () => {
           zIndex: 3,
           display: "flex",
           justifyContent: "center",
+          flexDirection:'column'
         }}
       >
         <div
@@ -63,12 +66,11 @@ const FormContainer: React.FC = () => {
           </div>
         </div>
 
-        <h2
-          className={varela.className}
+        {/* <h2
+          className={`${varela.className} contact-h2`}
           style={{
-            fontSize: "2rem",
-            // marginBottom: "1rem",
-            marginTop: "5rem",
+            // fontSize: "2rem",
+            marginTop: "2rem",
             textAlign: "center",
             position: "absolute",
             color: "white",
@@ -77,7 +79,7 @@ const FormContainer: React.FC = () => {
          
         >
           השאר פרטים ונחזור אליך!
-        </h2>
+        </h2> */}
 
         <Form />
       </div>

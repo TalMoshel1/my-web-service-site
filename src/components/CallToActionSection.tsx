@@ -72,7 +72,6 @@ const CallToActionSection: React.FC = () => {
                         position: "relative",
                         left: "0",
                         textAlign: "center",
-                        fontSize: "2rem",
                     }}
                     className={`${varela.className} call-to-action-h1`}
                 >
@@ -89,8 +88,8 @@ const CallToActionSection: React.FC = () => {
 
                     }}
 
-                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FFDD00')}
-                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FFFF00')}
+                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#E0F0F0	')}
+                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#F0F0F0	')}
                 >
                        <a style={{display: 'block',width: '100%', height: '100%'}} href="#contact-form">
               דברו איתי - נתחיל לשפר

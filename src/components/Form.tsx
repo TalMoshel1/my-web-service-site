@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { Varela_Round } from "next/font/google";
 import AnimatedOnScrollButNotOnLoad from "./AnimatedOnScrollButNotOnLoad";
+import "../components-css/Form.css";
+
 
 const varela = Varela_Round({ subsets: ["latin"], weight: "400" });
 
@@ -100,33 +102,52 @@ const Form: React.FC = () => {
 
   return (
     <>
-      <AnimatedOnScrollButNotOnLoad threshold={0.1}> 
+      {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}>  */}
+
+      
         <form
           onSubmit={handleSubmit}
           style={{
-            width: "20rem",
-            margin: '10.5em auto',
+            width: '100%',
+            maxWidth: "20rem",
+            // margin: '10.5em auto',
+            margin: 'auto',
+            height: 'fit-content',
             boxShadow: "0 0.25rem 0.75rem rgba(0, 0, 0, 0.1)",
             direction: "rtl",
             boxSizing: "border-box",
             backgroundColor: "transparent",
             position: "absolute",
-            top: "0",
-            left: "100%",
-            transform: "translateX(-50%)",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
             zIndex: 4,
             textAlign: "center",
           }}
-          className={varela.className}
+          className={` form ${varela.className}`}
           data-aos="fade-up"
           id="contact-form"
         >
+              <h2
+          className={`${varela.className} contact-h2`}
+          style={{
+            // fontSize: "2rem",
+            marginTop: "0",
+            marginBottom:'2em',
+            textAlign: "center",
+            // position: "absolute",
+            color: "white",
+          }}
+
+         
+        >
+          השאר פרטים ונחזור אליך!
+        </h2>
           <label
             htmlFor="name"
             style={{
               display: "block",
               marginBottom: "0.5em",
-              fontSize: "1.5rem",
               color: "white",
             }}
           >
@@ -157,7 +178,6 @@ const Form: React.FC = () => {
             style={{
               display: "block",
               marginBottom: "0.5em",
-              fontSize: "1.5rem",
               color: "white",
             }}
           >
@@ -197,16 +217,16 @@ const Form: React.FC = () => {
               fontWeight: "700",
             }}
             onMouseOver={(e) =>
-              (e.currentTarget.style.backgroundColor = "#FFDD00")
+              (e.currentTarget.style.backgroundColor = "#E0F0F0")
             }
             onMouseOut={(e) =>
-              (e.currentTarget.style.backgroundColor = "#FFFF00")
+              (e.currentTarget.style.backgroundColor = "#F0F0F0")
             }
           >
             שליחה
           </button>
         </form>
-      </AnimatedOnScrollButNotOnLoad>
+      {/* </AnimatedOnScrollButNotOnLoad> */}
     </>
   );
 };

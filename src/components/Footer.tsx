@@ -8,13 +8,23 @@ export default function Footer() {
   return (
     <footer
       // className="p-5 text-center border-t text-sm space-y-1 text-gray-500"
-      style={{ backgroundColor: "black", height: "auto", position :'relative', top:'0'}}
+      style={{
+        backgroundColor: "black",
+        height: "auto",
+        position: "relative",
+        top: "0",
+        maxWidth: '100vw'
+      }}
     >
       <div>
         <section style={{ color: "white" }}>
           <div className="footer-logo-container" style={{}}>
             <div
-              style={{ padding: "2em 2em 1em 2em", position: "relative", height: "10rem" }}
+              style={{
+                padding: "2em 2em 1em 2em",
+                position: "relative",
+                height: "10rem",
+              }}
             >
               {/* <SearchEngineSvg /> */}
               <svg
@@ -40,25 +50,54 @@ export default function Footer() {
                   fill="rgba(77, 125, 238, 0.5)"
                 />
               </svg>
-         
             </div>
-                 <section className="footer-contact">
-                <h1 style={{display: 'inline-block', marginInline: 'auto', marginBottom: '0.5em', fontSize: '1.5rem'}}>צור קשר</h1>
-                <ul className="contact-list" style={{ position: "relative", display: 'flex', width: 'auto', padding: '1em' }}>
-                  <li style={{display: 'flex', gap: '1rem'}}>
-                    <div style={{ width: "1rem", position: "relative" }}>
-                      <Image src={"/email.svg"} alt={"email"} fill={true} />
-                    </div>
-                    <span className='contact-list-span' style={{alignContent:'center'}}>talmoshel444@gmail.com</span>
-                  </li>
-                  <li style={{display: 'flex', gap: '1rem'}}>
-                    <div style={{ width: "1rem", position: "relative" }}>
-                      <Image src={"/phone.svg"} alt={"phone"} fill={true} />
-                    </div>
-                    <span className='contact-list-span' style={{alignContent: 'center'}}>0522233573</span>
-                  </li>
-                </ul>
-              </section>
+            <section className="footer-contact">
+              <h1
+                style={{
+                  display: "inline-block",
+                  marginInline: "auto",
+                  marginBottom: "0.5em",
+                  fontSize: "1.5rem",
+                }}
+              >
+                צור קשר
+              </h1>
+              <ul
+                className="contact-list"
+                style={{
+                  position: "relative",
+                  display: "flex",
+                  width: "auto",
+                  padding: "1em",
+                }}
+              >
+                <li style={{ display: "flex", gap: "1rem" }}>
+                  <div style={{ width: "1rem", position: "relative" }}>
+                    <Image src={"/email.svg"} alt={"email"} fill={true} />
+                  </div>
+                  <span
+                    className="contact-list-span span-email"
+                    style={{ alignContent: "center" }}
+                  >
+                    {" "}
+                    <a href="mailto:talmoshel444@gmail.com">
+                      talmoshel444@gmail.com
+                    </a>
+                  </span>
+                </li>
+                <li style={{ display: "flex", gap: "1rem" }}>
+                  <div style={{ width: "1rem", position: "relative" }}>
+                    <Image src={"/phone.svg"} alt={"phone"} fill={true} />
+                  </div>
+                  <span
+                    className="contact-list-span span-phone"
+                    style={{ alignContent: "center"}}
+                  >
+                    0522233573
+                  </span>
+                </li>
+              </ul>
+            </section>
           </div>
           {/* <ul className="flex justify-center divide-x">
             <li>
@@ -87,6 +126,8 @@ export default function Footer() {
               display: "flex",
               padding: "1em",
               gap: "1em",
+              textWrap: 'wrap',
+              wordBreak: 'break-all'
             }}
             className="bottom-footer"
           >
@@ -105,26 +146,42 @@ export default function Footer() {
               }}
               className="socialmedia-container"
             >
-              <span style={{ width: "max-content" }}> עקבו אחרי ב</span>
+              <span
+  style={{
+    // width: "max-content",
+    // flexGrow: "1",
+    textAlign: "right",
+    alignSelf: "center",
+  }}
+> עקבו אחרי ב</span>
               <ul
                 className="socialmedia-links"
                 style={{ display: "flex", gap: "1em", position: "relative" }}
               >
                 <li style={{ width: "1rem", position: "relative" }}>
-                  <Link href="https://www.linkedin.com/in/tal-moshel/"     target="_blank"
-    rel="noopener noreferrer" >
+                  <Link
+                    href="https://www.linkedin.com/in/tal-moshel/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Image src={"/linkedin.svg"} alt={"linkedin"} fill={true} />
                   </Link>
                 </li>
                 <li style={{ width: "1rem", position: "relative" }}>
-                  <Link href="https://github.com/TalMoshel1" target="_blank"
-    rel="noopener noreferrer">
+                  <Link
+                    href="https://github.com/TalMoshel1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Image src={"/github.svg"} alt={"github"} fill={true} />
                   </Link>
                 </li>
                 <li style={{ width: "1rem", position: "relative" }}>
-                  <Link href="https://www.facebook.com/mosheltal/" target="_blank"
-    rel="noopener noreferrer">
+                  <Link
+                    href="https://www.facebook.com/mosheltal/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Image src={"/facebook.svg"} alt={"facebook"} fill={true} />
                   </Link>
                 </li>

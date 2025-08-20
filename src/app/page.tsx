@@ -85,6 +85,7 @@ export default function AboutPage() {
               backgroundColor: "transparent",
               textAlign: "center",
               marginTop: "2em",
+              color: 'black'
               // marginRight: "5%",
             }}
           >

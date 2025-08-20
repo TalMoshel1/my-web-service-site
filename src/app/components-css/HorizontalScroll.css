@@ -6,9 +6,54 @@
 
 .scrollingList {
   display: flex;
+
   /* width: max-content; */
   /* animation: scroll 3s linear infinite;
     scroll-snap-type: x mandatory; */
+}
+
+@media (min-width: 320px) {
+  .scrollingList {
+    width: 250%;
+  }
+
+  .scrollisgListItem a {
+    width: 55vw !important;
+}
+}
+
+
+
+@media (max-width: 320px) {
+
+  .scrollingList {
+    flex-direction: column;
+    /* width: 100vw !important; */
+    align-items:center;
+    height: 150vw;
+  }
+
+    .scrollisgListItem a {
+      width: 50svh !important;
+      height: 50svh !important;
+  /* height: 55svh */
+}
+}
+@media (max-width: 265px) {
+
+  .scrollingList {
+    flex-direction: column;
+    /* width: 100vw !important; */
+    align-items:center;
+    height: 150vw;
+  }
+
+    .scrollisgListItem a {
+      width: 41vw !important;
+      height: 50svh !important;
+      flex-grow:1;
+  /* height: 55svh */
+}
 }
 
 /* Keyframes for horizontal movement */

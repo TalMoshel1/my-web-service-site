@@ -93,6 +93,11 @@ li {
 }
 
 
+@media (orientation: portrait) {
+       .ul-display-none {
+        display: none;
+    }
+}
 
 @media (orientation: landscape) and (max-width: 1500px) {
     /* .ul-display-none {
@@ -123,4 +128,10 @@ li {
         /* margin-left: 1rem; */
     }
 
+}
+
+@media (orientation: landscape) {
+    .hamburger-display-none {
+        display: none;
+    }
 }

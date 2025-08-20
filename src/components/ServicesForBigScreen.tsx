@@ -52,6 +52,8 @@ const ServicesForBigScreen = () => {
                       // overflow: "hidden",
                       minWidth: "0",
                     }}
+                                        className="service-item"
+
                   >
                     <span>בניית עמודי נחיתה שמניעים לפעולה</span>
                     <Image

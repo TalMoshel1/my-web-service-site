@@ -15,7 +15,18 @@
     width: 50%;
  
 }
+
+
 }
+
+@media (orientation: landscape) and (max-width: 800px) {
+    .article div{
+    width: 90%;
+ 
+}
+}
+
+
 
 .article {
     gap:1rem;
