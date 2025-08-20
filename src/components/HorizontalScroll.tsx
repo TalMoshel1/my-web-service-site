@@ -20,7 +20,6 @@ const HorizontalScroll: React.FC = () => (
     style={{
       overflowX: "auto",
       width: "100%",
-      maxWidth: "100vw", // ← חוסם גלילה מעבר
       whiteSpace: "normal", // <-- critical: allows wrapping
       boxSizing: "border-box",
    

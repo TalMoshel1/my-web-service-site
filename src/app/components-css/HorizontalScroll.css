@@ -23,6 +23,12 @@
 }
 
 
+@media (min-width: 320px) {
+  .display-none {
+    max-width: 100vw;
+  }
+}
+
 
 @media (max-width: 320px) {
 
@@ -33,8 +39,9 @@
     height: 150vw;
   }
 
+  
     .scrollisgListItem a {
-      width: 50svh !important;
+      width: 48svh !important;
       height: 50svh !important;
   /* height: 55svh */
 }
