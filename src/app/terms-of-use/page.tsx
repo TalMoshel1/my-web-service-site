@@ -14,7 +14,7 @@ const TermsOfUsePage: React.FC = () => {
               margin: "auto",  
               backgroundColor: "white",
               color: "black",
-              zIndex: "10000",
+              // zIndex: "10000",
               // overflow: 'hidden',
               display: "flex",
               flexDirection: "column",
@@ -22,6 +22,7 @@ const TermsOfUsePage: React.FC = () => {
               gap: "1em",
               height: "100%",
               flexGrow:'1',
+              padding: '1em'
               // border: '10px solid red'
             }}
           >
