@@ -84,9 +84,10 @@ const ShowTermsModal: React.FC = () => {
         className="modal"
         role="dialog"
         aria-modal="true"
+        aria-label="תנאי שימוש"
         aria-labelledby="modal-title" // Added for screen readers
         tabIndex={-1}
-        dir='rtl'
+        dir="rtl"
         style={{
           position: "fixed",
           maxWidth: "100vw",
@@ -104,7 +105,7 @@ const ShowTermsModal: React.FC = () => {
           justifyContent: "center",
           gap: "1em",
           height: "100%",
-          flexGrow:'1',
+          flexGrow: "1",
           // border: '10px solid red'
         }}
       >
@@ -122,7 +123,7 @@ const ShowTermsModal: React.FC = () => {
             overflowY: "auto",
             overflowX: "hidden",
             width: "calc(100vw)",
-            padding:'1em',
+            padding: "1em",
           }}
         >
           <header style={{ marginBottom: "1.5rem" }}>
@@ -135,11 +136,11 @@ const ShowTermsModal: React.FC = () => {
           <section aria-labelledby="acceptance">
             <h2 id="acceptance">1) הסכמה לתנאים</h2>
             <p>
-              ברוך/ה הבא/ה לאתר <strong>talmoshel.co.il</strong> (&quot;האתר&quot;),
-              המופעל על ידי
-              <strong> טל מושל — פיתוח אתרים</strong> (&quot;המפעיל&quot;). השימוש באתר
-              כפוף לתנאים המפורטים במסמך זה. שימוש באתר משמעו כי קראת ואת/ה
-              מסכים/ה לתנאים.
+              ברוך/ה הבא/ה לאתר <strong>talmoshel.co.il</strong>{" "}
+              (&quot;האתר&quot;), המופעל על ידי
+              <strong> טל מושל — פיתוח אתרים</strong> (&quot;המפעיל&quot;).
+              השימוש באתר כפוף לתנאים המפורטים במסמך זה. שימוש באתר משמעו כי
+              קראת ואת/ה מסכים/ה לתנאים.
             </p>
           </section>
 
@@ -249,7 +250,7 @@ const ShowTermsModal: React.FC = () => {
                 border: "1px solid black",
                 marginInline: "auto",
                 padding: "1em",
-                marginBlock: '1em'
+                marginBlock: "1em",
               }}
               onClick={agreeToTerms}
               ref={
