@@ -121,8 +121,8 @@ const ShowTermsModal: React.FC = () => {
             // maxHeight: "80vh",
             overflowY: "auto",
             overflowX: "hidden",
-            width: "calc(100vw-1em)",
-            padding:'1em'
+            width: "calc(100vw)",
+            padding:'1em',
           }}
         >
           <header style={{ marginBottom: "1.5rem" }}>
