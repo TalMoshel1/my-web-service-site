@@ -11,7 +11,7 @@ const items = [
     page: '/articles/landing-page'
   },
   { text: "תיקון באגים", img: "/bug.svg", alt: "bugs", page: '/articles/bugs' },
-  { text: "בוט עסקי", img: "/seo.svg", alt: "bot", page:'/articles/bot' },
+  { text: "בוט עסקי", img: "/botSvg.svg", alt: "chat bot", page:'/articles/bot' },
   { text: "שיפור נגישות", img: "/accessibility.svg", alt: "accessibility", page: '/articles/accessibility'},
 ];
 

@@ -122,8 +122,8 @@ const ServicesForBigScreen = () => {
                   >
                     <span>בוט עסקי</span>
                     <Image
-                      src={"/seo.svg"}
-                      alt={"seo"}
+                      src={"/botSvg.svg"}
+                      alt={"chat-bot"}
                       width={100}
                       height={100}
                       color="black"
