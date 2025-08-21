@@ -109,7 +109,7 @@ const ShowTermsModal: React.FC = () => {
         }}
       >
         {/* <h2 id="modal-title" style={{textAlign:'center'}}>ברוכים הבאים לאתר</h2>
-        <p style={{width: 'fit-content',  marginInline:'auto'}}>כדי להמשיך, אנא אשרו שקראתם את תנאי השימוש</p> */}
+        <p style={{width: 'fit-content',  marginInline:'auto'}}>כדי להמשיך, אנא אשרו שקראתם את תנאי השימוש</p> */}
         {/* <TermsOfUsePage /> */}
         <main
           dir="rtl"
@@ -135,9 +135,9 @@ const ShowTermsModal: React.FC = () => {
           <section aria-labelledby="acceptance">
             <h2 id="acceptance">1) הסכמה לתנאים</h2>
             <p>
-              ברוך/ה הבא/ה לאתר <strong>talmoshel.co.il</strong> ("האתר"),
+              ברוך/ה הבא/ה לאתר <strong>talmoshel.co.il</strong> (&quot;האתר&quot;),
               המופעל על ידי
-              <strong> טל מושל — פיתוח אתרים</strong> ("המפעיל"). השימוש באתר
+              <strong> טל מושל — פיתוח אתרים</strong> (&quot;המפעיל&quot;). השימוש באתר
               כפוף לתנאים המפורטים במסמך זה. שימוש באתר משמעו כי קראת ואת/ה
               מסכים/ה לתנאים.
             </p>
