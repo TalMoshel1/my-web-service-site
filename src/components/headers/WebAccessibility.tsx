@@ -30,7 +30,7 @@ const WebAccessibility: React.FC = () => {
         paddingTop: "5rem",
       }}
     >
-      <HeroImage src="/color-contrast.webp" width="100%" height="100%" />
+      <HeroImage src="/pc-background-image.webp" width="100%" height="100%" />
 
       <Navbar />
 
@@ -96,7 +96,7 @@ const WebAccessibility: React.FC = () => {
       <div
         className="dynamic-height"
         style={{
-          backgroundColor: "rgba(77, 125, 238, 0.5)",
+          backgroundColor: "rgba(77, 82, 238, 0.5)",
           width: "100vw",
           position: "absolute",
           top: "0",

@@ -74,31 +74,37 @@ const Form: React.FC = () => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const validation = checkData(formData.name, formData.phone);
-    console.log('validation', validation)
-    if (validation.success === false) {
-      console.log('validation failed')
-      return;
-    }
-    console.log("Form submitted with:", formData);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    const result = await fetch(
-      "https://8b9de3728139.ngrok-free.app/submit-details",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      }
-    );
+  // בדיקה אם אושר
+  const approveChecked = (document.getElementById("approve") as HTMLInputElement)?.checked;
+  if (!approveChecked) {
+    alert("יש לאשר את מדיניות הפרטיות לפני השליחה.");
+    return;
+  } else {
+    alert('???')
+  }
 
-    if (result.ok) {
-      alert("Message sent!");
-    } else {
-      alert("Failed to send message.");
-    }
-  };
+  const validation = checkData(formData.name, formData.phone);
+  if (!validation.success) {
+    return;
+  }
+
+  console.log("Form submitted with:", formData);
+
+  const result = await fetch("https://8b9de3728139.ngrok-free.app/submit-details", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData),
+  });
+
+  if (result.ok) {
+    alert("Message sent!");
+  } else {
+    alert("Failed to send message.");
+  }
+}; 
 
   return (
     <>
@@ -133,7 +139,7 @@ const Form: React.FC = () => {
           style={{
             // fontSize: "2rem",
             marginTop: "0",
-            marginBottom:'2em',
+            marginBottom:'1em',
             textAlign: "center",
             // position: "absolute",
             color: "white",
@@ -202,6 +208,23 @@ const Form: React.FC = () => {
             }}
             required
           />
+
+   <div style={{ marginBottom: '1em', textAlign: "right" }}>
+  <input
+    type="checkbox"
+    id="approve"
+    name="approve"
+    required
+    aria-required="true"
+    style={{ marginLeft: '0.5em' }}
+  />
+  <label
+    htmlFor="approve"
+    style={{ color: 'white', fontSize: '1rem', cursor: "pointer" }}
+  >
+    אני מאשר כי קראתי את תנאי השימוש ומדיניות הפרטים. אני מסכים שבעל העסק טל יצור איתי קשר לאחר שליחת הפרטים
+  </label>
+</div>
 
           <button
             type="submit"

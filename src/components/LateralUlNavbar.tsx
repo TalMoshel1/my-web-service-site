@@ -59,6 +59,9 @@ const LateralUlNavbar: React.FC<LateralUlNavbarProps> = ({ isOpen, toggle }) => 
             <li className='lateral-ul-navbar-element'>
                 <a href="#contact-form">צור קשר</a>
             </li>
+                  <li>
+              <a href="/terms-of-use">תנאי שימוש</a>
+            </li>
         </ul>
     );
 };

@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 
 import Navbar from "@/components/Navbar";
 import { Varela_Round } from "next/font/google";
-import '../../components-css/AboutLayout.css';
-import '../../components-css/UxUiHeader.css';
+import "../../components-css/AboutLayout.css";
+import "../../components-css/UxUiHeader.css";
 
 import SvgBottomShapedCorner from "@/components/SvgBottomShapedCorner";
 import AnimatedLogo from "../AnimatedLogo";
@@ -18,16 +18,20 @@ const varela = Varela_Round({
   display: "swap",
 });
 
-const BotHeader: React.FC = () => {
+const TermsOfUse: React.FC = () => {
   return (
     <header
-    className='header'
-      style={{ position: "relative", overflow: "hidden", width: '100vw',paddingTop: '5rem'}}
+      className="header"
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        width: "100vw",
+        paddingTop: "5rem",
+      }}
     >
       <HeroImage src="/pc-background-image.webp" width="100%" height="100%" />
 
       <Navbar />
-
 
       <div
         style={{
@@ -47,14 +51,12 @@ const BotHeader: React.FC = () => {
           gap: "2rem",
         }}
       >
-
-               <div>
-            <AnimatedLogo  />
-
-            </div>
+        <div>
+          <AnimatedLogo />
+        </div>
 
         <div
-        className='dynamic-top'
+          className="dynamic-top"
           style={{
             width: "100%",
             position: "absolute",
@@ -78,14 +80,13 @@ const BotHeader: React.FC = () => {
             }}
             className={`${varela.className} call-to-action-h1 ux-ui-header-h1`}
           >
-           בניית בוט ווצאפ שימקסם את התוצאות של העסק שלך
+            תנאי שימוש{" "}
           </h1>
         </div>
       </div>
 
       <div
-              className='dynamic-height'
-
+        className="dynamic-height"
         style={{
           backgroundColor: "rgba(0, 69, 14, 0.5)",
           width: "100vw",
@@ -112,4 +113,4 @@ const BotHeader: React.FC = () => {
   );
 };
 
-export default BotHeader;
+export default TermsOfUse;

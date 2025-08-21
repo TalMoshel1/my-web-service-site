@@ -100,6 +100,9 @@ const Navbar: React.FC = () => {
                 צור קשר
               </a>
             </li>
+            <li>
+              <a href="/terms-of-use">תנאי שימוש</a>
+            </li>
           </ul>
         )}
         <TemporaryLogo />

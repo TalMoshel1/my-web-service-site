@@ -1,14 +1,16 @@
 // app/privacy/page.tsx
 "use client";
 
+import Privacy from "@/components/headers/Privacy";
 import React from "react";
 
 export default function PrivacyPolicy() {
-  return (
-    <main  style={{backgroundColor:'white', width: '100%'}}>
+  return <>
+      <Privacy />
+     <main  style={{backgroundColor:'white', width: '100%'}}>
       <article className="card" style={{width: '100%'}} itemScope itemType="https://schema.org/PrivacyPolicy">
         <header>
-          <h1 itemProp="name">הצהרת פרטיות</h1>
+          {/* <h1 itemProp="name">הצהרת פרטיות</h1> */}
           <div className="meta muted">
             <span>עודכן לאחרונה:</span>
             <time dateTime="2025-08" itemProp="dateModified">
@@ -127,6 +129,5 @@ export default function PrivacyPolicy() {
           color: var(--muted);
         }
       `}</style>
-    </main>
-  );
+    </main></>
 }

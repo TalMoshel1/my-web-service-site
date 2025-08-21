@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import AboutHeaderLayout from "@/components/AboutLayout";
 import HeroImage from "@/components/HeroImage";
+import IsLocalStorage from "@/components/ShowTermsModal";
+import ShowTermsModal from "@/components/ShowTermsModal";
 
 export const metadata: Metadata = {
   title: {
@@ -25,6 +27,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
+
 
   
   return (
@@ -50,9 +55,14 @@ export default function RootLayout({
               flexGrow: "1",
               overflow: "hidden",
               paddingBottom: "0px !important",
-              flexShrink:'0'
+              flexShrink:'0',
+              display:'flex',
+              flexDirection:'column',
+              minHeight:'100svh'
             }}
           >
+                      <ShowTermsModal />
+
             {/* <AboutHeaderLayout/> */}
             {/* <Navbar /> */}
 

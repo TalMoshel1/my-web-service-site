@@ -80,7 +80,7 @@ export default function Footer() {
                     style={{ alignContent: "center" }}
                   >
                     {" "}
-                    <a href="mailto:talmoshel444@gmail.com">
+                    <a href="mailto:talmoshel444@gmail.com" style={{color:'white'}}>
                       talmoshel444@gmail.com
                     </a>
                   </span>
@@ -91,7 +91,7 @@ export default function Footer() {
                   </div>
                   <span
                     className="contact-list-span span-phone"
-                    style={{ alignContent: "center"}}
+                    style={{ alignContent: "center", color: 'white'}}
                   >
                     0522233573
                   </span>
@@ -126,8 +126,6 @@ export default function Footer() {
               display: "flex",
               padding: "1em",
               gap: "1em",
-              textWrap: 'wrap',
-              wordBreak: 'break-all'
             }}
             className="bottom-footer"
           >

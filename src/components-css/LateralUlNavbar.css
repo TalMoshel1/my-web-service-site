@@ -1,6 +1,12 @@
 .lateralUlNavbar {
     
-right:0
+right:0;
+justify-content: start;
+}
+
+.lateralUlNavbar li {
+    
+text-align: right;
 }
 
 .lateral-ul-navbar-element:focus-visible {
