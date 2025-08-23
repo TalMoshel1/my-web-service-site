@@ -1,6 +1,7 @@
 // app/privacy/page.tsx
 "use client";
 
+import FormContainer from "@/components/FormContainer";
 import Privacy from "@/components/headers/Privacy";
 import React from "react";
 
@@ -129,5 +130,7 @@ export default function PrivacyPolicy() {
           color: var(--muted);
         }
       `}</style>
-    </main></>
+    </main>
+    <FormContainer />
+    </>
 }

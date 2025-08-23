@@ -1,4 +1,5 @@
 import AboutHeaderLayout from "@/components/AboutLayout";
+import FormContainer from "@/components/FormContainer";
 import TermsOfUse from "@/components/headers/TermsOfUse";
 import React from "react";
 
@@ -165,6 +166,7 @@ const TermsOfUsePage: React.FC = () => {
               </footer>
             </main>
           </main>
+          <FormContainer />
     </>
     
     
