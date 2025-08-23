@@ -53,9 +53,9 @@ const TermsOfUsePage: React.FC = () => {
               <section aria-labelledby="acceptance">
                 <h2 id="acceptance">1) הסכמה לתנאים</h2>
                 <p>
-                  ברוך/ה הבא/ה לאתר <strong>talmoshel.co.il</strong> (&quot;האתר&quot;),
+                  ברוך/ה הבא/ה לאתר <strong>talmoshel.co.il</strong>,
                   המופעל על ידי
-                  <strong> טל מושל — פיתוח אתרים</strong> (&quot;המפעיל&quot;). השימוש באתר
+                  <strong> טל מושל — פיתוח אתרים</strong>. השימוש באתר
                   כפוף לתנאים המפורטים במסמך זה. שימוש באתר משמעו כי קראת ואת/ה
                   מסכים/ה לתנאים.
                 </p>
@@ -149,18 +149,18 @@ const TermsOfUsePage: React.FC = () => {
                 <p>
                   אימייל:{" "}
                   <a href="mailto:talmoshel444@gmail.com">talmoshel444@gmail.com</a>{" "}
-                  · טלפון: <a href="tel:+972522233573">052‑223‑3573</a>
+                  · טלפון: <a href="tel:+972522233573">0522233573</a>
                 </p>
               </section>
     
               <footer
                 style={{ marginTop: "2rem", fontSize: "0.95rem", opacity: 0.85 }}
               >
-                <p>
+                {/* <p>
                   הערה: תנאים אלה מנוסחים בהתבסס על ההצהרה כי אין שימוש בעוגיות או
                   בכלי אנליטיקה חיצוניים, וכי נשמר בדפדפן רק סטטוס הסכמה לתנאים. אם
                   המדיניות תשתנה בעתיד (למשל הוספת כלי ניתוח), יש לעדכן מסמך זה.
-                </p>
+                </p> */}
               
               </footer>
             </main>

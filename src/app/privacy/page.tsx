@@ -12,8 +12,7 @@ export default function PrivacyPolicy() {
         <header>
           {/* <h1 itemProp="name">הצהרת פרטיות</h1> */}
           <div className="meta muted">
-            <span>עודכן לאחרונה:</span>
-            <time dateTime="2025-08" itemProp="dateModified">
+            <span>עודכן לאחרונה:</span> <time dateTime="2025-08" itemProp="dateModified">
               אוגוסט 2025
             </time>
           </div>
@@ -60,8 +59,10 @@ export default function PrivacyPolicy() {
         <section className="section">
           <h2>עוגיות (Cookies)</h2>
           <p>
-            האתר עשוי לעשות שימוש בעוגיות (Cookies) לצורך תפקוד תקין, התאמת חוויית הגלישה ואיסוף
-            נתונים סטטיסטיים.
+               האתר <strong>אינו</strong> אוסף מידע על גולשים באמצעות עוגיות
+              (Cookies) או כלי מעקב דומים, למעט שימוש ב-
+              <strong>Local Storage</strong> בדפדפן שלך לצורך שמירת סטטוס ההסכמה
+              לתנאי השימוש בלבד. לא נשמרים פרטים מזהים נוספים.
           </p>
           <p>
             ניתן לחסום עוגיות דרך הגדרות הדפדפן, אך ייתכן שחלק מהשירותים באתר לא יעבדו בצורה מיטבית.
@@ -117,7 +118,6 @@ export default function PrivacyPolicy() {
         }
         ul {
           margin: 0.5rem 0 1rem;
-          padding-right: 1.2rem;
         }
         li {
           margin: 0.35rem 0;
