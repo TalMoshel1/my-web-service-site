@@ -1,9 +1,10 @@
 // app/privacy/page.tsx
-"use client";
-
+// "use client";
+import './page.css'
 import FormContainer from "@/components/FormContainer";
 import Privacy from "@/components/headers/Privacy";
 import React from "react";
+
 
 export default function PrivacyPolicy() {
   return <>
@@ -95,7 +96,7 @@ export default function PrivacyPolicy() {
         </section>
       </article>
 
-      <style jsx>{`
+      {/* <style jsx>{`
      
  
         .card {
@@ -129,7 +130,7 @@ export default function PrivacyPolicy() {
         .muted {
           color: var(--muted);
         }
-      `}</style>
+      `}</style> */}
     </main>
     <FormContainer />
     </>

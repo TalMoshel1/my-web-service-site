@@ -39,6 +39,11 @@
   color: blue;
 }
 
+  .link-in-text {
+  color: #0077cc; /* כחול עדין */
+  text-decoration: none; /* בלי קו תחתון אם לא רוצים */
+}
+
   .link-in-text:link {
   color: #0077cc; /* כחול עדין */
   text-decoration: none; /* בלי קו תחתון אם לא רוצים */

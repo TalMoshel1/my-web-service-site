@@ -43,3 +43,9 @@
   color: #0077cc; /* כחול עדין */
   text-decoration: none; /* בלי קו תחתון אם לא רוצים */
 }
+
+strong {
+    margin-block:2em;
+    font-weight: 900;
+    font-size:1.2rem;
+}

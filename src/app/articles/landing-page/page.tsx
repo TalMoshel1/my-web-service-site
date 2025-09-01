@@ -96,7 +96,7 @@ export default function LandingPage() {
                 className="article"
                 style={{ width: "100vw", margin: "auto", display: "flex" }}
               >
-                {/* <div>
+                <div>
                   <p style={{ width: "100%" }}>
                     עמוד נחיתה הוא הרבה יותר מסתם דף אינטרנט; הוא כלי שיווקי
                     עוצמתי שנועד להשיג מטרה אחת וברורה: להניע את המבקר לבצע
@@ -127,13 +127,13 @@ export default function LandingPage() {
                       בתמורה לזמנו או לפרטיו.
                     </li>
                     <li>
-                      <strong>הוכחה חברתית (Social Proof):</strong> אנשים סומכים
+                      <strong>הוכחה חברתית:</strong> אנשים סומכים
                       על אנשים אחרים. שילוב של עדויות לקוחות, לוגואים של חברות
                       מוכרות, נתוני שימוש או דירוגים יכול להגביר את האמינות שלכם
                       ולשכנע מתלבטים.
                     </li>
                     <li>
-                      <strong>הנעה לפעולה (Call to Action – CTA):</strong> כפתור
+                      <strong>הנעה לפעולה:</strong> כפתור
                       ה-CTA הוא לב ליבו של העמוד. הוא חייב להיות בולט, ברור ובעל
                       ניסוח שמבהיר בדיוק מה יקרה כאשר לוחצים עליו (למשל, &quot;הורד
                       את המדריך החינמי&quot; במקום &quot;שלח&quot;).
@@ -147,10 +147,9 @@ export default function LandingPage() {
                       <strong>עיצוב ויזואלי נקי ומזמין:</strong> עמוד נחיתה לא
                       צריך להיות עמוס. השתמשו ברווחים לבנים, תמונות או סרטונים
                       איכותיים ועיצוב שמשתלב עם המותג שלכם. בנוסף, יש לוודא
-                      שהעמוד נגיש לכלל האוכלוסייה. קראו עוד על
-                      <a
+                      שהעמוד נגיש לכלל האוכלוסייה. קראו עוד על <a
                         className="link-in-text"
-                        href="https://www.example.com/accessibility-improvement"
+                        href="/articles/accessibility"
                       >
                         שיפור נגישות
                       </a>
@@ -161,17 +160,16 @@ export default function LandingPage() {
                   <p>
                     עמוד נחיתה מעוצב היטב הוא כלי חיוני לכל קמפיין שיווקי. הוא
                     מפחית את עלויות הקמפיין, מגביר את שיעורי ההמרה ומשמש כחוליה
-                    חיונית בשרשרת השיווקית שלכם. קראו עוד על
-                    <a
+                    חיונית בשרשרת השיווקית שלכם. קראו עוד על <a
                       className="link-in-text"
-                      href="https://www.example.com/ux-improvement"
+                      href="/articles/ux-iu"
                     >
                       שיפור חווית משתמש
                     </a>
                     .
                   </p>
-                </div> */}
-                <p>עמוד זה נמצא בבנייה ויתווסף בקרוב</p>
+                </div>
+                {/* <p>עמוד זה נמצא בבנייה ויתווסף בקרוב</p> */}
               </article>
             </AnimatedOnScrollButNotOnLoad>
           </div>

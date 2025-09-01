@@ -10,11 +10,10 @@ import FormContainer from "@/components/FormContainer";
 import AnimatedOnScrollButNotOnLoad from "@/components/AnimatedOnScrollButNotOnLoad";
 import "../../components-css/AboutIndex.css";
 import "./page.css";
-import BugsHeader from '@/components/headers/Bugs';
+import BugsHeader from "@/components/headers/Bugs";
 
 export const metadata: Metadata = {
-  title:
-    "טל מושל - תיקון של באגים ושגיאות באתר",
+  title: "טל מושל - תיקון של באגים ושגיאות באתר",
 };
 
 const varela = Varela_Round({
@@ -62,7 +61,7 @@ export default function Bugs() {
             position: "relative",
             top: "0",
             backgroundColor: "rgba(255,255,255,0.8)",
-                        minHeight: '70svh',
+            minHeight: "70svh",
 
             width: "100%",
             height: "100%",
@@ -89,7 +88,6 @@ export default function Bugs() {
                 margin: "auto",
               }}
             >
-              
               תיקון באגים
             </header>
             <AnimatedOnScrollButNotOnLoad threshold={0.1}>
@@ -97,7 +95,7 @@ export default function Bugs() {
                 className="article"
                 style={{ width: "100vw", margin: "auto", display: "flex" }}
               >
-                {/* <div>
+                <div>
                   <p style={{ width: "100%" }}>
                     בעולם הפיתוח, באגים הם חלק בלתי נפרד מהתהליך. הם יכולים
                     להופיע בכל שלב, משינוי קטן בקוד ועד להשקת פיצ&apos;ר חדש
@@ -114,10 +112,7 @@ export default function Bugs() {
                     </strong>
                   </p>
                   <br />
-                  <ul
-                    className="landing-page-list"
-                    style={{ width: "100%" }}
-                  >
+                  <ul className="landing-page-list" style={{ width: "100%" }}>
                     <li>
                       <strong>שחזור הבעיה:</strong> הצעד הראשון הוא להיות מסוגל
                       לשחזר את הבאג באופן עקבי. אם לא ניתן לשחזר את הבעיה, קשה
@@ -133,22 +128,22 @@ export default function Bugs() {
                     </li>
                     <li>
                       <strong>בידוד הקוד הבעייתי:</strong> לאחר שזיהיתם את שורש
-                      הבעיה, בודדו את הקוד הבעייתי. צמצמו את הקוד למקרה
-                      המינימלי שמייצר את הבאג. ככל שהקוד שתבדקו יהיה קטן יותר,
-                      כך יהיה קל יותר לאתר את הטעות ולתקן אותה.
+                      הבעיה, בודדו את הקוד הבעייתי. צמצמו את הקוד למקרה המינימלי
+                      שמייצר את הבאג. ככל שהקוד שתבדקו יהיה קטן יותר, כך יהיה קל
+                      יותר לאתר את הטעות ולתקן אותה.
                     </li>
                     <li>
                       <strong>בדיקת התיקון:</strong> לאחר שהבאתם פתרון, יש לבדוק
                       אותו ביסודיות. ודאו שהתיקון לא רק פתר את הבאג המקורי, אלא
                       גם שלא יצר באגים חדשים במערכת. זהו שלב חיוני למניעת מצבים
                       של &quot;אחד בפה ואחד בחוץ&quot;. שימו לב במיוחד לבאגים
-                      שפוגעים במבנה האתר או בתכנים, שכן הם עלולים להזיק ל{" "}
-                      <a
+                      שפוגעים במבנה האתר או בתכנים, שכן הם עלולים להזיק ל
+                      {/* <a
                         className="link-in-text"
                         href="https://www.example.com/seo-guide"
-                      >
+                      > */}
                         קידום האורגני
-                      </a>
+                      {/* </a>{" "} */}
                       שלכם.
                     </li>
                     <li>
@@ -157,21 +152,20 @@ export default function Bugs() {
                       תהליך בדיקות יסודי יכול לשפר משמעותית את{" "}
                       <a
                         className="link-in-text"
-                        href="https://www.example.com/ux-improvement"
+                        href="/articles/ux-ui"
                       >
                         חווית המשתמש
-                      </a>
+                      </a>{" "}
                       ולשמור על יציבות המערכת.
                     </li>
                     <li>
-                      <strong>תיעוד:</strong> תיעוד הוא חלק קריטי בתהליך. כתבו על
-                      הבאג שנמצא, על הפתרון שיושם ועל הסיבה שהבאג הופיע
+                      <strong>תיעוד:</strong> תיעוד הוא חלק קריטי בתהליך. כתבו
+                      על הבאג שנמצא, על הפתרון שיושם ועל הסיבה שהבאג הופיע
                       מלכתחילה. תיעוד טוב יכול לעזור למנוע טעויות דומות בעתיד
                       ולחסוך זמן לכל הצוות. בנוסף, ודאו שתיקון הבאג אינו יוצר
-                      חסמים חדשים למשתמשים עם מוגבלויות, מה שפוגע ב{" "}
-                      <a
+                      חסמים חדשים למשתמשים עם מוגבלויות, מה שפוגע ב<a
                         className="link-in-text"
-                        href="https://www.example.com/accessibility-improvement"
+                        href="/articles/accessibility"
                       >
                         שיפור נגישות
                       </a>{" "}
@@ -181,11 +175,11 @@ export default function Bugs() {
                   <br />
                   <p>
                     תיקון באגים הוא תהליך מתמיד של למידה ושיפור. גישה שיטתית
-                    ונכונה תבטיח לא רק שהקוד יפעל כצפוי, אלא גם שתשמרו על
-                    יציבות ואמינות המוצר שלכם לאורך זמן.
+                    ונכונה תבטיח לא רק שהקוד יפעל כצפוי, אלא גם שתשמרו על יציבות
+                    ואמינות המוצר שלכם לאורך זמן.
                   </p>
-                </div> */}
-                <p>עמוד זה נמצא בבנייה ויתווסף בקרוב</p>
+                </div>
+                {/* <p>עמוד זה נמצא בבנייה ויתווסף בקרוב</p> */}
               </article>
             </AnimatedOnScrollButNotOnLoad>
           </div>

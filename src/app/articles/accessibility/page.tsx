@@ -1,13 +1,10 @@
-import UxUiHeader from "@/components/headers/ux-ui";
-import HeroImage from "@/components/HeroImage";
+
 import { Metadata } from "next";
 import { Varela_Round } from "next/font/google";
-import Customer_ux from "../../assets/customer-ux.svg";
 import Image from "next/image";
 import "./page.css";
-import Form from "@/components/Form";
 import FormContainer from "@/components/FormContainer";
-import AnimatedOnScrollButNotOnLoad from "@/components/AnimatedOnScrollButNotOnLoad";
+// import AnimatedOnScrollButNotOnLoad from "@/components/AnimatedOnScrollButNotOnLoad";
 import "../../components-css/AboutIndex.css";
 import "./page.css";
 import WebAccessibility from "@/components/headers/WebAccessibility";
@@ -89,15 +86,47 @@ export default function Accessibility() {
                 margin: "auto",
               }}
             >
-נגישות            </header>
-            <AnimatedOnScrollButNotOnLoad threshold={0.1}>
+
+<h1>נגישות</h1>
+   </header>
+            {/* <AnimatedOnScrollButNotOnLoad threshold={0.1}> */}
               <article
                 className="article"
                 style={{ width: "100vw", margin: "auto", display: "flex" }}
               >
-                <p>עמוד זה נמצא בבנייה ויתווסף בקרוב</p>
+                                <div>
+   
+                  <p>
+
+                    בשביל נגישות טובה, יש להשתמש במבנה HTML תקין, בין היתר בשביל קוראי מסך.
+                    למשל, יש להשתמש בתגית ה button כאשר יוצרים כפתור באתר. מנגד, שימוש באלמנט div או span לא נכונים סמנטית,
+                    קורא המסך לא יעביר למשתמש שמדובר בכפתור מה שעלול לבלבל אותו ופוגע בנגישות.
+                    <br/>
+                    <strong>כותרות</strong>
+                    <br/>
+                    יש להשתמש בכותרות מסוג h1 בדף, פעם אחת בלבד. זוהי הכותרות הראשית של הדף.
+                    לכותרות הראשית נוכל להצמיד תת כותרות ראשיות שיקראו h2.
+                    אפשר להסתכל על זה כעל עץ בעל גזע אחד שממנו ענפים.
+                    לכל תת כותרות נוכל להצמיד אחד או יותר מתגיות h3 וכך הלאה.
+                    יש שש תגיות כותרת:
+                    <br/>
+                    h1, h2, h3, h4, h5 ו h6.
+                    <br/>
+                    אי התחשבות בסדר זה פוגע בנגישות וחושף אתכם לתביעה, חווית משתמש פחות טובה ובין היתר גם דירוג קידום אורגני נמוך יותר.
+                    <br/>
+                    <strong>aria-label</strong>
+                    <br/>
+                    ניתן להשתמש בתכונה aria-label כדי לספק תיאור קצר, ברור ונהיר לרכיבי ממשק שאין להם תווית ויזואלית מובנית או שהתווית הקיימת לא מספקת מספיק מידע. תכונה זו עוזרת לקוראי מסך להבין טוב יותר את הפונקציה של הרכיב, במיוחד במקרים של אייקונים או כפתורים שמוצגים רק באמצעות תמונה. לדוגמה, אם יש לכם כפתור עם אייקון של סל קניות, תוכלו להוסיף לו aria-label="הוסף לסל" כדי שמשתמשים עם קוראי מסך יבינו בדיוק מה הפעולה שהכפתור מבצע.
+                    <br/>
+                    <strong>alt (Alternate Text)
+</strong>
+<br/>
+בנוסף, עבור תגיות תמונה img, ישנה חשיבות עצומה לשימוש נכון בתכונה alt. תכונה זו מכילה טקסט חלופי שמתאר את תוכן התמונה. הוא מוצג במקרים שבהם התמונה לא נטענת או שמשתמשים משתמשים בקורא מסך. תיאור ה-alt צריך להיות קצר אך מדויק, ולתאר את מה שרואים בתמונה. לדוגמה, אם יש תמונה של כלב משחק בפארק, תיאור ה-alt המתאים יהיה "כלב גולדן רטריבר משחק בכדור בפארק ירוק." שימוש נכון ב-alt משפר את הנגישות, תורם לקידום האורגני של האתר (SEO) ומבטיח שגם אם התמונה לא נטענת, המשתמש עדיין יבין את הקונטקסט. במקרים שבהם התמונה היא קישוטית בלבד ואין לה חשיבות תוכנית, ניתן להשאיר את התכונה ריקה (alt="") כדי שקוראי מסך יתעלמו ממנה.
+        
+                  </p>
+                </div>
               </article>
-            </AnimatedOnScrollButNotOnLoad>
+            {/* </AnimatedOnScrollButNotOnLoad> */}
           </div>
         </div>
       </main>
