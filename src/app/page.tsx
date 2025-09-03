@@ -17,22 +17,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title:
     "טל מושל - בוט עסקי - עמודי נחיתה - תיקון באגים - נגישות - חווית משתמש",
-       openGraph: {
-    title: "טל מושל | אתר רשמי",
-    description: "ברוך הבא לאתר הרשמי של טל מושל",
-    url: "https://www.talmoshel.co.il/",
-    siteName: "talmoshel.co.il",
-    images: [
-      {
-        url: "https://www.talmoshel.co.il/opengraph-image.png", 
-        width: 1200,
-        height: 630,
-        alt: "טל מושל",
-      },
-    ],
-    locale: "he_IL",
-    type: "website",
-  },
+    
 };
 
 const varela = Varela_Round({
