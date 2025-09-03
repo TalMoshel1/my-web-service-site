@@ -15,11 +15,25 @@ export const metadata: Metadata = {
     template:
       "%s - טל מושל" /*this is for /posts... for example*/,
   },
+    openGraph: {
+    title: "טל מושל | אתר רשמי",
+    description: "ברוך הבא לאתר הרשמי של טל מושל",
+    url: "https://www.talmoshel.co.il/",
+    siteName: "talmoshel.co.il",
+    images: [
+      {
+        url: "https://www.talmoshel.co.il/opengraph-image.png", 
+        width: 1200,
+        height: 630,
+        alt: "טל מושל",
+      },
+    ],
+    locale: "he_IL",
+    type: "website",
+  },
   description:
     "מתכנת React" /* this is the default text shown when posting a link to our website in social media */,
-  twitter: {
-    /* this will be explecitly for twitter */ card: "summary_large_image",
-  },
+
 };
 
 export default function RootLayout({
