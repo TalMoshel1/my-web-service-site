@@ -162,7 +162,7 @@ export default function LandingPage() {
                     מפחית את עלויות הקמפיין, מגביר את שיעורי ההמרה ומשמש כחוליה
                     חיונית בשרשרת השיווקית שלכם. קראו עוד על <a
                       className="link-in-text"
-                      href="/articles/ux-iu"
+                      href="/articles/ux-ui"
                     >
                       שיפור חווית משתמש
                     </a>
