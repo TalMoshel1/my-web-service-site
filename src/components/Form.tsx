@@ -97,6 +97,8 @@ const Form: React.FC = () => {
 
     // const result = await fetch("https://8b9de3728139.ngrok-free.app/submit-details", {
     const result = await fetch("https://talmoshelasaservice3.runmydocker-app.com/send-mail", {
+        // const result = await fetch("http://localhost:3001/send-mail", {
+
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
