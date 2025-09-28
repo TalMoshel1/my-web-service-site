@@ -16,8 +16,8 @@ export const metadata: Metadata = {
       "%s - טל מושל" /*this is for /posts... for example*/,
   },
     openGraph: {
-    title: "טל מושל | אתר רשמי",
-    description: "ברוך הבא לאתר הרשמי של טל מושל",
+    title: "טל מושל | מפתח אתרים ואוטומציות ",
+    description: "בניית דפי נחיתה ואוטומציות לעסקים, תיקןן באגים ואופטימיזציה",
     url: "https://www.talmoshel.co.il/",
     siteName: "talmoshel.co.il",
     images: [
