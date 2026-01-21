@@ -10,6 +10,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
 
   return [
+        {
+      // url: `${process.env.NEXT_PUBLIC_BASE_URL}/articles/landing-page`,
+            url: `https://www.talmoshel.co.il`,
+
+      lastModified: new Date(),
+    },
     {
       // url: `${process.env.NEXT_PUBLIC_BASE_URL}/articles/landing-page`,
             url: `https://www.talmoshel.co.il/articles/landing-page`,
