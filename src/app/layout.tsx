@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
     openGraph: {
     title: "טל מושל | מפתח אתרים ואוטומציות ",
-    description: "בניית דפי נחיתה ואוטומציות לעסקים, תיקןן באגים ואופטימיזציה",
+    description: "בניית דפי נחיתה ואוטומציות לעסקים, תיקון באגים ואופטימיזציה",
     url: "https://www.talmoshel.co.il/",
     siteName: "talmoshel.co.il",
     images: [
